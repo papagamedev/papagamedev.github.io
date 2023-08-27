@@ -1,5 +1,6 @@
 ---
-title: Proyecto JPacman &#35;4&#58; Primeras señales de vida
+title: >
+    Proyecto JPacman #4: Primeras señales de vida
 image: jpacman_alive_banner-750x350.jpg
 ---
 

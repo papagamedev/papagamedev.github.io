@@ -1,5 +1,6 @@
 ---
-title: Carlos Bordeu&#58; «ser papá es una aventura maravillosa»
+title: >
+    Carlos Bordeu: «ser papá es una aventura maravillosa»
 image: carlosbordeu-banner-750x350.jpg
 ---
 

@@ -1,5 +1,6 @@
 ---
-title: Proyecto JPacman &#35;5&#58; Gráficos y Controles
+title: >
+    Proyecto JPacman #5: Gráficos y Controles
 image: jpacman_graphics_banner-750x350.jpg
 ---
 

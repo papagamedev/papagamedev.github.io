@@ -1,5 +1,6 @@
 ---
-title: Proyecto JPacman &#35;3&#58; Nuevas Herramientas
+title: >
+    Proyecto JPacman #3: Nuevas Herramientas
 image: jpacman_cocos2dx_banner-750x350.jpg
 ---
 

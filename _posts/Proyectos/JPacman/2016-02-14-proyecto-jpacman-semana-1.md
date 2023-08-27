@@ -1,5 +1,6 @@
 ---
-title: Proyecto JPacman&#58; Semana &#35;1
+title: >
+    Proyecto JPacman: Semana #1
 image: jpacman-semana1-banner-750x350.jpg
 ---
 
