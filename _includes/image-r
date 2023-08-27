@@ -1,0 +1,11 @@
+<figure style="float:right;max-width:500px;">
+  <img class="image" width="{{ include.w }}" src="/images/{{ include.url }}"
+    {% if include.caption %}
+    alt="{{ include.caption }}"
+    {% endif %}
+  >
+  {% if include.caption %}
+  <figcaption class="image-caption" style="text-align:center;white-space:pre-wrap;">{{ include.caption }}</figcaption>
+  {% endif %}
+</figure>
+
