@@ -1,0 +1,24 @@
+<hr>
+<span>
+    <div>
+      {% if author.image %}
+        <img src="{{author.image}}" class="author-img" style="max-width:80px;float:left;margin:10px" alt="{{author.name}}" />
+      {% endif %}
+      <div>
+         <b>{{author.name}}</b> &nbsp;
+           {% if author.twitter %}
+              <a href="{{author.twitter}}" class="icon fa-twitter">
+                <svg class="svg-icon grey">
+                    <use xlink:href="{{ '/assets/minima-social-icons.svg#' | append: 'twitter' | relative_url }}"></use>
+                </svg>
+              </a> 
+            {% endif %}
+      </div>
+    </div>
+    {% if page.lang == "en" %}
+        {{ author.bio-en }}
+    {% else %}
+        {{ author.bio }}
+    {% endif %}
+</span>
+<br>

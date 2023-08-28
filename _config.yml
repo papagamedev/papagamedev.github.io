@@ -11,13 +11,6 @@ description: Paternidad y Videojuegos
 github_username: papagamedev
 lang: es
 
-# Email and twitter are optional:
-email: 
-twitter_username:
-
-# Set this to true to get LaTeX math equation support
-use_math:
-
 # Add your Google Analytics ID here if you have one and want to use it
 google_analytics:
 
@@ -26,14 +19,12 @@ header_pages:
   - proyectos.md
   - contacto.md
 
-show_excerpts: true
-excerpt_separator: <!--more-->
-
 remote_theme: jekyll/minima
 minima:
   skin: dark
   social_links:
     - { platform: github, user_url: "https://github.com/papagamedev" }
+    - { platform: twitter, user_url: "https://twitter.com/papagamedev/"}
     - { platform: instagram, user_url: "https://instagram.com/papagamedev/"}
 
 plugins:

@@ -1,11 +1,9 @@
 ---
 title: «Papá, si te eligen Presidente, ¿ya no vas a tener tiempo para jugar?»
 image: micsur_vgchile.jpg
+author: jpl
+summary: Ser presidente de VG Chile fue muy agotador, pero también fue una experiencia increíblemente enriquecedora, tanto personal como profesionalmente.
 ---
-
-*Ser presidente de VG Chile fue muy agotador, pero también fue una experiencia increíblemente enriquecedora, tanto personal como profesionalmente.*
-
-<!--more-->
 
 *«Papá, si te eligen Presidente, ¿ya no vas a tener tiempo para jugar?»*
 

@@ -1,11 +1,9 @@
 ---
 title: «ibb and obb», puzzles de cabeza
 image: ibbandobb_banner-750x350.jpg
+author: jpl
+summary: Una breve revisión de «ibb and obb», un entretenido juego de puzles cooperativo ideal para que padres jueguen con sus hijos.
 ---
-
-*Una breve revisión de «ibb and obb», un entretenido juego de puzles cooperativo ideal para que padres jueguen con sus hijos.*
-
-<!--more-->
 
 **ibb and obb** es un videojuego que jugamos con Diego, mi hijo mayor.
 

@@ -1,11 +1,9 @@
 ---
 title: «Papá, ¡está cayendo agua del cielo!»
 image: Link-To-The-Past-Rain.jpg
+author: jpl
+summary: La lluvia en los videojuegos. Algunas ideas para jugar en estas vacaciones de invierno.
 ---
-
-*La lluvia en los videojuegos. Algunas ideas para jugar en estas vacaciones de invierno.*
-
-<!--more-->
 
 > «Papá, ¡está cayendo agua del cielo!»
 

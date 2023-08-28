@@ -1,11 +1,9 @@
 ---
 title: «Papá, ¿Cuándo vas a escribir otro Papá Game Dev?»
 image: reflexionar.jpg
+author: jpl
+summary: Dificultades para organizar mi propio tiempo. Aprender a planificar y también adaptarse a los cambios.
 ---
-
-*Dificultades para organizar mi propio tiempo. Aprender a planificar y también adaptarse a los cambios.*
-
-<!--more-->
 
 *«Papá, ¿cuándo vas a escribir otro Papá Game Dev?»*
 
