@@ -35,6 +35,8 @@ Muchos talentosos desarrolladores que sueñan con concretar algún proyecto o id
 
 Es tan diferente la percepción externa de esta industria que en los últimos años han aparecido cientos de notas, memes y hasta videos hablando de esto.  Mi favorito es [So you want to work in the video game industry](https://youtu.be/lGar7KC6Wiw) (está en inglés).
 
+{% include youtube id="lGar7KC6Wiw" %}
+
 ## ¿Y entonces?
 
 Entonces, si es todo tan terrible, ¿por qué sigo trabajando en videojuegos? ¿Por qué la industria sigue creciendo y más gente entra en ella? ¿Quiero realmente que mi hijo entre a una industria que, aunque cool, parece ser tan terrible para trabajar en ella?
@@ -77,9 +79,11 @@ No sé exactamente cuánto tiempo pasó desde que llegó al Atari hasta el día 
 
 Y luego, tipeó lo siguiente en el super ergonómico teclado negro del Atari:
 
-10 PRINT «HOLA»
+{% highlight vb %}
+10 PRINT "HOLA"
 20 GOTO 10
 RUN
+{% endhighlight %}
 
 Y empezó a salir en la pantalla «HOLA», mágicamente, una y otra vez, sin parar.
 

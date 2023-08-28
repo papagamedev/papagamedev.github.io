@@ -63,13 +63,13 @@ Sé que ya resolvimos ese puzzle con Diego, pero honestamente no tengo la menor 
 
 Para este artículo, quise que Diego también aportara su opinión por lo que le hice tres preguntas:
 
->Papá: «¿Que es lo que te gusta de jugar ibb and obb?»
+>Papá: «¿Que es lo que te gusta de jugar ibb and obb?»<br>
 >Diego: «Que es en equipo»
 
->Papá: «¿Hay alguna parte del juego que te haya gustado especialmente? ¿Por qué te gustó tanto?»
+>Papá: «¿Hay alguna parte del juego que te haya gustado especialmente? ¿Por qué te gustó tanto?»<br>
 >Diego: «La del primer cristal grande. Porque fue un desafío y tuvimos que trabajar mucho como equipo»
 
->Papá: «¿Sientes que ibb and obb es fácil o difícil? ¿Por qué?»
+>Papá: «¿Sientes que ibb and obb es fácil o difícil? ¿Por qué?»<br>
 >Diego: «Es dificil, porque te hace pensar en lógica, precisión y tiempo. Es un gran desafío.»
 
 La parte más difícil a la que Diego se refirió es el primer nivel secreto que descubrimos hace un par de semanas:
