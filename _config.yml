@@ -8,6 +8,8 @@
 
 title: Papa Game Dev
 description: Paternidad y Videojuegos
+logo: papagamedev_logo_web.png
+
 github_username: papagamedev
 lang: es
 
@@ -16,8 +18,11 @@ google_analytics:
 
 header_pages:
   - articulos.md
+  - articles.md
   - proyectos.md
+  - projects.md
   - contacto.md
+  - contact.md
 
 remote_theme: jekyll/minima
 minima:
