@@ -1,7 +1,7 @@
 ---
 title: JPacman
-lang: es
-translation_url: jpacman-en.html
+lang: en
+translation_url: jpacman.html
 ---
 # JPacman
 

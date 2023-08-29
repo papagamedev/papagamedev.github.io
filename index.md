@@ -1,3 +1,6 @@
-# Bienvenido
+---
+lang: es
+translation_url: index-en.html
+---
 
-hola
+Bienvenido!

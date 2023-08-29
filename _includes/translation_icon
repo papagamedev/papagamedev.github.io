@@ -1,0 +1,13 @@
+{% if page.lang == "en" %}
+<span>
+  <a href="{{ include.url }}">
+    <image src="{{ '/images/flag-spanish.svg' | relative_url }}" style="height:20px;" alt="Español"/>
+  </a>
+</span>
+{% else %}
+<span>
+  <a href="{{ include.url }}">
+    <image src="{{ '/images/flag-english.svg' | relative_url }}" style="height:20px;" alt="English"/>
+  </a>
+</span>
+{% endif %}

@@ -3,6 +3,7 @@ title: >
     Carlos Bordeu: «ser papá es una aventura maravillosa»
 image: carlosbordeu-banner-750x350.jpg
 author: jpl
+lang: es
 summary: Entrevista a Carlos Bordeu, exitoso emprendedor, miembro fundador de ACE Team, y uno de los pioneros del desarrollo de videojuegos en Chile.
 ---
 

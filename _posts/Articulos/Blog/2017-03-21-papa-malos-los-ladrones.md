@@ -2,6 +2,8 @@
 title: «Papá, ¡qué malos son los ladrones!»
 image: ladrones_banner-750x350.jpg
 author: jpl
+lang: es
+translation_url: dad-thieves-are-bad.html
 summary: Desde el robo sufrido en mi auto, a explicarle a mi hijo que no todas las personas tienen buenas intenciones. Videojuegos de policías y ladrones.
 ---
 
@@ -27,7 +29,9 @@ Pero la experiencia sirvió, al menos, para hablar con los niños acerca del tem
 
 El tema del robo hizo además que volvieran a mi mente recuerdos de videojuegos que jugué hace más de 20 años, justamente acerca de policías y ladrones.
 
-{% include image url="keystonekapers-screenshot.jpg" caption="Keystone Kapers en Atari, un juego en que el jugador conduce a un policía que persigue a un criminal que escapa entre obstáculos, avionetas y carritos de supermercado." %} El que recuerdo con más nostalgia es **Keystone Kapers**, un juego muy simple y muy bien logrado que tuve en el Atari 800 XL Debo haber jugado cientos de veces, intentando sincronizar todos los saltos para esquivar carritos de supermercado y avionetas mientras perseguía al ladrón. Era un juego muy difícil pero muy entretenido [video del juego acá](https://www.youtube.com/watch?v=wZTn8z76zWY)
+El que recuerdo con más nostalgia es **Keystone Kapers**, un juego muy simple y muy bien logrado que tuve en el Atari 800 XL Debo haber jugado cientos de veces, intentando sincronizar todos los saltos para esquivar carritos de supermercado y avionetas mientras perseguía al ladrón. Era un juego muy difícil pero muy entretenido [video del juego acá](https://www.youtube.com/watch?v=wZTn8z76zWY)
+
+{% include image url="keystonekapers-screenshot.jpg" caption="Keystone Kapers en Atari, un juego en que el jugador conduce a un policía que persigue a un criminal que escapa entre obstáculos, avionetas y carritos de supermercado." %}
 
 También hay juegos muy entretenidos y desafiantes en los que el jugador toma el rol del ladrón. De estos, uno que disfruté mucho hace casi veinte años fue **Thief: The Dark Project**, la primera entrega de la serie Thief.
 

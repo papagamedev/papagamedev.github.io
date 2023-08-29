@@ -1,0 +1,8 @@
+<div>
+  {%- include translation_icon url=include.url -%}
+  {%- if page.lang == "en" -%}
+  También puedes leer este artículo en <a href="{{ include.url }}">Español</a>
+  {%- else -%}
+  You can also read this article in <a href="{{ include.url }}">English</a>
+  {%- endif -%}
+</div>

@@ -1,0 +1,16 @@
+<div style="display:inline-block;min-width:300px;width:40%;margin:2%;vertical-align: top;" >
+  <div style="padding:5px">
+    <a href="{{ include.card.url | relative_url }}">
+      <img src="/images/{{include.card.image}}" class="post-summary-img" style="height:200px;object-fit:cover;margin-left:auto;margin-right:auto;display:block;" alt="{{include.card.title}}" />
+    </a>
+  </div>
+  <div style="padding:5px">
+    <a class="post-link" href="{{ include.card.url | relative_url }}">{{include.card.title | escape}}</a> 
+  </div>
+  <div style="padding:5px">
+    <span class="post-meta">{{ post.date | date: date_format }}</span>
+  </div>
+  <div style="padding:15px">
+    {{include.card.summary | escape}}
+  </div>
+</div>
