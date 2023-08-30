@@ -22,8 +22,9 @@ layout: base
         • <span itemprop="author" itemscope itemtype="http://schema.org/Person">
             <span class="p-author h-card" itemprop="name">{{ author.name }}</span>
         </span>
-      {%- endif -%}</p>
-
+      {%- endif -%}
+      {% include category_link categories=page.categories showprimary=true %}
+      </p>
       {% if page.translation_url %}
         {% include post_translation_link url=page.translation_url %}
       {% endif %}

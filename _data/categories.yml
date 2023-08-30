@@ -1,0 +1,28 @@
+articles:
+    es: Artículos
+    en: Articles
+    primary: true
+blog:
+    es: Blog
+    en: Blog
+    primary: false
+interviews:
+    es: Entrevistas
+    en: Interviews
+    primary: false
+recommended_games:
+    es: Juegos Recomendados
+    en: Recommended Games
+    primary: false
+projects:
+    es: Proyectos
+    en: Projects
+    primary: true
+jpacman:
+    es: JPacman
+    en: JPacman
+    primary: false
+downloads:
+    es: Descargas
+    en: Downloads
+    primary: false

@@ -3,7 +3,12 @@
       {%- assign default_paths = site.pages | map: "path" -%}
       {%- assign page_paths = site.header_pages | default: default_paths -%}
       {%- assign titles_size = site.pages | map: 'title' | join: '' | size -%}
-      <a class="site-title" rel="author" href="{{ "/" | relative_url }}">
+      
+      {%- if page.lang=="en" -%}
+        <a class="site-title" rel="author" href="{{ "/index-en.html" | relative_url }}">
+      {%- else -%}
+      <a class="site-title" rel="author" href="{{ "/index.html" | relative_url }}">
+      {%- endif -%}
         <img alt="{{ site.title}}" src="/images/{{site.logo}}" width="300"/>
       </a>
   

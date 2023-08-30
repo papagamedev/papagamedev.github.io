@@ -26,7 +26,7 @@ Ideas tengo muchas, y ganas también. Solo escasea el tiempo libre, pero dado qu
 
 Además, es una excelente oportunidad para **compartir el proceso de creación de un videojuego** y, de alguna manera, crear un registro que pueda servir de guía a los que recién están partiendo y pueden aprender de la experiencia.
 
-Bienvenidos, entonces, a la nueva sección de [Proyectos]({% link proyectos.md %}).
+Bienvenidos, entonces, a la nueva sección de [Proyectos]({% link category/projects-es.md %}).
 
 Cada vez que pueda avanzar algo concreto en alguno de los proyectos publicaré una pequeña actualización contando los avances y, tal vez, compartiendo una versión del propio juego. No tengo idea qué tan rápido pueda llegar a algo concreto, pero estoy seguro que disfrutaré el camino.
 

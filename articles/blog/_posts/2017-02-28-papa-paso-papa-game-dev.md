@@ -20,7 +20,7 @@ Y decidí que no dejaría que terminara este mes sin volver a escribir un nuevo 
 
 ## Vacaciones y Proyectos
 
-Hace casi un año escribí [un artículo acerca de las vacaciones]({% post_url 2016-03-07-nos-vamos-de-vacaciones %}) donde contaba que una de las cosas que más disfrutaba de esos períodos era la posibilidad de avanzar en mis propios proyectos. En vacaciones fue que escribí mis primeros artículos de Papá Game Dev, y en vacaciones también fue que reviví mi [Proyecto JPacman]({% link jpacman.md %}).
+Hace casi un año escribí [un artículo acerca de las vacaciones]({% post_url 2016-03-07-nos-vamos-de-vacaciones %}) donde contaba que una de las cosas que más disfrutaba de esos períodos era la posibilidad de avanzar en mis propios proyectos. En vacaciones fue que escribí mis primeros artículos de Papá Game Dev, y en vacaciones también fue que reviví mi [Proyecto JPacman]({% link category/jpacman-es.md %}).
 
 Estas vacaciones no fueron la excepción, y en parte esa es la razón por la que dejé de tener tiempo para escribir más artículos durante tantas semanas. Exageré, a decir verdad. No sólo me embarqué en un proyecto, sino que en varios.
 

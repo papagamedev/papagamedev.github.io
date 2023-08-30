@@ -1,9 +1,8 @@
 ---
 title: JPacman
-lang: en
-translation_url: jpacman.html
+lang: es
+translation_url: jpacman-en.html
 ---
-# JPacman
 
 JPacman es un juego inspirado en el clásico Pacman, con un par de interesantes agregados a la jugabilidad.
 
@@ -12,3 +11,5 @@ Es un proyecto personal que desarrollé inicialmente entre 1998 y 1999 como un r
 El nombre JPacman viene de mi nombre (JP) y Pacman: JP + Pacman = JPacman
 
 Revisa acá las descargas disponibles del proyecto JPacman
+
+{% include post_list category="jpacman" %}

@@ -17,10 +17,10 @@ lang: es
 google_analytics:
 
 header_pages:
-  - articulos.md
-  - articles.md
-  - proyectos.md
-  - projects.md
+  - category/articles-es.md
+  - category/articles-en.md
+  - category/projects-es.md
+  - category/projects-en.md
   - contacto.md
   - contact.md
 

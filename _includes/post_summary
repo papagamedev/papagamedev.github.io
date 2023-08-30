@@ -8,7 +8,10 @@
     <a class="post-link" href="{{ include.card.url | relative_url }}">{{include.card.title | escape}}</a> 
   </div>
   <div style="padding:5px">
-    <span class="post-meta">{{ post.date | date: date_format }}</span>
+    <span class="post-meta">
+      {{- post.date | date: date_format }}
+      {% include category_link categories=post.categories showprimary=false -%}
+    </span>
   </div>
   <div style="padding:15px">
     {{include.card.summary | escape}}

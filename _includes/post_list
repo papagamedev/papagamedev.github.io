@@ -13,7 +13,9 @@
 
 {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
 {%- for post in posts -%}
-  {% include post_summary card=post %}
+  {% if include.category == nil or post.categories contains include.category %}
+    {% include post_summary card=post %}
+  {% endif %}
 {%- endfor -%}
 
 {% if site.paginate %}
