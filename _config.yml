@@ -16,6 +16,8 @@ lang: es
 # Add your Google Analytics ID here if you have one and want to use it
 google_analytics:
 
+permalink: /:year/:month/:title:output_ext
+
 header_pages:
   - category/articles-es.md
   - category/articles-en.md
@@ -31,6 +33,7 @@ minima:
     - { platform: github, user_url: "https://github.com/papagamedev" }
     - { platform: twitter, user_url: "https://twitter.com/papagamedev/"}
     - { platform: instagram, user_url: "https://instagram.com/papagamedev/"}
+    - { platform: facebook, user_url: "https://facebook.com/papagamedev/"}
 
 plugins:
   - jekyll-feed

@@ -4,4 +4,4 @@ lang: en
 translation_url: jpacman-es.html
 ---
 
-{% include post_list category="jpacman" %}
+{% include post_list category="jpacman" description=true %}

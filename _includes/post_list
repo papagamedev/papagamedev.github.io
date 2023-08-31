@@ -1,40 +1,46 @@
 <div style="margin: auto;">
-
-{% if site.paginate %}
-  {% assign posts = paginator.posts %}
-{% else %}
-  {% assign posts = site.posts | where: "lang",page.lang %}
-{% endif %}
-
+{%- assign posts = site.posts | where: "lang",page.lang -%}
 {%- if posts.size > 0 -%}
-{%- if page.list_title -%}
-  <h2 class="post-list-heading">{{ page.list_title }}</h2>
-{%- endif -%}
+  {%- assign postcount = posts.size -%}
+  {%- if include.limit -%}
+    {% if include.limit < posts.size %}
+      {%- assign postcount = include.limit -%}
+    {%- endif -%}
+  {%- endif -%}
 
-{%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-{%- for post in posts -%}
-  {% if include.category == nil or post.categories contains include.category %}
-    {% include post_summary card=post %}
-  {% endif %}
-{%- endfor -%}
+  {%- if include.title -%}
+    <h2 class="post-list-heading">{% include category_link category=include.category %}</h2>
+  {%- endif -%}
 
-{% if site.paginate %}
-  <div class="pager">
-    <ul class="pagination">
-    {%- if paginator.previous_page %}
-      <li><a href="{{ paginator.previous_page_path | relative_url }}" class="previous-page">{{ paginator.previous_page }}</a></li>
-    {%- else %}
-      <li><div class="pager-edge">•</div></li>
-    {%- endif %}
-      <li><div class="current-page">{{ paginator.page }}</div></li>
-    {%- if paginator.next_page %}
-      <li><a href="{{ paginator.next_page_path | relative_url }}" class="next-page">{{ paginator.next_page }}</a></li>
-    {%- else %}
-      <li><div class="pager-edge">•</div></li>
-    {%- endif %}
-    </ul>
-  </div>
-{%- endif %}
+  {%- if include.description -%}
+    {% include category_description category=include.category %}
+  {%- endif -%}
 
+  {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+  {%- assign counter = 0 -%}
+  {%- assign allcounter = 0 -%}
+  {%- for post in posts -%}
+    {%- if include.category == nil or post.categories contains include.category -%}
+      {%- assign allcounter = allcounter | plus:1 -%}
+      {%- if counter < postcount -%}
+        {%- include post_summary card=post -%}
+        {%- assign counter = counter | plus:1 -%}
+      {%- endif -%}
+    {%- endif -%}
+  {%- endfor -%}
+
+  {%- if include.seeall -%}
+    {%- if postcount < allcounter -%}
+      <div>
+        <a href="{{include.category}}-all-{{page.lang}}.html">
+          {%- if page.lang == "en" -%}
+            See all {{ allcounter }} entries...
+          {%- else -%}
+            Ver todas las {{ allcounter }} entradas...
+          {%- endif -%}
+        </a>
+      </div>
+    {%- endif -%}
+  {%- endif -%}
 {%- endif -%}
 </div>

@@ -4,4 +4,4 @@ lang: es
 translation_url: downloads-en.html
 ---
 
-{% include post_list category="downloads" %}
+{% include post_list category="downloads" description=true %}

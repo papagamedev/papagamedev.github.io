@@ -1,15 +1,8 @@
-<span>
-  {%- assign categories = include.categories -%}
-  {%- for category in categories -%}
-    {% assign categorydata = site.data.categories[category] %}
-    {%- if include.showprimary == true or categorydata.primary == false %}
-      • <a href="/category/{{category}}-{{page.lang}}.html">
-        {%- if page.lang == "en" -%}
-          {{ categorydata.en }}
-        {%- else -%}
-          {{ categorydata.es }}
-        {%- endif -%}
-      </a>
-    {%- endif -%}
-  {%- endfor -%}
-</span>
+{%- assign categorydata = site.data.categories[include.category] -%}
+<a href="/category/{{include.category}}-{{page.lang}}.html">
+  {%- if page.lang == "en" -%}
+    {{ categorydata.en }}
+  {%- else -%}
+    {{ categorydata.es }}
+  {%- endif -%}
+</a>

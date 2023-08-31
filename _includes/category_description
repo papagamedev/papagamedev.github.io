@@ -1,0 +1,3 @@
+<div>
+  {{ site.data.categories[include.category].description[page.lang] }}
+</div>

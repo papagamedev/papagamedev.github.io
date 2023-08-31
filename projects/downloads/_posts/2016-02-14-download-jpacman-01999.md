@@ -3,7 +3,7 @@ title: Download JPacman 0.1999
 image: jpacman.jpg
 author: jpl
 lang: en
-translation_url: 2016-02-14-descarga-jpacman-01999.html
+translation_url: descarga-jpacman-01999.html
 category: jpacman
 ---
 

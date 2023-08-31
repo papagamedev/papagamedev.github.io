@@ -4,4 +4,4 @@ lang: es
 translation_url: interviews-en.html
 ---
 
-{% include post_list category="interviews" %}
+{% include post_list category="interviews" description=true %}

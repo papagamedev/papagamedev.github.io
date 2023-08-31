@@ -8,7 +8,9 @@ layout: base
   {%- endif -%}
 
   {{ content }}
+  
+  {% include post_list limit=2 category="articles" title=true %}
 
-  {% include post_list %}
+  {% include post_list limit=2 category="projects" title=true %}
 
 </div>

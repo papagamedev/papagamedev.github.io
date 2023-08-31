@@ -4,6 +4,10 @@ lang: es
 translation_url: articles-en.html
 ---
 
-Artículos acerca de la paternidad, los videojuegos y el desarrollo de éstos
+{% include category_description category="articles"%}
 
-{% include post_list category="articles" %}
+{% include post_list limit=2 category="blog" title=true %}
+
+{% include post_list limit=2 category="interviews" title=true %}
+
+{% include post_list limit=2 category="recommended_games" title=true %}
