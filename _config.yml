@@ -7,7 +7,7 @@
 # https://learnxinyminutes.com/docs/yaml/
 
 title: Papa Game Dev
-description: Un sitio web acerca de Paternidad y Videojuegos
+description: Paternidad y Videojuegos
 logo: /images/papagamedev_logo_web.png
 url: "https://papagame.dev"
 github_username: papagamedev
@@ -27,8 +27,12 @@ header_pages:
   - category/articles-en.md
   - category/projects-es.md
   - category/projects-en.md
+  - search-es.md
+  - search-en.md
   - contacto.md
   - contact.md
+
+date_format: "%b %-d, %Y"
 
 remote_theme: jekyll/minima
 minima:

@@ -16,7 +16,6 @@
     {% include category_description category=include.category %}
   {%- endif -%}
 
-  {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
   {%- assign counter = 0 -%}
   {%- assign allcounter = 0 -%}
   {%- for post in posts -%}

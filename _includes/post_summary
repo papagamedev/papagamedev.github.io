@@ -9,7 +9,7 @@
   </div>
   <div style="padding:5px">
     <span class="post-meta">
-      {{- post.date | date: date_format }}
+      {{- post.date | date: site.date_format }}
       {% include category_links categories=post.categories showprimary=false -%}
     </span>
   </div>
