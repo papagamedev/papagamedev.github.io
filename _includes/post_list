@@ -9,11 +9,11 @@
   {%- endif -%}
 
   {%- if include.title -%}
-    <h2 class="post-list-heading">{% include category_link category=include.category %}</h2>
+    <h2>{% include category_link category=include.category class="post-list-heading" %}</h2>
   {%- endif -%}
 
   {%- if include.description -%}
-    {% include category_description category=include.category %}
+    {% include category_description category=include.category class="categorylistlink" %}
   {%- endif -%}
 
   {%- assign counter = 0 -%}

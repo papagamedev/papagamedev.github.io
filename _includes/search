@@ -16,6 +16,6 @@ SimpleJekyllSearch({
   noResultsText: '{{include.noresults}}',
   limit: 10,
   fuzzy: false,
-  searchResultTemplate: '<div style="display:inline-block;min-width:300px;width:40%;margin:2%;vertical-align: top;"><div style="padding:5px"><a href="{url}"><img src="/images/{image}" class="post-summary-img" style="height:200px;object-fit:cover;margin-left:auto;margin-right:auto;display:block;" alt="{title}" /></a></div><div style="padding:5px"><a class="post-link" href="{url}">{title}</a> </div><div style="padding:5px"><span class="post-meta">{date}</span></div><div style="padding:15px">{description}</div>  </div>'
+  searchResultTemplate: '<div class="post-summary"><div class="post-summary-item"><a href="{url}"><img src="/images/{image}" class="post-summary-img" alt="{title}" /></a></div><div class="post-summary-item"><a class="post-link" href="{url}">{title}</a> </div><div class="post-summary-item"><span class="post-meta">{date}</span></div><div class="post-summary-description">{description}</div>  </div>'
 })
 </script>

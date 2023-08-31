@@ -1,0 +1,75 @@
+.site-header {
+  border-top: 5px solid #181818;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  color: #FF6600;
+}
+
+a.post-list-heading
+{
+  color: #FF6600;
+  &:visited
+  {
+    color: #FF6600;
+  }
+  &:hover
+  {
+    color: #FF6600;
+  }
+}
+
+a.post-link
+{
+  color: #bbbbbb;
+  font-weight: bold;
+}
+
+a.categorylink
+{
+  color: #bbbbbb;
+  font-weight: bold;
+}
+
+a
+{
+  color: #bbbbbb;
+  font-weight: bold;
+  &:visited
+  {
+    color: #bbbbbb;
+  }
+  &:hover
+  {
+    color: #bbbbbb;
+  }
+}
+
+.post-summary-img
+{
+  height:200px;
+  object-fit:cover;
+  margin-left:auto;
+  margin-right:auto;
+  display:block;
+}
+
+.post-summary
+{
+  display:inline-block;
+  min-width:300px;
+  width:40%;
+  margin:2%;
+  vertical-align: top; 
+}
+
+.post-summary-item
+{
+  padding:5px;
+}
+
+.post-summary-description
+{
+  padding:15px;
+}

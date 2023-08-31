@@ -1,5 +1,5 @@
 {%- assign categorydata = site.data.categories[include.category] -%}
-<a href="/category/{{include.category}}-{{page.lang}}.html">
+<a class="{{include.class}}" href="/category/{{include.category}}-{{page.lang}}.html">
   {%- if page.lang == "en" -%}
     {{ categorydata.en }}
   {%- else -%}
