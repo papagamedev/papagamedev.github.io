@@ -5,6 +5,7 @@ author: jpl
 lang: es
 translation_url: download-jpacman-01999.html
 category: jpacman
+description: Descarga la versión original de JPacman 0.1999
 ---
 
 {% include image url="jpacman.jpg" %}

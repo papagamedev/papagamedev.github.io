@@ -4,7 +4,7 @@ image: ladrones_banner-750x350.jpg
 author: jpl
 lang: es
 translation_url: dad-thieves-are-bad.html
-summary: Desde el robo sufrido en mi auto, a explicarle a mi hijo que no todas las personas tienen buenas intenciones. Videojuegos de policías y ladrones.
+description: Desde el robo sufrido en mi auto, a explicarle a mi hijo que no todas las personas tienen buenas intenciones. Videojuegos de policías y ladrones.
 ---
 
 Hace un par de meses, llevé a mi hijo Diego (12) a jugar un partido por su equipo de Hockey, y como los guardias no me permitieron estacionarme al interior del recinto, tuve que dejar el auto estacionado en la calle, junto a unos 20 o 30 autos más.

@@ -3,7 +3,7 @@ title: ¡Proyectos en Papá Game Dev!
 image: proyectos_banner-750x350.jpg 
 author: jpl
 lang: es
-summary: Nueva sección de proyectos de Papá Game Dev, con ideas personales, experimentos, tutoriales y avances del progreso de los proyectos.
+description: Nueva sección de proyectos de Papá Game Dev, con ideas personales, experimentos, tutoriales y avances del progreso de los proyectos.
 ---
 
 ¡Nuevo año, nuevas metas!

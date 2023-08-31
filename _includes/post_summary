@@ -14,6 +14,6 @@
     </span>
   </div>
   <div style="padding:15px">
-    {{include.card.summary | escape}}
-  </div>
+    {{include.card.description | escape}}
+  </div>  
 </div>

@@ -7,11 +7,15 @@
 # https://learnxinyminutes.com/docs/yaml/
 
 title: Papa Game Dev
-description: Paternidad y Videojuegos
-logo: papagamedev_logo_web.png
-
+description: Un sitio web acerca de Paternidad y Videojuegos
+logo: /images/papagamedev_logo_web.png
+url: "https://papagame.dev"
 github_username: papagamedev
 lang: es
+
+twitter:
+  username: papagamedev
+  card: summary
 
 # Add your Google Analytics ID here if you have one and want to use it
 google_analytics:

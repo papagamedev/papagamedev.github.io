@@ -3,7 +3,7 @@ title: «Papá, ¿qué pasó con tu Papá Game Dev?»
 image: que_paso_papagamedev_banner-750x350.jpg
 author: jpl
 lang: es
-summary: ¿Por qué pasé casi dos meses sin escribir para Papá Game Dev? Proyectos nuevos y reflexiones. El fin de una era para Wanako / Behaviour Chile.
+description: ¿Por qué pasé casi dos meses sin escribir para Papá Game Dev? Proyectos nuevos y reflexiones. El fin de una era para Wanako / Behaviour Chile.
 ---
 
 > «Papá, ¿qué pasó con tu Papá Game Dev?»
