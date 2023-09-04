@@ -6,3 +6,4 @@ lang: es
 description: Muchos sueñan con trabajar haciendo videojuegos. ¿Se puede estudiar videojuegos? ¿Se puede trabajar y vivir del desarrollo? ¿Hay alternativas en Chile?
 ---
 
+https://papagame.dev/articulos/quiero-estudiar-videojuegos

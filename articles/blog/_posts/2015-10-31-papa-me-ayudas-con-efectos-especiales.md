@@ -5,3 +5,5 @@ author: jpl
 lang: es
 description: 
 ---
+
+https://papagame.dev/articulos/papa-me-ayudas-con-efectos-especiales

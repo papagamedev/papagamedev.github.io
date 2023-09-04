@@ -4,10 +4,11 @@ title: >
 image: jpacman_alive_banner-750x350.jpg
 author: jpl
 lang: es
+translation_url: project-jpacman-4-first-signs-life.html
 description: Empieza la producción de JPacman. Análisis de los módulos del código fuente original. Conseguir que el juego compile con Cocos2d-x.
 ---
 
-Durante la segunda mitad de Febrero, con la [elección de Cocos2d-x]({% post_url 2016-07-29-proyecto-jpacman-3-nuevas-herramientas %}) como el motor de videojuegos a utilizar, había completado toda la fase de **pre-producción** de mi Proyecto JPacman. Como resultado, ya tenía un **objetivo**, **herramientas**, y un **plan**.
+Durante la segunda mitad de Febrero, con la [elección de Cocos2d-x]({% post_url /projects/jpacman/2016-07-29-proyecto-jpacman-3-nuevas-herramientas %}) como el motor de videojuegos a utilizar, había completado toda la fase de **pre-producción** de mi Proyecto JPacman. Como resultado, ya tenía un **objetivo**, **herramientas**, y un **plan**.
 
 El objetivo estaba claro: resucitar **JPacman**, un clon de Pac-Man que había desarrollado originalmente en 1999 y cuya versión apenas funcionaba en los computadores modernos por las herramientas obsoletas con que había sido desarrollado.
 
@@ -19,7 +20,7 @@ Pasaron varias semanas en las que no tuve tiempo de mirar el proyecto, hasta que
 
 ## Inspección del código fuente de JPacman
 
-Para seguir adelante, tuve que hacer una inspección más profunda del código fuente original de JPacman (código disponible en el [repositorio en Bitbucket]({% post_url 2016-07-09-proyecto-jpacman-control-de-versiones%})). Pude entonces clasificar los archivos en cuatro grupos:
+Para seguir adelante, tuve que hacer una inspección más profunda del código fuente original de JPacman (código disponible en el [repositorio en Bitbucket]({% post_url /projects/jpacman/2016-07-09-proyecto-jpacman-control-de-versiones%})). Pude entonces clasificar los archivos en cuatro grupos:
 
 1. **Módulo de Juego**: contiene la lógica de jugabilidad y las interfaces, y en su versión original no usaban directamente (casi) nada de las librerías obsoletas. (Archivos: *Game.cpp, Intro.cpp, Menu.cpp, Puntajes.cpp*)
 1. **Módulo de Recursos**: contiene una abstracción para administrar los controles, gráficos y sonidos, y permitir al resto del juego usarlos sin llamar directamente a las librerías de DirectX, ahora obsoletas. (Archivos: *Input.cpp, Input.h, Gfx.cpp, Sfx.cpp, Music.cpp*)

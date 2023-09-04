@@ -4,10 +4,11 @@ title: >
 image: jpacman_graphics_banner-750x350.jpg
 author: jpl
 lang: es
+translation_url: project-jpacman-5-graphics-controls.html
 description: La lógica de JPacman ya funciona con Cocos2d-x, y es hora de hacer funcionar los gráficos y los controles para hacerlo jugable nuevamente.
 ---
 
-Después de que JPacman había dado [las primeras señales]({% post_url 2016-09-04-proyecto-jpacman-4-primeras-vida %}) de vida usando Cocos2d-x, era hora de hacer que por fin se pudiera volver a jugar. ¿Qué faltaba para esto? Dos cosas: que se vieran los gráficos en pantalla y que se pudiera usar el teclado para controlar menús y personaje.
+Después de que JPacman había dado [las primeras señales]({% post_url /projects/jpacman/2016-09-04-proyecto-jpacman-4-primeras-vida %}) de vida usando Cocos2d-x, era hora de hacer que por fin se pudiera volver a jugar. ¿Qué faltaba para esto? Dos cosas: que se vieran los gráficos en pantalla y que se pudiera usar el teclado para controlar menús y personaje.
 
 ## Gráficos en Pantalla
 

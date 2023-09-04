@@ -3,6 +3,7 @@ title: «Papá, ¿por qué ocurren los terremotos?»
 image: simcity-2000.jpg
 author: jpl
 lang: es
+translation_url: /2015/11/why-earthquakes-happen.html
 description: Los terremotos, inundaciones y otras catástrofes naturales siempre han estado presentes en los videojuegos. Aprender jugando videojuegos y la historia acerca del juego Rebuild Chile.
 ---
 

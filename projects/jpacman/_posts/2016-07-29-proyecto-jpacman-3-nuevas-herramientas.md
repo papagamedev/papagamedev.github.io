@@ -4,11 +4,12 @@ title: >
 image: jpacman_cocos2dx_banner-750x350.jpg
 author: jpl
 lang: es
+translation_url: project-jpacman-3-new-toolset.html
 description: >
     Nuevo desafío: encontrar nuevas herramientas para JPacman. Inspección del código fuente, alternativas de motores de videojuegos e integración de Cocos2d-x.
 ---
 
-A fines de Febrero, estaba muy motivado con seguir avanzando en el [proyecto JPacman](/category/jpacman-es.html). En un par de semanas, ya había conseguido hacer funcionar los binarios originales del juego y tenía listo el repositorio en BitBucket. Ahí había respaldado todo el código fuente y los recursos con los que había creado la primera versión hace más de 15 años.
+A fines de Febrero, estaba muy motivado con seguir avanzando en el [proyecto JPacman]({% link category/jpacman-es.md %}). En un par de semanas, ya había conseguido hacer funcionar los binarios originales del juego y tenía listo el repositorio en BitBucket. Ahí había respaldado todo el código fuente y los recursos con los que había creado la primera versión hace más de 15 años.
 
 Sin embargo, había un pequeño inconveniente. Cuando trabajé en el proyecto en 1999, usé un conjunto de herramientas que hoy en día están completamente obsoletas. Para poder avanzar, entonces, el siguiente obstáculo a resolver era **definir e integrar herramientas nuevas para poder reconstruir el juego**.
 

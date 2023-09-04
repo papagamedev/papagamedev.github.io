@@ -4,6 +4,7 @@ title: >
 image: jpacman-semana1-banner-750x350.jpg
 author: jpl
 lang: es
+translation_url: project-jpacman-week-1.html
 description: >
     Empieza el proyecto JPacman: retomar un juego que desarrollé con fines no comerciales hace mucho tiempo. ¡Descarga la versión original construida en 1999!
 ---
@@ -18,7 +19,7 @@ Incrédulo, observé cómo empezaba la melodía y se animaba la introducción qu
 
 {% include image url="jpacman-intro.png" caption="Hace diecisiete años, estaba decidido a tener mi propia empresa de videojuegos. Su nombre sería JPL Soft, otro chispazo notable de creatividad." %}
 
-A principios de este año, medité bastante acerca de mis experiencias del año anterior e incluso escribí un artículo al respecto ([«¡Adios 2015! Dos breves historias y nuevos desafíos»]({% post_url 2016-01-24-adios-2015-dos-breves-historias %})). Sentí que era hora de poner manos a la obra y me propuse retomar, durante el 2016, algunos de estos proyectos.
+A principios de este año, medité bastante acerca de mis experiencias del año anterior e incluso escribí un artículo al respecto ([«¡Adios 2015! Dos breves historias y nuevos desafíos»]({% post_url /articles/blog/2016-01-24-adios-2015-dos-breves-historias %})). Sentí que era hora de poner manos a la obra y me propuse retomar, durante el 2016, algunos de estos proyectos.
 
 *Ha llegado el momento de revivir JPacman.*
 
@@ -68,6 +69,6 @@ Sé que no puedo publicar el juego por el tema de los derechos de autor, pero es
 
 {% include image url="jpacman.jpg" caption="¡Descarga JPacman 0.1999 ahora!" %}
 
-Puedes obtenerlo desde la página de [descarga de JPacman 0.1999]({% post_url 2016-02-14-descarga-jpacman-01999 %})
+Puedes obtenerlo desde la página de [descarga de JPacman 0.1999]({% post_url /projects/downloads/2016-02-14-descarga-jpacman-01999 %})
 
-También puedes revisar en esta sección todas las actualizaciones al [Proyecto JPacman](/category/jpacman-es.html)
+También puedes revisar en esta sección todas las actualizaciones al [Proyecto JPacman]({% link category/jpacman-es.md  %})

@@ -3,6 +3,7 @@ title: ¡Proyectos en Papá Game Dev!
 image: proyectos_banner-750x350.jpg 
 author: jpl
 lang: es
+translation_url: papa-game-dev-projects.html
 description: Nueva sección de proyectos de Papá Game Dev, con ideas personales, experimentos, tutoriales y avances del progreso de los proyectos.
 ---
 
@@ -10,7 +11,7 @@ description: Nueva sección de proyectos de Papá Game Dev, con ideas personales
 
 En los últimos meses me ha pasado, en varias ocasiones, que he sentido una creciente inquietud por participar en nuevos proyectos.
 
-No es que me sobre el tiempo, en absoluto. Tampoco significa que esté aburrido en mi trabajo actual y que quiera salirme de ahí para buscar otros horizontes. De hecho, como contaba en un [artículo anterior]({% post_url 2016-01-24-adios-2015-dos-breves-historias %}) el último año fue excelente en el ámbito profesional, y sé que tengo mucha suerte de ser parte de un equipo como Behaviour.
+No es que me sobre el tiempo, en absoluto. Tampoco significa que esté aburrido en mi trabajo actual y que quiera salirme de ahí para buscar otros horizontes. De hecho, como contaba en un [artículo anterior]({% post_url /articles/blog/2016-01-24-adios-2015-dos-breves-historias %}) el último año fue excelente en el ámbito profesional, y sé que tengo mucha suerte de ser parte de un equipo como Behaviour.
 
 Pero en el contexto del trabajo, en un estudio de desarrollo de videojuegos como Behaviour, me toca enfrentarme a la mayoría de los desafíos desde la perspectiva de la eficiencia y de la calidad. No hay mucho espacio ni tiempo para explorar libremente diferentes alternativas, probar ideas raras, o simplemente explorar temas nuevos solo por la diversión de explorarlos.
 
