@@ -14,7 +14,7 @@ Después de que JPacman había dado [las primeras señales]({% post_url /project
 
 Para poder mostrar los gráficos en pantalla y mantener la lógica que ya tenía implementada en la versión original de JPacman, tuve que revisar primero cómo era que funcionaba y en qué consistían los archivos de imágenes que el proyecto ya contenía.
 
-Descubrí que JPacman cargaba sólo una gran imagen por escena. En la parte superior de cada imagen estaba el fondo de la escena, del tamaño de la pantalla completa a una resolución de 640 por 480 pixeles. Había cuatro escenas diferentes en el juego y por tanto había cuatro archivos de imagen: introducción, menú principal, pantalla de mejores puntajes y la escena del juego.
+Descubrí que JPacman cargaba sólo una gran imagen por escena. En la parte superior de cada imagen estaba el fondo de la escena, del tamaño de la pantalla completa a una resolución de 640 por 480 pixeles. Había cuatro escenas diferentes en el juego y por tanto había cuatro archivos de imagen: *introducción, menú principal, pantalla de mejores puntajes y la escena del juego*.
 
 {% include image url="jpacman_fondos.jpg" caption="Los fondos de las cuatro escenas de JPacman: la escena para jugar tiene el laberinto pintado en el fondo, la introducción tiene un fondo negro, los menús tienen un fondo (horrible) de ladrillos verdes, y el menú principal tiene el nombre del juego superpuesto." %}
 
