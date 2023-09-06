@@ -117,7 +117,7 @@ Sin duda, lo hemos pasado muy bien. Les recomiendo mucho jugar **ibb and obb** c
 {% include image-r url="ibbandobb_logo-300x157.jpg" %}
 
 |*Nombre del juego:*|ibb and obb|
-|*Tipo de juego:|Puzzles|
+|*Tipo de juego:*|Puzzles|
 |*Modos de juego:*|Dos jugadores (cooperativo), un jugador (muy difícil)|
 |*Edad recomendada:*|8 o más años (buena motricidad)|
 |*Duración típica de una sesión:*|1 hora|

@@ -3,7 +3,8 @@ title: «Papá, ¡yo quiero tener una Wii!»
 image: mariokart-wheel.jpg
 author: jpl
 lang: es
-description: 
+description: >
+    La Wii y su revolución en los videojuegos: los controles naturales y el legado innovador de Satoru Iwata.
 ---
 
 > «Papá, ¡yo quiero tener una Wii!»
