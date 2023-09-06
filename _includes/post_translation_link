@@ -1,9 +1,9 @@
 <div>
   {%- if page.lang == "en" -%}
-  {%- include translation_icon lang="es" url=include.url -%}
+  {%- include translation_icon lang="es" url=include.url %}
   También puedes leer este artículo en <a href="{{ include.url }}">Español</a>
   {%- else -%}
-  {%- include translation_icon lang="en" url=include.url -%}
+  {%- include translation_icon lang="en" url=include.url %}
   You can also read this article in <a href="{{ include.url }}">English</a>
   {%- endif -%}
 </div>

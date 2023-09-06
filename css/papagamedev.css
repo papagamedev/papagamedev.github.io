@@ -48,33 +48,83 @@ a
 
 .post-summary-img
 {
-  height:200px;
-  object-fit:cover;
-  margin-left:auto;
-  margin-right:auto;
-  display:block;
+  height: 200px;
+  object-fit: cover;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 
 .post-summary
 {
-  display:inline-block;
-  min-width:300px;
-  width:40%;
-  margin:2%;
+  display: inline-block;
+  min-width: 300px;
+  width: 40%;
+  margin: 2%;
   vertical-align: top; 
 }
 
 .post-summary-item
 {
-  padding:5px;
+  padding: 5px;
 }
 
 .post-summary-description
 {
-  padding:15px;
+  padding: 15px;
 }
 
 .relatedPosts
 {
   margin: 15px;
+}
+
+figure
+{
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+  max-width: 500px;
+  padding: 10px;
+  background-color: #212121;
+}
+
+figure > img
+{
+  margin: auto;
+}
+
+figcaption
+{
+  padding-top: 10px;
+  text-align: center;
+  white-space: pre-wrap;
+  font-style: italic;
+}
+
+.search-input
+{
+  margin: auto;
+  font-size: 20px;
+  padding: 5px;
+  min-width: 300px;
+}
+
+.author-img
+{
+  max-width: 80px;
+  float: left;
+  margin: 10px;
+}
+
+.translation-flag
+{
+  height:15px;
+}
+
+.youtube-embed
+{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }

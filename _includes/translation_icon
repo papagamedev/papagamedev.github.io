@@ -1,13 +1,7 @@
-{% if include.lang == "es" %}
 <span>
-  <a href="{{ include.url }}">
-    <image src="{{ '/images/flag-spanish.svg' | relative_url }}" style="height:15px;" alt="Español"/>
-  </a>
+  {%- if include.lang == "es" -%}
+    <a href="{{ include.url }}"><image src="{{ '/images/flag-spanish.svg' | relative_url }}" class="translation-flag" alt="Español"/></a>
+  {%- else -%}
+    <a href="{{ include.url }}"><image src="{{ '/images/flag-english.svg' | relative_url }}" class="translation-flag" alt="English"/></a>
+  {%- endif -%}
 </span>
-{% else %}
-<span>
-  <a href="{{ include.url }}">
-    <image src="{{ '/images/flag-english.svg' | relative_url }}" style="height:15px;" alt="English"/>
-  </a>
-</span>
-{% endif %}

@@ -1,6 +1,6 @@
 <!-- Html Elements for Search -->
 <div id="search-container">
-  <input style="margin:auto;font-size:15px;" type="text" id="search-input" placeholder="{{include.placeholder}}">
+  <input class="search-input" type="text" id="search-input" placeholder="{{include.placeholder}}">
   <div class="post-list" id="results-container"></div>
 </div>
 

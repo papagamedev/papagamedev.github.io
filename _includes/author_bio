@@ -2,7 +2,7 @@
 <span>
     <div>
       {% if author.image %}
-        <img src="{{author.image}}" class="author-img" style="max-width:80px;float:left;margin:10px" alt="{{author.name}}" />
+        <img src="{{author.image}}" class="author-img" alt="{{author.name}}" />
       {% endif %}
       <div>
          <b>{{author.name}}</b> &nbsp;
