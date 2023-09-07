@@ -1,5 +1,5 @@
 <iframe 
-  class="youtube-embed"
+  class="container"
   width="560" height="315" frameborder="0"
   src="https://www.youtube-nocookie.com/embed/{{include.id}}" 
   title="YouTube video player {{include.id}}" 

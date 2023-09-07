@@ -1,11 +1,11 @@
-<figure>
-  <img class="image" width="{{ include.w }}" src="/images/{{ include.url }}"
+<figure class="figure-image-container container">
+  <img class="figure-image" width="{{ include.w }}" src="/images/{{ include.url }}"
     {% if include.caption %}
     alt="{{ include.caption }}"
     {% endif %}
   >
   {% if include.caption %}
-  <figcaption class="image-caption">{{ include.caption }}</figcaption>
+  <figcaption class="figure-caption">{{ include.caption }}</figcaption>
   {% endif %}
 </figure>
 
