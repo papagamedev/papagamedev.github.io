@@ -56,7 +56,7 @@ Y todo había comenzado con un momento inspirador: esas dos líneas de programac
 
 Para muchos, la programación es una especie de ciencia oculta, algo así como la matriz de la película «The Matrix», algo que sólo los elegidos como Neo (el protagonista) pueden entender y dominar.
 
-{% include image url="prog_matrix2.png" %}
+{% include image url="prog_matrix2.png" caption="Muchos piensan que programar es tan difícil como dominar la matriz de la película «The Matrix»" %}
 
 Afortunadamente, la programación es más fácil que eso.
 
