@@ -63,7 +63,7 @@ In fact, I wrote [this blog’s first article]({% post_url /articles/blog/2015-1
 
 {% include image url="parcela-siste.jpg" caption="Sunset on my mother-in-law’s country home in Padre Hurtado, about 40 km from Santiago." %}
 
-Another example is [JPacman]({% link category/jpacman-en.md %}), the game that I decided to resurrect a few weeks ago and that became my first [Papa Game Dev Project]({% post_url /projects/2016-02-11-papa-game-dev-projects %}). The original version was developed precisely in the summer of 1999, while I was on vacation, and it was finished in the winter vacation that very same year.
+Another example is [JPacman]({% link category/jpacman-en.md %}), the game that I decided to resurrect a few weeks ago and that became my first [Papa Game Dev Project]({% post_url /articles/blog/2016-02-11-papa-game-dev-projects %}). The original version was developed precisely in the summer of 1999, while I was on vacation, and it was finished in the winter vacation that very same year.
 
 There are also several instances for children to do some productive activities while on vacation. From summer camps to sports schools, every year there are new initiatives to encourage kids and give them the opportunity to explore other experiences during the months they should not attend school.
 

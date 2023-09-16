@@ -40,6 +40,13 @@ jpacman:
     description:
         es: JPacman es un juego inspirado en Pacman, con mejoras jugables. Surgió como regalo en 1998-1999, revivido en 2015. El nombre combina mis iniciales (JP) y Pacman.
         en: JPacman is a Pacman-inspired game with gameplay enhancements. Originating as a gift in 1998-1999, it was revived in 2015. The name combines my initials (JP) and Pacman.
+learnai:
+    es: Aprender AI
+    en: Learn AI
+    primary: false
+    description:
+        es: Diversas pruebas y experimentos realizados mientras aprendo acerca de Inteligencia Artificial y Deep Learning.
+        en: An set of tests and experiments developed while learning about Artificial Intelligence and Deep Learning. 
 downloads:
     es: Descargas
     en: Downloads

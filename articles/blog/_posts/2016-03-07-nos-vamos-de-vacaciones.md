@@ -62,7 +62,7 @@ Sin ir más lejos, [el primer artículo de este blog]({% post_url /articles/blog
 
 {% include image url="parcela-siste.jpg" caption="Atardecer en la parcela de mi suegra, en Padre Hurtado, a unos 40 km de Santiago." %}
 
-Otro ejemplo es [JPacman]({% link category/jpacman-es.md %}), el videojuego que hace unas semanas decidí resucitar y que es mi primer [Proyecto Papá Game Dev]({% post_url /projects/2016-02-11-proyectos-en-papa-game-dev %}). La versión original la desarrollé, justamente, en las vacaciones de verano del año 1999, y lo terminé de desarrollar en las vacaciones de invierno de ese mismo año.
+Otro ejemplo es [JPacman]({% link category/jpacman-es.md %}), el videojuego que hace unas semanas decidí resucitar y que es mi primer [Proyecto Papá Game Dev]({% post_url /articles/blog/2016-02-11-proyectos-en-papa-game-dev %}). La versión original la desarrollé, justamente, en las vacaciones de verano del año 1999, y lo terminé de desarrollar en las vacaciones de invierno de ese mismo año.
 
 También existen las instancias para que los niños aprovechen las vacaciones en alguna actividad más productiva. Desde los campamentos de verano hasta las escuelas deportivas, todos los años surgen nuevas iniciativas que buscan estimular a los pequeños y darles la oportunidad que exploren otras experiencias durante los meses en que no deben asistir a la escuela.
 
