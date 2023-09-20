@@ -1,0 +1,41 @@
+<hr>
+<div class="comment-list">
+  {%- if site.data.comments[page.slug] -%}
+    {%- if page.lang == "en" -%}
+      <h4>Comments</h4>
+    {%- else -%}
+      <h4>Comentarios</h4>
+    {%- endif -%}
+    {%- assign comments = site.data.comments[page.slug] -%}
+
+    {%- assign commentObjects = '' | split: '' -%}
+    {%- for comment in comments -%}
+      {%- assign commentObject = comment[1] -%}
+      {%- assign commentObjects = commentObjects | push: commentObject -%}
+    {%- endfor -%}
+    {%- assign comments = commentObjects | sort: "date" -%}
+
+    {%- for comment in comments -%}
+    <article id="comment{{ forloop.index }}" class="comment" itemprop="comment" itemscope itemtype="https://schema.org/Comment">
+      <div class="comment-avatar">
+        <img src="https://www.gravatar.com/avatar/{{ comment.emailmd5 }}?d=retro&s=60" alt="{{ comment.name }}">
+      </div>
+      <div class="comment-content">
+        <b>
+          {%- if comment.url -%}
+            <a rel="external nofollow" itemprop="url" href="{{ comment.url }}">{{ comment.name }}</a>
+          {%- else -%}
+            {{ comment.name }}
+          {%- endif -%}
+        </b> • 
+        <span class="dt-published">
+          {%- if comment.date -%}
+            <a href="#comment{{ forloop.index }}" itemprop="url"><time datetime="{{ comment.date | date_to_xmlschema }}" itemprop="datePublished">{{ comment.date | date: site.datetime_format }}</time></a>
+          {%- endif -%}
+        </span>
+        <div itemprop="text">{{ comment.message | markdownify }}</div>
+      </div>
+    </article>
+    {%- endfor -%}
+  {%- endif -%}
+</div>

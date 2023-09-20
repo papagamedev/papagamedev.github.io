@@ -6,15 +6,14 @@ layout: base
   <header class="post-header">
     <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
     <p class="post-meta">
-      {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
       <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-        {{ page.date | date: date_format }}
+        {{ page.date | date: site.date_format }}
       </time>
       {%- if page.modified_date -%}
         ~ 
         {%- assign mdate = page.modified_date | date_to_xmlschema -%}
         <time class="dt-modified" datetime="{{ mdate }}" itemprop="dateModified">
-          {{ mdate | date: date_format }}
+          {{ mdate | date: site.date_format }}
         </time>
       {%- endif -%}
       {%- if page.author -%}
@@ -34,60 +33,21 @@ layout: base
     {{ content }}
   </div>
 
-  {% if page.translation_url %}
-    {% include post_translation_link url=page.translation_url %}
-  {% endif %}
-
-  <div class="relatedPosts">
-    {% assign maxRelated = 4 %}
-    {% assign minCommonTags =  2 %}
-    {% assign maxRelatedCounter = 0 %}
-    
-    {% for post in site.posts %}
-    
-      {% assign sameTagCount = 0 %}
-      {% assign commonTags = '' %}
-  
-      {% for category in post.categories %}
-        {% if post.url != page.url and post.lang == page.lang %}
-          {% if page.categories contains category %}
-            {% assign sameTagCount = sameTagCount | plus: 1 %}
-            {% capture tagmarkup %} <span class="label label-default">{{ category }}</span> {% endcapture %}
-            {% assign commonTags = commonTags | append: tagmarkup %}
-          {% endif %}
-        {% endif %}
-      {% endfor %}
-  
-      {% if sameTagCount >= minCommonTags %}
-
-        {% if maxRelatedCounter == 0 %}
-          {%- if page.lang == "en" -%}
-            <h4>You may also enjoy</h4>
-          {%- else -%}
-            <h4>También te puede interesar</h4>
-          {% endif %}
-        {% endif %}
-
-        <div>
-        <h5><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h5>
-        </div>
-        {% assign maxRelatedCounter = maxRelatedCounter | plus: 1 %}
-        {% if maxRelatedCounter >= maxRelated %}
-          {% break %}
-        {% endif %}
-      {% endif %}
-  
-    {% endfor %}
-  
-  </div>
-
-  {% if author.bio %}
-    {% include author_bio %}
-  {% endif %}
-
-  {%- if site.disqus.shortname -%}
-    {%- include disqus_comments.html -%}
+  {%- if page.translation_url -%}
+    {%- include post_translation_link url=page.translation_url -%}
   {%- endif -%}
+
+  {%- if author.bio -%}
+    {%- include author_bio -%}
+  {%- endif -%}
+
+  {%- include comment_list -%}
+  
+  {%- if site.comments_enabled -%}
+    {%- include new_comment -%}
+  {%- endif -%}
+
+  {%- include related_posts -%}
 
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
 </article>

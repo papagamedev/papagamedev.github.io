@@ -79,6 +79,30 @@ a
   margin: 15px;
 }
 
+.comment-list
+{
+  margin: 15px;
+}
+
+.comment::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.comment-content
+{
+  float: right;
+  width: calc(100% - 70px);
+  margin: 5px;
+}
+
+.comment-avatar
+{
+  float: left;
+  width: 50px;
+}
+
 .figure-image-container
 {
   max-width: 500px;

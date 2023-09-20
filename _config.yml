@@ -32,6 +32,7 @@ header_pages:
   - contact.md
 
 date_format: "%b %-d, %Y"
+datetime_format: "%b %-d, %Y - %H:%M"
 
 remote_theme: jekyll/minima
 minima:
