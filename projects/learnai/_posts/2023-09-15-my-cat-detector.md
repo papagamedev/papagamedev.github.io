@@ -91,7 +91,7 @@ interp = ClassificationInterpretation.from_learner(learn)
 interp.plot_confusion_matrix()
 {% endhighlight %}
 
-{% include image url="learnai/catdetector_confusionmatrix.png" caption="The Confusion Matrix shows how many photos of each type were incorrectly classified with the trained version of the model. In this case, 3 Gateto photos were mistakenly identified as Ori." %}
+{% include image url="learnai/catdetector_confussionmatrix.png" caption="The Confusion Matrix shows how many photos of each type were incorrectly classified with the trained version of the model. In this case, 3 Gateto photos were mistakenly identified as Ori." %}
 
 I conducted multiple tests, starting with fewer images and then adding more to improve recognition accuracy. The best I could achieve was a 7.5% error rate, and from what I've learned, I believe the only way to improve this is to have more photos, especially of Ori.
 
