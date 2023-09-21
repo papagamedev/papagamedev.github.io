@@ -6,7 +6,7 @@
       var form = this;
 
       $(form).addClass('disabled');
-      $('#comment-form-submit').html('<i class="fas fa-spinner fa-spin fa-fw"></i> {{ site.data.localization.loading_label[page.lang] }}');
+      $('#comment-form-submit').html('<i class="fas fa-spinner fa-spin fa-fw"></i> Cargando...');
 
       $.ajax({
         type: $(this).attr('method'),
@@ -14,17 +14,17 @@
         data: $(this).serialize(),
         contentType: 'application/x-www-form-urlencoded',
         success: function (data) {
-          $('#comment-form-submit').html('{{ site.data.localization.comment_btn_submitted[page.lang] }}');
-          $('.page__comments-form .js-notice').removeClass('notice--danger');
-          $('.page__comments-form .js-notice').addClass('notice--success');
-          showAlert('{{ site.data.localization.comment_success_msg[page.lang] }}');
+          $('#comment-form-submit').html('Enviado');
+          $('.comment-form .js-notice').removeClass('notice-error');
+          $('.comment-form .js-notice').addClass('notice-success');
+          showAlert('¡Gracias por el comentario! Aparecerá en la página una vez sea aprobado.');
         },
         error: function (err) {
           console.log(err);
-          $('#comment-form-submit').html('{{ site.data.localization.comment_btn_submit[page.lang] }}');
-          $('.page__comments-form .js-notice').removeClass('notice--success');
-          $('.page__comments-form .js-notice').addClass('notice--danger');
-          showAlert('{{ site.data.localization.comment_error_msg[page.lang] }}');
+          $('#comment-form-submit').html('Enviar Comentario');
+          $('.comment-form .js-notice').removeClass('notice-success');
+          $('.comment-form .js-notice').addClass('notice-error');
+          showAlert('Lamentablemente hubo un error al enviar el comentario. Por favor verifica que los campos requeridos hayan sido completados e intenta nuevamente.');
           $(form).removeClass('disabled');
         }
       });
@@ -33,8 +33,8 @@
     });
 
     function showAlert(message) {
-      $('.page__comments-form .js-notice').removeClass('hidden');
-      $('.page__comments-form .js-notice-text').html(message);
+      $('.comment-form .js-notice').removeClass('hidden');
+      $('.comment-form .js-notice-text').html(message);
     }
   })(jQuery);
   </script>
