@@ -1,6 +1,6 @@
 ---
 title: My Cat Detector
-image: learnai/ori_y_gateto.jpg
+image: images/learnai/ori_y_gateto.jpg
 author: jpl
 lang: en
 translation_url: mi-detector-de-gatos.html

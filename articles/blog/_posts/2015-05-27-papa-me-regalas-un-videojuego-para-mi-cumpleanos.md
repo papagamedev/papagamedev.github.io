@@ -1,6 +1,6 @@
 ---
 title: «Papá, ¿me regalas un videojuego para mi cumpleaños?»
-image: minecraft-cake.jpg
+image: images/minecraft-cake.jpg
 author: jpl
 lang: es
 description: ¿Son los videojuegos un buen regalo de cumpleaños? Contenidos, perjuicios y responsabilidad de los padres.

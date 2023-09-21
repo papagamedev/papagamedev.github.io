@@ -1,6 +1,6 @@
 ---
 title: ¡Adiós 2015! Dos breves historias y nuevos desafíos
-image: adios2015.jpg
+image: images/adios2015.jpg
 author: jpl
 lang: es
 translation_url: farewell-2015-two-short-stories.html

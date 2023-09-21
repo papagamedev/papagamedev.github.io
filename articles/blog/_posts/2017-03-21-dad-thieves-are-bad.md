@@ -1,6 +1,6 @@
 ---
 title: “Dad, thieves are very bad!”
-image: ladrones_banner-750x350.jpg
+image: images/ladrones_banner-750x350.jpg
 author: jpl
 lang: en
 translation_url: papa-malos-los-ladrones.html

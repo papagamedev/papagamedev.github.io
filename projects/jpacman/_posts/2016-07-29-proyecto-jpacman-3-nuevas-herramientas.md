@@ -1,7 +1,7 @@
 ---
 title: >
     Proyecto JPacman #3: Nuevas Herramientas
-image: jpacman_cocos2dx_banner-750x350.jpg
+image: images/jpacman_cocos2dx_banner-750x350.jpg
 author: jpl
 lang: es
 translation_url: project-jpacman-3-new-toolset.html

@@ -1,6 +1,6 @@
 ---
 title: “Are you playing Pokémon GO?”
-image: pokemongo_banner-750x350.jpg
+image: images/pokemongo_banner-750x350.jpg
 author: jpl
 lang: en
 translation_url: ya-instalaste-pokemon-go.html

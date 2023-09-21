@@ -1,6 +1,6 @@
 ---
 title: «Papá, ¿juguemos otra batalla de Clash Royale?»
-image: clarsh_royale_messages_banner-750x350.jpg
+image: images/clarsh_royale_messages_banner-750x350.jpg
 author: jpl
 lang: es
 translation_url: dad-another-battle-clash-royale.html

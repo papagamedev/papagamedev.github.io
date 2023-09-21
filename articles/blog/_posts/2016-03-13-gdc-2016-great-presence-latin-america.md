@@ -1,6 +1,6 @@
 ---
 title: GDC 2016 is here and Latin America will be present!
-image: gdc-2016-banner-750x350.jpg
+image: images/gdc-2016-banner-750x350.jpg
 author: jpl
 lang: en
 translation_url: gdc-2016-gran-presencia-latinoamerica.html

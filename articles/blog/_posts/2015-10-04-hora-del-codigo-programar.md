@@ -1,6 +1,6 @@
 ---
 title: «Papá, ¡yo quiero aprender a programar!»
-image: programar-banner-750x350.jpg
+image: images/programar-banner-750x350.jpg
 author: jpl
 lang: es
 translation_url: /2015/12/dad-want-learn-code.html

@@ -1,6 +1,6 @@
 ---
 title: Goodbye 2016! A year of Virtual Reality and Projects
-image: adios2016_banner-750x350.jpg
+image: images/adios2016_banner-750x350.jpg
 author: jpl
 lang: en
 translation_url: adios-2016-realidad-virtual-proyectos.html

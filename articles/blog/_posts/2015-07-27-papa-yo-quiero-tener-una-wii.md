@@ -1,6 +1,6 @@
 ---
 title: «Papá, ¡yo quiero tener una Wii!»
-image: mariokart-wheel.jpg
+image: images/mariokart-wheel.jpg
 author: jpl
 lang: es
 description: >

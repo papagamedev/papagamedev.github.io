@@ -1,6 +1,6 @@
 ---
 title: «¡Feliz Día Papá!»
-image: feliz_dia_del_padre_banner-750x316.jpg
+image: images/feliz_dia_del_padre_banner-750x316.jpg
 author: jpl
 lang: es
 description: >

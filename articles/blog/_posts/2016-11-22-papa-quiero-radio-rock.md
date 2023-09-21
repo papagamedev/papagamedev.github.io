@@ -1,6 +1,6 @@
 ---
 title: «Papá, ¡quiero la Radio del Rock!»
-image: rock_banner-750x350.jpg
+image: images/rock_banner-750x350.jpg
 author: jpl
 lang: es
 translation_url: dad-want-rock-radio.html

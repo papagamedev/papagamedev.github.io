@@ -1,6 +1,6 @@
 ---
 title: “Dad, I want to try Virtual Reality!”
-image: probar-oculus-banner-750x350.jpg
+image: images/probar-oculus-banner-750x350.jpg
 author: jpl
 lang: en
 translation_url: papa-probar-realidad-virtual.html

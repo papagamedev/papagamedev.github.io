@@ -1,6 +1,6 @@
 ---
 title: «Papá, ¡qué malos son los ladrones!»
-image: ladrones_banner-750x350.jpg
+image: images/ladrones_banner-750x350.jpg
 author: jpl
 lang: es
 translation_url: dad-thieves-are-bad.html

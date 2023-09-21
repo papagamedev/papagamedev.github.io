@@ -1,7 +1,7 @@
 ---
 title: >
     Global Game Jam 2016: Everyone can create videogames!
-image: ggj2016-banner-750x350.jpg
+image: images/ggj2016-banner-750x350.jpg
 author: jpl
 lang: en
 translation_url: global-game-jam-2016-todos-pueden-crear-videojuegos.html

@@ -1,6 +1,6 @@
 ---
 title: “Dad, play Clash Royale with me!”
-image: clash_royale_banner-750x350.jpg
+image: images/clash_royale_banner-750x350.jpg
 author: jpl
 lang: en
 translation_url: papa-juega-clash-royale-conmigo.html

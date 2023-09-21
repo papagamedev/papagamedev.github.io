@@ -1,6 +1,6 @@
 ---
 title: «Papá, ¡está cayendo agua del cielo!»
-image: Link-To-The-Past-Rain.jpg
+image: images/Link-To-The-Past-Rain.jpg
 author: jpl
 lang: es
 translation_url: /2015/12/rain-raining-outside.html

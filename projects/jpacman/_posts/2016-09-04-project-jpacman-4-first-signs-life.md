@@ -1,7 +1,7 @@
 ---
 title: >
     Project JPacman #4: First Signs of Life
-image: jpacman_alive_banner-750x350.jpg
+image: images/jpacman_alive_banner-750x350.jpg
 author: jpl
 lang: en
 translation_url: proyecto-jpacman-4-primeras-vida.html

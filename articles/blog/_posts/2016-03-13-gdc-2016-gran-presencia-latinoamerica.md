@@ -1,6 +1,6 @@
 ---
 title: ¡GDC 2016 ya empieza y Latinoamérica estará ahí!
-image: gdc-2016-banner-750x350.jpg
+image: images/gdc-2016-banner-750x350.jpg
 author: jpl
 lang: es
 translation_url: gdc-2016-great-presence-latin-america.html

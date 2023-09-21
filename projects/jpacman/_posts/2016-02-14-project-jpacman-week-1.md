@@ -1,7 +1,7 @@
 ---
 title: >
     Project JPacman: Week #1
-image: jpacman-semana1-banner-750x350.jpg
+image: images/jpacman-semana1-banner-750x350.jpg
 author: jpl
 lang: en
 translation_url: proyecto-jpacman-semana-1.html

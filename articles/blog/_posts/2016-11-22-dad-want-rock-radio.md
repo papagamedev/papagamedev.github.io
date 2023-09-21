@@ -1,6 +1,6 @@
 ---
 title: “Dad, I want the Rock Radio!”
-image: rock_banner-750x350.jpg
+image: images/rock_banner-750x350.jpg
 author: jpl
 lang: en
 translation_url: papa-quiero-radio-rock.html

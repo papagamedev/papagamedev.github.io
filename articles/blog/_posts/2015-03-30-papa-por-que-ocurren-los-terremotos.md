@@ -1,6 +1,6 @@
 ---
 title: «Papá, ¿por qué ocurren los terremotos?»
-image: simcity-2000.jpg
+image: images/simcity-2000.jpg
 author: jpl
 lang: es
 translation_url: /2015/11/why-earthquakes-happen.html

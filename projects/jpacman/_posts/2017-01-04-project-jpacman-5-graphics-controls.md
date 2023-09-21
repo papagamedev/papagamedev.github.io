@@ -1,7 +1,7 @@
 ---
 title: >
     Project JPacman #5: Graphics and Controls
-image: jpacman_graphics_banner-750x350.jpg
+image: images/jpacman_graphics_banner-750x350.jpg
 author: jpl
 lang: en
 translation_url: proyecto-jpacman-5-graficos-controles.html

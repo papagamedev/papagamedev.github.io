@@ -1,6 +1,6 @@
 ---
 title: “Dad, it’s raining outside!”
-image: Link-To-The-Past-Rain.jpg
+image: images/Link-To-The-Past-Rain.jpg
 author: jpl
 lang: en
 translation_url: /2015/07/papa-esta-cayendo-agua-del-cielo.html

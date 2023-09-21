@@ -1,6 +1,6 @@
 ---
 title: Happy Holidays to all of you!
-image: saludo_navidad_papagamedev-750x410.jpg
+image: images/saludo_navidad_papagamedev-750x410.jpg
 author: jpl
 lang: en
 translation_url: felices-fiestas.html

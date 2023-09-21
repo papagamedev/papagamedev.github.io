@@ -1,6 +1,6 @@
 ---
 title: “Dad, let’s play another battle in Clash Royale!”
-image: clarsh_royale_messages_banner-750x350.jpg
+image: images/clarsh_royale_messages_banner-750x350.jpg
 author: jpl
 lang: en
 translation_url: papa-otra-batalla-clash-royale.html

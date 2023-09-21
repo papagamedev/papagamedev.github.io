@@ -1,6 +1,6 @@
 ---
 title: “Dad, I want to watch football!”
-image: ver_futbol_banner-750x350.jpg
+image: images/ver_futbol_banner-750x350.jpg
 author: jpl
 lang: en
 translation_url: /2015/10/papa-yo-quiero-ver-futbol.html

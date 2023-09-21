@@ -1,6 +1,6 @@
 ---
 title: “Dad, what happened to your Papa Game Dev?”
-image: que_paso_papagamedev_banner-750x350.jpg
+image: images/que_paso_papagamedev_banner-750x350.jpg
 author: jpl
 lang: en
 translation_url: papa-paso-papa-game-dev.html

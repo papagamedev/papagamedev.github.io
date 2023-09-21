@@ -1,6 +1,6 @@
 ---
 title: «Papá, ¡vamos a Festigame!»
-image: festigame-logo.jpg
+image: images/festigame-logo.jpg
 author: jpl
 lang: es
 description: Festigame 2015, evento gamer donde destacaron desarrolladores chilenos en un showcase y en el stand de VG Chile.

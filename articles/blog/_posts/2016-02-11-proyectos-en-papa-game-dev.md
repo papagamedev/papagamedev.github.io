@@ -1,6 +1,6 @@
 ---
 title: ¡Proyectos en Papá Game Dev!
-image: proyectos_banner-750x350.jpg 
+image: images/proyectos_banner-750x350.jpg 
 author: jpl
 lang: es
 translation_url: papa-game-dev-projects.html

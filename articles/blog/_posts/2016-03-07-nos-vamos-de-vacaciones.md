@@ -1,6 +1,6 @@
 ---
 title: «Papá, ¿vamos de vacaciones?»
-image: vamos-vacaciones-banner-750x350.jpg
+image: images/vamos-vacaciones-banner-750x350.jpg
 author: jpl
 lang: es
 translation_url: dad-can-go-vacation.html

@@ -1,6 +1,6 @@
 ---
 title: “ibb and obb”, upside down puzzles
-image: ibbandobb_banner-750x350.jpg
+image: images/ibbandobb_banner-750x350.jpg
 author: jpl
 lang: en
 translation_url: /2015/08/ibb-and-obb-puzzles-de-cabeza.html

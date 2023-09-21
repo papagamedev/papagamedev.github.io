@@ -1,7 +1,7 @@
 ---
 title: >
     Proyecto JPacman #2: Control de Versiones
-image: jpacman_scm_banner-750x350.jpg
+image: images/jpacman_scm_banner-750x350.jpg
 author: jpl
 lang: es
 translation_url: project-jpacman-version-control.html

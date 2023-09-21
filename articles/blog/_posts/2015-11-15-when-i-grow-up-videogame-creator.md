@@ -1,6 +1,6 @@
 ---
 title: «Cuando sea grande, quiero ser Creador de Videojuegos»
-image: minecraft-padre-hijo.jpg
+image: images/minecraft-padre-hijo.jpg
 author: jpl
 lang: en
 translation_url: /2015/03/cuando-sea-grande-quiero-ser-creador-de-videojuegos.html

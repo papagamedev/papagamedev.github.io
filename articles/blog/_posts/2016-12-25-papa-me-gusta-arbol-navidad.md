@@ -1,6 +1,6 @@
 ---
 title: «Papá, ¡me gusta el árbol de Navidad!»
-image: navidad-papagamedev_banner-750x350.jpg
+image: images/navidad-papagamedev_banner-750x350.jpg
 author: jpl
 lang: es
 translation_url: dad-like-christmas-tree.html

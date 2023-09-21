@@ -1,6 +1,6 @@
 ---
 title: «Papá, ¡quiero los lentes mágicos!»
-image: lentes_magicos_banner-750x350.jpg
+image: images/lentes_magicos_banner-750x350.jpg
 author: jpl
 lang: es
 translation_url: dad-want-magic-glasses.html

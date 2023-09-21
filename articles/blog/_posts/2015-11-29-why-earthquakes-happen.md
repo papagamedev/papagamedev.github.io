@@ -1,6 +1,6 @@
 ---
 title: “Dad, why do earthquakes happen?”
-image: simcity-2000.jpg
+image: images/simcity-2000.jpg
 author: jpl
 lang: en
 translation_url: /2015/03/papa-por-que-ocurren-los-terremotos.html

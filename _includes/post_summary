@@ -1,7 +1,7 @@
 <div class="post-summary">
   <div class="post-summary-item">
     <a href="{{ include.card.url | relative_url }}">
-      <img src="/images/{{include.card.image}}" class="post-summary-img" alt="{{include.card.title}}" />
+      <img src="/{{include.card.image}}" class="post-summary-img" alt="{{include.card.title}}" />
     </a>
   </div>
   <div class="post-summary-item">

@@ -1,6 +1,6 @@
 ---
 title: “Dad, can we go on vacation?”
-image: vamos-vacaciones-banner-750x350.jpg
+image: images/vamos-vacaciones-banner-750x350.jpg
 author: jpl
 lang: en
 translation_url: nos-vamos-de-vacaciones.html

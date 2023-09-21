@@ -1,6 +1,6 @@
 ---
 title: Learn to code with Condorito!
-image: condorito_banner-750x350.jpg
+image: images/condorito_banner-750x350.jpg
 author: jpl
 lang: en
 translation_url: aprende-programar-condorito.html

@@ -1,6 +1,6 @@
 ---
 title: «Papá, ¡yo quiero ver fútbol!»
-image: ver_futbol_banner-750x350.jpg
+image: images/ver_futbol_banner-750x350.jpg
 author: jpl
 lang: es
 translation_url: /2016/06/dad-want-watch-football.html

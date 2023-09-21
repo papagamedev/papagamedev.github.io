@@ -1,6 +1,6 @@
 ---
 title: «ibb and obb», puzzles de cabeza
-image: ibbandobb_banner-750x350.jpg
+image: images/ibbandobb_banner-750x350.jpg
 author: jpl
 lang: es
 translation_url: /2016/02/ibb-obb-upside-puzzles.html
