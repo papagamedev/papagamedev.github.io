@@ -1,13 +1,8 @@
 <hr>
 <div class="comment-list">
   {%- if site.data.comments[page.slug] -%}
-    {%- if page.lang == "en" -%}
-      <h4>Comments</h4>
-    {%- else -%}
-      <h4>Comentarios</h4>
-    {%- endif -%}
+    <h4>{{ site.data.localization.comment_list_label[page.lang] }}</h4>
     {%- assign comments = site.data.comments[page.slug] -%}
-
     {%- assign commentObjects = '' | split: '' -%}
     {%- for comment in comments -%}
       {%- assign commentObject = comment[1] -%}

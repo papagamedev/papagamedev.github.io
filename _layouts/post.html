@@ -43,11 +43,11 @@ layout: base
 
   {%- include comment_list -%}
   
-  {%- if site.comments_enabled -%}
-    {%- include new_comment -%}
-  {%- endif -%}
-
+  {%- include comment_new -%}
+  
   {%- include related_posts -%}
 
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
 </article>
+
+{%- include comment_script -%}

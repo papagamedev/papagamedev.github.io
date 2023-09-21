@@ -13,6 +13,8 @@ url: "https://papagame.dev"
 github_username: papagamedev
 lang: es
 
+comments_enabled: true
+
 twitter:
   username: papagamedev
   card: summary
@@ -33,6 +35,23 @@ header_pages:
 
 date_format: "%b %-d, %Y"
 datetime_format: "%b %-d, %Y - %H:%M"
+
+backend:
+#  comment_url: http://localhost:7071/api/comment
+#  contact_url: http://localhost:7071/api/contact
+  comment_url: https://papagamedevsite.azurewebsites.net/api/comment
+  contact_url: https://papagamedevsite.azurewebsites.net/api/contact
+
+reCaptcha:
+  siteKey: 6LeaCwsTAAAAAC1B4rTP9IbD9O4WACfBXbbpWsdv
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      comments_enabled: true
 
 remote_theme: jekyll/minima
 minima:

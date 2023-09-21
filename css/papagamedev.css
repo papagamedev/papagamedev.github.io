@@ -103,6 +103,51 @@ a
   width: 50px;
 }
 
+.comment-form
+{
+  min-width: 350px;
+}
+
+.form-group
+{
+  display: block;
+  min-width: 300px;
+  margin-bottom: 5px;
+}
+
+input, textarea
+{
+  width: 100%;
+  font-size: large;
+}
+
+textarea
+{
+  resize: vertical;
+  height: auto;
+  overflow: auto;
+  vertical-align: top;
+}
+
+.small
+{
+  font-size: small;
+}
+
+.required
+{
+  color: red
+}
+
+.btn-submit
+{
+  background-color: lightgreen;
+  border-radius: 5px;
+  width: 200px;
+  height: 30px;
+  font-size: large;
+}
+
 .figure-image-container
 {
   max-width: 500px;

@@ -1,0 +1,41 @@
+{%- if site.comments_enabled and page.comments_enabled -%}  
+  <script src="/js/jquery-3.7.1.min.js" type="text/javascript"></script>
+  <script type="text/javascript">
+    (function ($) {
+    $('#new_comment').submit(function () {
+      var form = this;
+
+      $(form).addClass('disabled');
+      $('#comment-form-submit').html('<i class="fas fa-spinner fa-spin fa-fw"></i> {{ site.data.localization.loading_label[page.lang] }}');
+
+      $.ajax({
+        type: $(this).attr('method'),
+        url: $(this).attr('action'),
+        data: $(this).serialize(),
+        contentType: 'application/x-www-form-urlencoded',
+        success: function (data) {
+          $('#comment-form-submit').html('{{ site.data.localization.comment_btn_submitted[page.lang] }}');
+          $('.page__comments-form .js-notice').removeClass('notice--danger');
+          $('.page__comments-form .js-notice').addClass('notice--success');
+          showAlert('{{ site.data.localization.comment_success_msg[page.lang] }}');
+        },
+        error: function (err) {
+          console.log(err);
+          $('#comment-form-submit').html('{{ site.data.localization.comment_btn_submit[page.lang] }}');
+          $('.page__comments-form .js-notice').removeClass('notice--success');
+          $('.page__comments-form .js-notice').addClass('notice--danger');
+          showAlert('{{ site.data.localization.comment_error_msg[page.lang] }}');
+          $(form).removeClass('disabled');
+        }
+      });
+
+      return false;
+    });
+
+    function showAlert(message) {
+      $('.page__comments-form .js-notice').removeClass('hidden');
+      $('.page__comments-form .js-notice-text').html(message);
+    }
+  })(jQuery);
+  </script>
+{% endif %}
