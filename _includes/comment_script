@@ -14,17 +14,17 @@
         data: $(this).serialize(),
         contentType: 'application/x-www-form-urlencoded',
         success: function (data) {
-          $('#comment-form-submit').html('Enviado');
+          $('#comment-form-submit').html('{{ site.data.localization.comment_btn_submitted[page.lang] }}');
           $('.comment-form .js-notice').removeClass('notice-error');
           $('.comment-form .js-notice').addClass('notice-success');
-          showAlert('¡Gracias por el comentario! Aparecerá en la página una vez sea aprobado.');
+          showAlert('{{ site.data.localization.comment_success_msg[page.lang] }}');
         },
         error: function (err) {
           console.log(err);
-          $('#comment-form-submit').html('Enviar Comentario');
+          $('#comment-form-submit').html('{{ site.data.localization.comment_btn_submit[page.lang] }}');
           $('.comment-form .js-notice').removeClass('notice-success');
           $('.comment-form .js-notice').addClass('notice-error');
-          showAlert('Lamentablemente hubo un error al enviar el comentario. Por favor verifica que los campos requeridos hayan sido completados e intenta nuevamente.');
+          showAlert('{{ site.data.localization.comment_error_msg[page.lang] }}');
           $(form).removeClass('disabled');
         }
       });
