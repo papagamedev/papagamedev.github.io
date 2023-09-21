@@ -103,15 +103,9 @@ a
   width: 50px;
 }
 
-.comment-form
-{
-  min-width: 350px;
-}
-
 .form-group
 {
   display: block;
-  min-width: 300px;
   margin-bottom: 5px;
 }
 
