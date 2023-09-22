@@ -10,9 +10,9 @@ comment_form_info:
 comment_form_comment_label:
   es: Comentario
   en: Comment
-loading_label:
-  es: Cargando...
-  en: Loading...
+sending_label:
+  es: Enviando...
+  en: Sending...
 comment_form_md_info:
   es: Se puede usar Markdown.
   en: Markdown is supported.
@@ -31,9 +31,18 @@ comment_btn_submit:
 comment_btn_submitted:
   es: Enviado
   en: Submitted
+contact_btn_submit:
+  es: Enviar Mensaje
+  en: Submit Message
 comment_success_msg:
   es: ¡Gracias por el comentario! Aparecerá en la página una vez sea aprobado.
   en: Thanks for your comment! It will show on the site once it has been approved.
 comment_error_msg:
   es: Lamentablemente hubo un error al enviar el comentario. Por favor verifica que los campos requeridos hayan sido completados e intenta nuevamente.
+  en: Sorry, there was an error with your submission. Please make sure all required fields have been completed and try again.
+contact_success_msg:
+  es: ¡Gracias por el mensaje! Te contactaremos a la brevedad al correo indicado.
+  en: Thanks for your message! We will contact you to the provided email soon.
+contact_error_msg:
+  es: Lamentablemente hubo un error al enviar el mensaje. Por favor verifica que los campos requeridos hayan sido completados e intenta nuevamente.
   en: Sorry, there was an error with your submission. Please make sure all required fields have been completed and try again.
