@@ -66,6 +66,7 @@ plugins:
   - jekyll-feed
   - jekyll-remote-theme
   - jekyll-seo-tag
+  - jekyll-redirect-from
 exclude:
   - Gemfile.lock
 
