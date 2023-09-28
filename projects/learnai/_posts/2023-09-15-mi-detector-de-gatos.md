@@ -5,6 +5,7 @@ author: jpl
 lang: es
 translation_url: my-cat-detector.html
 description: Construyendo un modelo de IA para reconocer fotos de mis dos gatos.
+featured: true
 ---
 
 En el [curso de IA de fast.ai](https://course.fast.ai/) que estoy haciendo, se insiste constantemente en la idea de que los estudiantes hagan pequeños proyectos personales. Es una excelente idea, ya que eso permite poner en práctica lo aprendido y ayuda a desarrollar la perspectiva que se necesita para abordar este tipo de problemas.

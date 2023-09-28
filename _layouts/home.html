@@ -8,9 +8,11 @@ layout: base
   {%- endif -%}
 
   {{ content }}
-  
-  {% include post_list limit=2 category="articles" title=true %}
 
-  {% include post_list limit=2 category="projects" title=true %}
+  {% include post_list limit=4 featured=true %}
+
+  {% include post_list limit=4 category="articles" title=true seeall=true featured=false %}
+
+  {% include post_list limit=4 category="projects" title=true seeall=true featured=false %}
 
 </div>

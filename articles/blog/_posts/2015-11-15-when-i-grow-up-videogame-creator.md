@@ -5,6 +5,7 @@ author: jpl
 lang: en
 translation_url: /2015/03/cuando-sea-grande-quiero-ser-creador-de-videojuegos.html
 description: Videogames industry is very competitive and sometimes frustrating. Why do we still do this? Why is it still growing? Do I want my son to work on videogames?
+featured: true
 ---
 
 {% include image url="minecraft-padre-hijo.jpg" %}

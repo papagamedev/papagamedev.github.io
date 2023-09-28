@@ -52,6 +52,7 @@ defaults:
       type: "posts"
     values:
       comments_enabled: true
+      featured: false
 
 remote_theme: jekyll/minima
 minima:

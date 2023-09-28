@@ -5,6 +5,7 @@ author: jpl
 lang: en
 translation_url: mi-detector-de-gatos.html
 description: Building an AI model to recognize pictures of my two cats.
+featured: true
 ---
 
 In the [fast.ai AI course](https://course.fast.ai/) I'm taking, there's a constant emphasis on encouraging students to undertake small personal projects. It's an excellent idea as it allows one to apply what they've learned and develop the perspective needed to tackle these types of problems.

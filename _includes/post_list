@@ -19,11 +19,13 @@
   {%- assign counter = 0 -%}
   {%- assign allcounter = 0 -%}
   {%- for post in posts -%}
-    {%- if include.category == nil or post.categories contains include.category -%}
+      {%- if include.category == nil or post.categories contains include.category -%}
       {%- assign allcounter = allcounter | plus:1 -%}
       {%- if counter < postcount -%}
-        {%- include post_summary card=post -%}
-        {%- assign counter = counter | plus:1 -%}
+        {%- if include.featured == nil or include.featured == post.featured -%}
+          {%- include post_summary card=post -%}
+          {%- assign counter = counter | plus:1 -%}
+        {%- endif -%}
       {%- endif -%}
     {%- endif -%}
   {%- endfor -%}
@@ -31,7 +33,7 @@
   {%- if include.seeall -%}
     {%- if postcount < allcounter -%}
       <div>
-        <a href="{{include.category}}-all-{{page.lang}}.html">
+        <a href="/category/{{include.category}}-all-{{page.lang}}.html">
           {%- if page.lang == "en" -%}
             See all {{ allcounter }} entries...
           {%- else -%}

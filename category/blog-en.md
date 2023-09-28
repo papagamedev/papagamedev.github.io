@@ -4,4 +4,4 @@ lang: en
 translation_url: blog-es.html
 ---
 
-{% include post_list category="blog" limit=6 seeall=true description=true %}
+{% include post_list category="blog" limit=4 seeall=true description=true %}
