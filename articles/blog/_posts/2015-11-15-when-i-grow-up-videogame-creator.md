@@ -36,7 +36,7 @@ Many talented developers dream with finishing their first project or turning int
 
 This bias on how the industry is perceived is so big that several articles, memes and even videos about that have appeared. My favorite is ["So you want to work in the video game industry"](https://youtu.be/lGar7KC6Wiw).
 
-{% include youtube id="lGar7KC6Wiw" %}
+{% include youtube id="lGar7KC6Wiw" caption="So you want to work in the video game industry" %}
 
 ## But then… why are you still in videogames?
 

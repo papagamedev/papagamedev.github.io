@@ -36,7 +36,7 @@ Muchos talentosos desarrolladores que sueñan con concretar algún proyecto o id
 
 Es tan diferente la percepción externa de esta industria que en los últimos años han aparecido cientos de notas, memes y hasta videos hablando de esto.  Mi favorito es [So you want to work in the video game industry](https://youtu.be/lGar7KC6Wiw) (está en inglés).
 
-{% include youtube id="lGar7KC6Wiw" %}
+{% include youtube id="lGar7KC6Wiw" caption="Así que quieres trabajar en la industria de videojuegos" %}
 
 ## ¿Y entonces?
 
