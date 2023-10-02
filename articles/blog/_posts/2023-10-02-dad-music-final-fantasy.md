@@ -5,6 +5,7 @@ author: jpl
 lang: en
 translation_url: papa-musica-final-fantasy.html
 description: The music of Final Fantasy XVI and Final Fantasy VII Remake is immersive and of high quality, and it is enjoyed both inside and outside the game.
+featured: true
 ---
 
 Every morning, I take Santi (11) and Sami (8) to school.
