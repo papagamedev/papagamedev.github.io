@@ -1,5 +1,5 @@
 ---
-title: "Dad, Final Fantasy music again!"
+title: “Dad, Final Fantasy music again!”
 image: images/ff7_ff16_screenshot.jpg
 author: jpl
 lang: en

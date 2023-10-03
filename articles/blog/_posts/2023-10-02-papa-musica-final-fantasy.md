@@ -1,5 +1,5 @@
 ---
-title: "Papá, ¡otra vez música de Final Fantasy!"
+title: “Papá, ¡otra vez música de Final Fantasy!”
 image: images/ff7_ff16_screenshot.jpg
 author: jpl
 lang: es
@@ -14,7 +14,7 @@ En las últimas semanas, desde que jugué y terminé *Final Fantasy XVI*, voy es
 
 > "Papá, ¡otra vez música de Final Fantasy!"
 
-Y claro, los entiendo, porque hace un par de años ocurrió lo mismo cuando jugué *Final Fantasy VII Remake*, cuya música también disfruté muchísimo. Estuve varios meses escuchando esos temas una y otra vez y supongo que mis hijos no quieren que la historia se repita.  
+Y claro, los entiendo, porque hace un par de años, ocurrió lo mismo cuando jugué *Final Fantasy VII Remake*, cuya música también disfruté muchísimo. Estuve varios meses escuchando esos temas una y otra vez y supongo que mis hijos no quieren que la historia se repita.  
 
 {% include image url="ff7_ff16_screenshot.jpg" caption="Dos de mis videojuegos favoritos en cuanto a su música: Final Fantasy XVI (izquierda) y Final Fantasy VII (derecha)" %}
 

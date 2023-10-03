@@ -1,5 +1,5 @@
 ---
-title: «Cuando sea grande, quiero ser Creador de Videojuegos»
+title: “When I grow up, I want to be a Videogames Creator”
 image: images/minecraft-padre-hijo.jpg
 author: jpl
 lang: en
