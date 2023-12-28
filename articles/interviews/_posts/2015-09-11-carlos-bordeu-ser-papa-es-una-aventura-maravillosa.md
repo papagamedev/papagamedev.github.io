@@ -4,6 +4,7 @@ title: >
 image: images/carlosbordeu-banner-750x350.jpg
 author: jpl
 lang: es
+translation_url: /2017/09/carlos-bordeu-dad-wonderful-adventure.html
 description: Entrevista a Carlos Bordeu, exitoso emprendedor, miembro fundador de ACE Team, y uno de los pioneros del desarrollo de videojuegos en Chile.
 ---
 
