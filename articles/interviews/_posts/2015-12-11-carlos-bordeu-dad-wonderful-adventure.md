@@ -22,7 +22,7 @@ translation_url: /2015/09/carlos-bordeu-ser-papa-es-una-aventura-maravillosa.htm
 
 **Papa Game Dev**: Hello Carlos. Thank you so much for agreeing to this interview with Papa Game Dev. I would like to start by talking about your career. ACE Team ([official site](http://aceteam.cl/)) is, of course, one of the most important companies in the gaming industry in Chile and Latin America. What is your current role in the company?
 
-**Carlos Bordeu**: Hi Juan Pablo. Thanks for having me. My two brothers and I co-founded the company; in fact, ACE is an acronym for "Andrés Carlos Edmundo." In the company, I'm primarily involved in game design, project management at the production level, and a lot of art and animation work; I even dabble in sound design. In smaller companies like ours, we tend to wear many hats.
+**Carlos Bordeu**: Hi Juan Pablo. Thanks for the interview. My two brothers and I co-founded the company; in fact, ACE is an acronym for "Andrés Carlos Edmundo." In the company, I'm primarily involved in game design, project management at the production level, and a lot of art and animation work; I even dabble in sound design. In smaller companies like ours, we tend to wear many hats.
 
 **Papa Game Dev**: When did you start making video games? Tell me about the early days of Carlos Bordeu's career.
 

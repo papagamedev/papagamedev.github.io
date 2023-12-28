@@ -8,11 +8,11 @@ title: “Dad, check out the levels I made!”
 translation_url: /2015/09/papa-mira-los-niveles-que-hice.html
 ---
 
-"Dad, check out the levels I made!"
+> "Dad, check out the levels I made!"
 
 It's been several months since Diego, my eldest son, has been enjoying creating levels in **Geometry Dash**. Initially, his creations were quite simple, mainly copying levels made by others and learning how they crafted certain puzzles or tricks. But over the past few weeks, when he shows me some of his more ambitious creations, I look at him baffled and ask:
 
-"Diego, did you really do all this?"
+> "Diego, did you really do all this?"
 
 It's not that I underestimate him, I promise. It's just that Geometry Dash, at least at first, seemed to me to be a very simple game where a little cube moves to the right, and when obstacles appear, the player touches the screen and the cube jumps, dodging and advancing through the level. Super simple.
 
@@ -20,7 +20,7 @@ It's not that I underestimate him, I promise. It's just that Geometry Dash, at l
 
 But when Diego shows me his levels, and I see how the cube jumps among hundreds of obstacles that appear and disappear in time with the music (which he also carefully selects according to the tone he wants to set for the level), and while the backgrounds change colors, the cube transforms into a ship that flies and changes direction, and messages he's placed in the background pop up, going through hidden walls and secret passages, I can't help but be amazed and react with disbelief.
 
-"Yes, dad, I took some ideas I saw in the Nine Circles and those invisible spikes I saw in (a name I can't recall) and I made it all by myself."
+> "Yes, dad, I took some ideas I saw in the Nine Circles and those invisible spikes I saw in (a name I can't recall) and I made it all by myself."
 
 The game has an important social component. Each player who creates stages can upload them to the game's centralized level repository, and then other players can download and rate them. This way, the really challenging and fun stages quickly become popular, which skyrockets the fame of their creators, who are true gurus of the game.
 
@@ -86,8 +86,14 @@ Unfortunately, I don't have images or any kind of material that reminds me of th
 
 ## Thinking about the future
 
-At that point, I didn't know what, formally, level design was, nor did I have any idea of how a "real" video game was made. However, the satisfaction I felt when creating entertaining and challenging experiences and then enjoying watching others have a good time with them is something that has stayed with me since then and would certainly guide some of my future professional decisions.
+At that time I didn't know what level design was formally, nor did I have the slightest idea of how a "real" video game was made. However, the satisfaction I felt in creating entertaining and challenging experiences and then enjoying watching others have a good time with them is something that has marked me since then and would surely guide some of my future professional decisions.
 
-When I watch Diego create his levels and marvel that others are playing them, I wonder if he is laying similar foundations.
+When I see Diego creating his levels and excited that other people play them, I wonder if he is laying similar foundations.
 
-So far, I've tried to influence him as little as possible, at least not directly. I've wanted to allow him to discover what he enjoys most about
+So far, I've tried to influence as little as possible, at least not directly. I've wanted to allow him to discover what he likes the most about video games. Maybe at some point he'll get bored of designing levels or find that he has more fun with another discipline such as mechanics design, art, or programming.
+
+Or maybe he'll take other directions and end up being an architect, doctor, athlete, or musician. Impossible to know today.
+
+What I do know is that he has a lot of eagerness and quite a bit of talent, at least when it comes to level design, and that's already a good start.
+
+The rest will depend on him.
