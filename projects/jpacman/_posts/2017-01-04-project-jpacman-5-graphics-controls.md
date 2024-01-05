@@ -6,7 +6,6 @@ author: jpl
 lang: en
 translation_url: proyecto-jpacman-5-graficos-controles.html
 description: JPacman logic was working with Cocos2d-x, so it’s time to make the graphics and controls work so that the game is playable again.
-featured: true
 ---
 
 After JPacman had given the [first signs of life]({% post_url /projects/jpacman/2016-09-04-project-jpacman-4-first-signs-life %}) using Cocos2d-x, it was time to make it finally playable again. What was missing for this? Two things: to see the graphics on screen and to use the keyboard to control menus and main character.
