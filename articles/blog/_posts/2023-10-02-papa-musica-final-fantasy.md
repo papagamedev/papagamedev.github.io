@@ -5,7 +5,6 @@ author: jpl
 lang: es
 translation_url: dad-music-final-fantasy.html
 description: La música de Final Fantasy XVI y Final Fantasy VII Remake es inmersiva y de calidad, y se disfruta tanto dentro como fuera del juego.
-featured: true
 ---
 
 Todas las mañanas, voy a dejar a Santi (11) y Sami (8) al colegio.
