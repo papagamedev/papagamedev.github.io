@@ -1,0 +1,20 @@
+<footer class="site-footer">
+  <div class="wrapper">
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p>{{ .Site.Params.description }}</p>
+        <ul class="social-links">
+          {{ with site.Params.social.twitter }}
+            <li><a href="https://twitter.com/{{ . }}">Twitter</a></li>
+          {{ end }}
+          {{ with site.Params.social.github }}
+            <li><a href="https://github.com/{{ . }}">GitHub</a></li>
+          {{ end }}
+          {{ with site.Params.social.instagram }}
+            <li><a href="https://instagram.com/{{ . }}">Instagram</a></li>
+          {{ end }}
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>

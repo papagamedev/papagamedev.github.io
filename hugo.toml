@@ -1,0 +1,114 @@
+baseURL = "https://papagamedev.github.io/"
+title = "Papa Game Dev"
+languageCode = "es"
+defaultContentLanguage = "es"
+defaultContentLanguageInSubdir = false
+
+# Theme (we'll build our own templates)
+# theme = ""
+
+# Build settings
+enableRobotsTXT = true
+enableGitInfo = true
+
+# Multilingual configuration
+[languages]
+  [languages.es]
+    languageName = "Español"
+    weight = 1
+    contentDir = "content/es"
+    [languages.es.params]
+      description = "Un blog sobre desarrollo de videojuegos y paternidad"
+  [languages.en]
+    languageName = "English"
+    weight = 2
+    contentDir = "content/en"
+    [languages.en.params]
+      description = "A blog about game development and parenting"
+
+# URL structure matching current Jekyll permalinks
+[permalinks]
+  posts = "/:year/:month/:slug/"
+  blog = "/:year/:month/:slug/"
+
+# Taxonomies
+[taxonomies]
+  category = "categories"
+
+# Main menu
+[[menus.main]]
+  identifier = "blog"
+  name = "Blog"
+  url = "/categories/blog/"
+  weight = 10
+
+[[menus.main]]
+  identifier = "projects"
+  name = "Proyectos"
+  url = "/categories/projects/"
+  weight = 20
+
+[[menus.main]]
+  identifier = "contact"
+  name = "Contacto"
+  url = "/contacto/"
+  weight = 30
+
+# English menu override
+[[languages.en.menus.main]]
+  identifier = "blog"
+  name = "Blog"
+  url = "/en/categories/blog/"
+  weight = 10
+
+[[languages.en.menus.main]]
+  identifier = "projects"
+  name = "Projects"
+  url = "/en/categories/projects/"
+  weight = 20
+
+[[languages.en.menus.main]]
+  identifier = "contact"
+  name = "Contact"
+  url = "/en/contact/"
+  weight = 30
+
+# Site parameters
+[params]
+  author = "Juan Pablo Lastra"
+  mainSections = ["blog", "projects"]
+  
+  [params.reCaptcha]
+    siteKey = "6LeaCwsTAAAAAC1B4rTP9IbD9O4WACfBXbbpWsdv"
+  
+  [params.backend]
+    baseUrl = "https://papagamedevsite.azurewebsites.net/api"
+    commentApi = "/comment"
+    contactApi = "/contact"
+
+  [params.social]
+    twitter = "papagamedev"
+    github = "papagamedev"
+    instagram = "papagamedev"
+    facebook = "papagamedev"
+
+# Google Analytics
+[services]
+  [services.googleAnalytics]
+    id = "G-DTFYGQX4WT"
+
+# Markdown rendering
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true  # Allow raw HTML in Markdown
+  [markup.highlight]
+    style = "monokai"
+    lineNos = false
+
+# Output formats
+[outputs]
+  home = ["HTML", "RSS"]
+  section = ["HTML", "RSS"]
+  taxonomy = ["HTML"]
+  term = ["HTML"]

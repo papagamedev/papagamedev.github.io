@@ -1,0 +1,58 @@
+{{ define "main" }}
+<article class="post">
+  <header class="post-header">
+    <h1 class="post-title">{{ .Title }}</h1>
+    
+    <p class="post-meta">
+      <time datetime="{{ .Date.Format "2006-01-02" }}">
+        {{ .Date.Format "January 2, 2006" }}
+      </time>
+      {{ with .Params.author }}
+        • {{ . }}
+      {{ end }}
+    </p>
+    
+    <!-- Categories -->
+    {{ with .Params.categories }}
+      <div class="post-categories">
+        {{ range . }}
+          <a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}/" class="category-link">{{ . }}</a>
+        {{ end }}
+      </div>
+    {{ end }}
+    
+    <!-- Translation link -->
+    {{ if .IsTranslated }}
+      <div class="translation-notice">
+        {{ range .Translations }}
+          <a href="{{ .Permalink }}">
+            {{ if eq .Lang "en" }}🇺🇸 Read in English{{ else }}🇪🇸 Leer en Español{{ end }}
+          </a>
+        {{ end }}
+      </div>
+    {{ end }}
+  </header>
+  
+  <!-- Featured image -->
+  {{ with .Params.image }}
+    <div class="post-image">
+      <img src="{{ . }}" alt="{{ $.Title }}">
+    </div>
+  {{ end }}
+  
+  <div class="post-content">
+    {{ .Content }}
+  </div>
+  
+  <footer class="post-footer">
+    <!-- Author bio -->
+    {{ partial "author-bio.html" . }}
+    
+    <!-- Related posts -->
+    {{ partial "related-posts.html" . }}
+    
+    <!-- Comments -->
+    {{ partial "comments.html" . }}
+  </footer>
+</article>
+{{ end }}

@@ -1,0 +1,20 @@
+{{ define "main" }}
+<div class="list-page">
+  <h1>{{ .Title }}</h1>
+  
+  {{ with .Content }}
+    <div class="list-description">
+      {{ . }}
+    </div>
+  {{ end }}
+  
+  <div class="post-list">
+    {{ range .Pages }}
+      {{ partial "post-card.html" . }}
+    {{ end }}
+  </div>
+  
+  <!-- Pagination -->
+  {{ template "_internal/pagination.html" . }}
+</div>
+{{ end }}

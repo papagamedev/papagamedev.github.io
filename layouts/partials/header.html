@@ -1,0 +1,35 @@
+<header class="site-header">
+  <div class="wrapper">
+    <a class="site-title" href="{{ "/" | relLangURL }}">{{ site.Title }}</a>
+    
+    <nav class="site-nav">
+      <ul class="nav-links">
+        {{ range site.Menus.main }}
+          <li>
+            <a href="{{ .URL | relLangURL }}"{{ if $.IsMenuCurrent "main" . }} class="active"{{ end }}>
+              {{ .Name }}
+            </a>
+          </li>
+        {{ end }}
+      </ul>
+      
+      <!-- Language toggle -->
+      <div class="lang-toggle">
+        {{ if .IsTranslated }}
+          {{ range .Translations }}
+            <a href="{{ .Permalink }}" title="{{ .Language.LanguageName }}">
+              {{ if eq .Lang "en" }}🇺🇸{{ else }}🇪🇸{{ end }}
+            </a>
+          {{ end }}
+        {{ else }}
+          {{/* Link to home of other language if no translation exists */}}
+          {{ if eq .Lang "es" }}
+            <a href="/en/" title="English">🇺🇸</a>
+          {{ else }}
+            <a href="/" title="Español">🇪🇸</a>
+          {{ end }}
+        {{ end }}
+      </div>
+    </nav>
+  </div>
+</header>
