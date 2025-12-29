@@ -171,28 +171,31 @@ assets/
 
 ---
 
-## Phase 3: Migrate Data Files (Day 1 - Evening)
+## Phase 3: Migrate Data Files (Day 1 - Evening) ✅ COMPLETED
 
-### 3.1 Copy Data Files
+### 3.1 Copy Data Files ✅
 
 ```powershell
 # Hugo uses data/ instead of _data/
-Copy-Item _data/authors.yml data/
-Copy-Item _data/categories.yml data/
-Copy-Item _data/localization.yml data/
-Copy-Item -Recurse _data/comments data/
+# Files have been moved (not copied) to preserve git history
+Move-Item _data/authors.yml data/
+Move-Item _data/categories.yml data/
+Move-Item _data/localization.yml data/
+Move-Item -Recurse _data/comments data/
 ```
 
-### 3.2 Verify Data Access
+### 3.2 Verify Data Access ✅
 
 In Hugo templates, access data via:
 - `{{ site.Data.authors.jpl.name }}`
 - `{{ site.Data.categories.blog.es }}`
 - `{{ site.Data.localization.es.comments }}`
 
+**Note**: Fixed author bio field from `bio_en` to `bio-en` to match data file format.
+
 ---
 
-## Phase 4: Create Base Templates (Day 2)
+## Phase 4: Create Base Templates (Day 2) ✅ COMPLETED
 
 ### 4.1 Base Layout
 

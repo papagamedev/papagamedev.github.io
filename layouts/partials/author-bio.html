@@ -7,7 +7,7 @@
   <div class="author-info">
     <strong>{{ $author.name }}</strong>
     {{ if eq $.Lang "en" }}
-      {{ with $author.bio_en }}<p>{{ . }}</p>{{ end }}
+      {{ with (index $author "bio-en") }}<p>{{ . }}</p>{{ end }}
     {{ else }}
       {{ with $author.bio }}<p>{{ . }}</p>{{ end }}
     {{ end }}
