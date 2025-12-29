@@ -44,7 +44,7 @@
       {{ else if strings.Contains .RelPermalink "/interviews/" }}
         {{ $categoryFromURL = "interviews" }}
       {{ else if strings.Contains .RelPermalink "/recommended-games/" }}
-        {{ $categoryFromURL = "recommended_games" }}
+        {{ $categoryFromURL = "recommended-games" }}
       {{ end }}
       
       {{ if $categoryFromURL }}

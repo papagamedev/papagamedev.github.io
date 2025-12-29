@@ -378,7 +378,7 @@ table th {
 .view-more-link {
   display: inline-block;
   padding: 10px 20px;
-  background-color: var(--brand-color);
+  background-color: var(--grey-color-light);
   color: white;
   text-decoration: none;
   border-radius: 5px;
@@ -387,7 +387,7 @@ table th {
 }
 
 .view-more-link:hover {
-  background-color: #0056b3;
+  background-color: var(--brand-color);
   text-decoration: none;
 }
 

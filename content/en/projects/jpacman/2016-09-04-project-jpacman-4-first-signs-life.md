@@ -5,7 +5,7 @@ date: 2016-09-04
 image: /images/jpacman_alive_banner-750x350.jpg
 author: jpl
 lang: en
-categories: ["projects", "jpacman"]
+categories: ["jpacman"]
 translationKey: proyecto-jpacman-4-primeras-vida
 description: The JPacman production has been started. Analysis of the source code modules. Making the game code compile with Cocos2d-x.
 ---

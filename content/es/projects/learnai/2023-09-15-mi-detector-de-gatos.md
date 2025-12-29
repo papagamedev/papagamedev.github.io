@@ -4,7 +4,7 @@ date: 2023-09-15
 image: /images/learnai/ori_y_gateto.jpg
 author: jpl
 lang: es
-categories: ["projects", "learnai"]
+categories: ["learnai"]
 translationKey: mi-detector-de-gatos
 description: Construyendo un modelo de IA para reconocer fotos de mis dos gatos.
 featured: true

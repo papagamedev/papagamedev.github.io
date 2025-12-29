@@ -5,7 +5,7 @@ date: 2016-07-29
 image: /images/jpacman_cocos2dx_banner-750x350.jpg
 author: jpl
 lang: en
-categories: ["projects", "jpacman"]
+categories: ["jpacman"]
 translationKey: proyecto-jpacman-3-nuevas-herramientas
 description: >
     New challenge: find a new toolset for JPacman. Source code inspection, game engine alternatives and the integration of Cocos2d-x.

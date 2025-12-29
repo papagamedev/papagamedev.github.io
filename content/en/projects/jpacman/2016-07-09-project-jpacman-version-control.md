@@ -5,7 +5,7 @@ date: 2016-07-09
 image: /images/jpacman_scm_banner-750x350.jpg
 author: jpl
 lang: en
-categories: ["projects", "jpacman"]
+categories: ["jpacman"]
 translationKey: proyecto-jpacman-control-de-versiones
 description: Resuming Project JPacman after several months without working on it. Creating the Version Control System repository. The source code first public version.
 ---

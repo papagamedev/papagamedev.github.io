@@ -1,6 +1,6 @@
 ---
 categories:
-  - recommended_games
+  - recommended-games
 date: 2016-02-11
 title: “ibb and obb”, upside down puzzles
 image: /images/ibbandobb_banner-750x350.jpg

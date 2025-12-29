@@ -1,6 +1,6 @@
 ---
 categories:
-  - recommended_games
+  - recommended-games
 date: 2015-08-11
 title: «ibb and obb», puzzles de cabeza
 image: /images/ibbandobb_banner-750x350.jpg

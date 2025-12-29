@@ -4,16 +4,17 @@ date: 2016-02-14
 image: /images/jpacman.jpg
 author: jpl
 lang: en
-categories: ["projects", "downloads"]
+categories: ["downloads"]
 translationKey: descarga-jpacman-01999
 description: Download the original version of JPacman 0.1999
 ---
 
 {{< image url="jpacman.jpg" >}}
 
-|File|[JPacman-0.1999.zip](/downloads/JPacman-0.1999.zip)|
-|Plataform|Windows|
-|Size|848 KB|
+| File | [JPacman-0.1999.zip](/downloads/JPacman-0.1999.zip) |
+|------|------------------------------------------------------|
+| Plataform | Windows |
+| Size | 848 KB |
 
 JPacman is a game inspired on the classic Pac-man, with a couple of interesting gameplay add ons.
 

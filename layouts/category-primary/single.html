@@ -40,6 +40,9 @@
     {{ end }}
   {{ end }}
   
+  {{/* Sort subcategories by order field */}}
+  {{ $subcategories = sort $subcategories "data.order" }}
+  
   {{/* Display each subcategory with recent posts */}}
   {{ range $subcategories }}
     {{ $subKey := .key }}

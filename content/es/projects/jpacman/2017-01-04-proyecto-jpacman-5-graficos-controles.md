@@ -5,7 +5,7 @@ date: 2017-01-04
 image: /images/jpacman_graphics_banner-750x350.jpg
 author: jpl
 lang: es
-categories: ["projects", "jpacman"]
+categories: ["jpacman"]
 translationKey: proyecto-jpacman-5-graficos-controles
 description: La lógica de JPacman ya funciona con Cocos2d-x, y es hora de hacer funcionar los gráficos y los controles para hacerlo jugable nuevamente.
 ---

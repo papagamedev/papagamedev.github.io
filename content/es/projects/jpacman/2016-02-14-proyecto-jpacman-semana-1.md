@@ -5,7 +5,7 @@ date: 2016-02-14
 image: /images/jpacman-semana1-banner-750x350.jpg
 author: jpl
 lang: es
-categories: ["projects", "jpacman"]
+categories: ["jpacman"]
 translationKey: proyecto-jpacman-semana-1
 description: >
     Empieza el proyecto JPacman: retomar un juego que desarrollé con fines no comerciales hace mucho tiempo. ¡Descarga la versión original construida en 1999!
@@ -21,7 +21,7 @@ Incrédulo, observé cómo empezaba la melodía y se animaba la introducción qu
 
 {{< image url="jpacman-intro.png" caption="Hace diecisiete años, estaba decidido a tener mi propia empresa de videojuegos. Su nombre sería JPL Soft, otro chispazo notable de creatividad." >}}
 
-A principios de este año, medité bastante acerca de mis experiencias del año anterior e incluso escribí un artículo al respecto ([«¡Adios 2015! Dos breves historias y nuevos desafíos»]({{< relref "blog/2016-01-24-adios-2015-dos-breves-historias.md" >}})). Sentí que era hora de poner manos a la obra y me propuse retomar, durante el 2016, algunos de estos proyectos.
+A principios de este año, medité bastante acerca de mis experiencias del año anterior e incluso escribí un artículo al respecto ([«¡Adios 2015! Dos breves historias y nuevos desafíos»]({{< relref "articles/blog/2016-01-24-adios-2015-dos-breves-historias.md" >}})). Sentí que era hora de poner manos a la obra y me propuse retomar, durante el 2016, algunos de estos proyectos.
 
 *Ha llegado el momento de revivir JPacman.*
 

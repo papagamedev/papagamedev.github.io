@@ -30,12 +30,12 @@
   {{ end }}
   
   <!-- Recent articles -->
-  {{ $articles := where (where site.RegularPages ".Lang" .Lang) "Type" "in" (slice "blog" "entrevistas" "juegos-recomendados") }}
+  {{ $articles := where (where site.RegularPages ".Lang" .Lang) "Type" "in" (slice "articles" "blog" "interviews" "recommended-games") }}
   {{ if $articles }}
     <section class="recent-posts">
       <h2>{{ if eq .Lang "es" }}Artículos{{ else }}Articles{{ end }}</h2>
       <div class="post-list">
-        {{ range first 4 $articles }}
+        {{ range first 3 $articles }}
           {{ partial "post-card.html" . }}
         {{ end }}
       </div>
@@ -48,12 +48,12 @@
   {{ end }}
   
   <!-- Recent projects -->
-  {{ $projects := where (where site.RegularPages ".Lang" .Lang) "Type" "in" (slice "jpacman" "learnai" "downloads") }}
+  {{ $projects := where (where site.RegularPages ".Lang" .Lang) "Type" "in" (slice "projects") }}
   {{ if $projects }}
     <section class="recent-projects">
       <h2>{{ if eq .Lang "es" }}Proyectos{{ else }}Projects{{ end }}</h2>
       <div class="post-list">
-        {{ range first 4 $projects }}
+        {{ range first 3 $projects }}
           {{ partial "post-card.html" . }}
         {{ end }}
       </div>

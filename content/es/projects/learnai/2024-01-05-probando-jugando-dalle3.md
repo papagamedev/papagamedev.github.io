@@ -4,7 +4,7 @@ date: 2024-01-05
 image: /images/learnai/dalle3.jpg
 author: jpl
 lang: es
-categories: ["projects", "learnai"]
+categories: ["learnai"]
 translationKey: probando-jugando-dalle3
 description: Conectarse al API de DALL-E 3 y jugar creando imágenes con mis hijos.
 featured: true
@@ -16,7 +16,7 @@ Hace más de un año yo había probado la versión original de *DALL-E*, cuyos r
 
 {{< image url="learnai/dalle3.jpg" caption="DALL-E 3, según el propio DALL-E 3" >}}
 
-La semana pasada, buscando imágenes para el [artículo del juego de mi hijo en Python]({{< relref "blog/2023-12-30-papa-hice-juego-python.md" >}}), pensé que tal vez podría generarlas usando *DALL-E 3* y así aprovechaba de probarlo.
+La semana pasada, buscando imágenes para el [artículo del juego de mi hijo en Python]({{< relref "articles/blog/2023-12-30-papa-hice-juego-python.md" >}}), pensé que tal vez podría generarlas usando *DALL-E 3* y así aprovechaba de probarlo.
 
 Me metí al sitio web y descubrí que para usarlo tenía que, o estar suscrito al servicio Plus de OpenAI (por 20 dólares mensuales), o usar el API directamente y pagar por cada uso. Quería hacer sólo algunas pruebas, así que me decidí por la segunda opción y me embarqué en el nuevo desafío.
 

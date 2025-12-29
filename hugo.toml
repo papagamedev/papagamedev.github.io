@@ -92,7 +92,6 @@ disableKinds = ["taxonomy", "term"]
 # Site parameters
 [params]
   author = "Juan Pablo Lastra"
-  mainSections = ["articles", "projects"]
   
   [params.reCaptcha]
     siteKey = "6LeaCwsTAAAAAC1B4rTP9IbD9O4WACfBXbbpWsdv"

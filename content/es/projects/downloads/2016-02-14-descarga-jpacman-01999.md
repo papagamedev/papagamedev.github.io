@@ -4,7 +4,7 @@ date: 2016-02-14
 image: /images/jpacman.jpg
 author: jpl
 lang: es
-categories: ["projects", "downloads"]
+categories: ["downloads"]
 translationKey: descarga-jpacman-01999
 description: Descarga la versión original de JPacman 0.1999
 ---
