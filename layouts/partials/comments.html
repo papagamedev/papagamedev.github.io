@@ -1,9 +1,45 @@
-{{/* Comments section - placeholder for now */}}
+{{/* Comments section */}}
 <section class="comments">
   <h3>{{ T "comments" }}</h3>
   
-  {{/* Comment display will be added in Phase 7 */}}
-  <p class="comments-placeholder">
-    {{ T "noComments" }}
-  </p>
+  {{/* Get comments for this post based on slug (without date prefix) */}}
+  {{ $slug := .File.BaseFileName }}
+  {{/* Remove date prefix if it exists (format: YYYY-MM-DD-) */}}
+  {{ $slug = replaceRE "^\\d{4}-\\d{2}-\\d{2}-" "" $slug }}
+  {{ $comments := index site.Data.comments $slug }}
+  
+  {{ if $comments }}
+    <div class="comments-list">
+      {{/* Iterate through comments map */}}
+      {{ range $key, $comment := $comments }}
+        <div class="comment">
+          <div class="comment-header">
+            <strong class="comment-author">{{ $comment.name }}</strong>
+            {{ if $comment.url }}
+              <a href="{{ $comment.url }}" class="comment-website" title="Website" target="_blank" rel="nofollow">
+                <svg class="icon" viewBox="0 0 24 24" width="16" height="16">
+                  <path fill="currentColor" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                </svg>
+              </a>
+            {{ end }}
+            {{ with $comment.date }}
+              <time class="comment-date" datetime="{{ . }}">
+                {{ . | time.Format "January 2, 2006" }}
+              </time>
+            {{ end }}
+          </div>
+          <div class="comment-body">
+            {{ $comment.message | markdownify }}
+          </div>
+        </div>
+      {{ end }}
+    </div>
+  {{ else }}
+    <p class="comments-placeholder">
+      {{ T "noComments" }}
+    </p>
+  {{ end }}
+  
+  <!-- Comment form -->
+  {{ partial "comment-form.html" . }}
 </section>

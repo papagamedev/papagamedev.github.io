@@ -1,0 +1,17 @@
+{{/* This template generates JSON search data for each language */}}
+{{/* Place in a data template or use JavaScript to fetch directly */}}
+{{ $pages := where site.RegularPages "Type" "in" (slice "blog" "interviews" "recommended_games") -}}
+{{ with $pages -}}
+[
+{{- range $index, $page := . -}}
+  {{- if $index }},{{ end -}}
+  {
+    "title": {{ $page.Title | jsonify }},
+    "url": {{ $page.RelPermalink | jsonify }},
+    "date": {{ $page.Date.Format "2006-01-02" | jsonify }},
+    "description": {{ ($page.Description | default (substr $page.Plain 0 200)) | jsonify }},
+    "categories": {{ $page.Params.categories | jsonify }}
+  }
+{{- end -}}
+]
+{{ end -}}

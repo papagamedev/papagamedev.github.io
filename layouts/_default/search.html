@@ -1,0 +1,107 @@
+{{ define "main" }}
+<article>
+  <header>
+    <h1>{{ .Title }}</h1>
+    <p class="post-meta">{{ .Description }}</p>
+  </header>
+
+  <div class="content">
+    {{ .Content }}
+    
+    <!-- Search Input -->
+    <div class="search-container">
+      <input 
+        type="text" 
+        id="search-input" 
+        class="search-input"
+        placeholder="{{ T "searchPlaceholder" }}"
+        aria-label="{{ T "search" }}"
+      >
+    </div>
+
+    <!-- Search Results -->
+    <div id="search-results" class="search-results"></div>
+  </div>
+</article>
+
+<script>
+(function() {
+  const searchInput = document.getElementById('search-input');
+  const searchResults = document.getElementById('search-results');
+  const searchLang = document.documentElement.lang || 'es';
+  
+  // Build search data from page links
+  const posts = [
+    {{ $pages := where site.RegularPages "Lang" .Lang -}}
+    {{ $count := 0 -}}
+    {{ range $pages -}}
+      {{ if gt $count 0 }},{{ end }}
+      {
+        "title": {{ .Title | jsonify }},
+        "url": {{ .RelPermalink | jsonify }},
+        "date": {{ .Date.Format "January 2, 2006" | jsonify }},
+        "description": {{ (.Description | default (substr .Plain 0 200)) | jsonify }},
+        "categories": {{ .Params.categories | jsonify }},
+        "content": {{ substr .Plain 0 300 | jsonify }}
+      }
+      {{ $count = add $count 1 }}
+    {{ end }}
+  ];
+
+  function performSearch() {
+    const query = searchInput.value.toLowerCase().trim();
+    searchResults.innerHTML = '';
+
+    if (!query) {
+      return;
+    }
+
+    const results = posts.filter(post => {
+      const titleMatch = post.title.toLowerCase().includes(query);
+      const descriptionMatch = post.description.toLowerCase().includes(query);
+      const contentMatch = post.content.toLowerCase().includes(query);
+      return titleMatch || descriptionMatch || contentMatch;
+    });
+
+    if (results.length === 0) {
+      searchResults.innerHTML = '<p class="no-results">{{ T "noResults" }}</p>';
+      return;
+    }
+
+    const html = results.map(post => `
+      <div class="search-result">
+        <h3><a href="${post.url}">${escapeHtml(post.title)}</a></h3>
+        <p class="search-result-meta">
+          <time>${post.date}</time>
+          ${post.categories && post.categories.length > 0 ? `<span class="categories">${post.categories.join(', ')}</span>` : ''}
+        </p>
+        <p class="search-result-description">${escapeHtml(post.description)}</p>
+      </div>
+    `).join('');
+
+    searchResults.innerHTML = html;
+  }
+
+  function escapeHtml(text) {
+    const div = document.createElement('div');
+    div.textContent = text;
+    return div.innerHTML;
+  }
+
+  // Debounce search
+  let searchTimeout;
+  searchInput.addEventListener('input', function() {
+    clearTimeout(searchTimeout);
+    searchTimeout = setTimeout(performSearch, 300);
+  });
+
+  // Also allow Enter key
+  searchInput.addEventListener('keypress', function(e) {
+    if (e.key === 'Enter') {
+      performSearch();
+    }
+  });
+})();
+</script>
+{{ end }}
+

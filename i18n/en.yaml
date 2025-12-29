@@ -20,8 +20,10 @@ comments: "Comments"
 relatedPosts: "Related Posts"
 noComments: "No comments yet"
 addComment: "Add a comment"
+leaveComment: "Leave a comment"
 name: "Name"
 email: "Email"
+website: "Website"
 message: "Message"
 submit: "Submit"
 commentSuccess: "Comment submitted successfully!"
@@ -29,9 +31,9 @@ commentError: "Error submitting comment"
 loading: "Loading..."
 
 # Search
-search: "Search..."
+search: "Search"
 searchPlaceholder: "Search articles..."
-noResults: "No results found."
+noResults: "No results found"
 results: "Search results"
 
 # Navigation
@@ -44,6 +46,7 @@ about: "About"
 
 # Forms
 contactForm: "Contact Form"
+contactMessage: "Send message"
 subject: "Subject"
 formMessage: "Message"
 send: "Send"

@@ -20,8 +20,10 @@ comments: "Comentarios"
 relatedPosts: "Artículos Relacionados"
 noComments: "No hay comentarios aún"
 addComment: "Agregar comentario"
+leaveComment: "Dejar un comentario"
 name: "Nombre"
 email: "Correo electrónico"
+website: "Sitio web"
 message: "Mensaje"
 submit: "Enviar"
 commentSuccess: "¡Comentario enviado exitosamente!"
@@ -29,9 +31,9 @@ commentError: "Error al enviar el comentario"
 loading: "Cargando..."
 
 # Search
-search: "Buscar..."
+search: "Buscar"
 searchPlaceholder: "Buscar artículos..."
-noResults: "No se encontraron resultados."
+noResults: "No se encontraron resultados"
 results: "Resultados de búsqueda"
 
 # Navigation
@@ -44,6 +46,7 @@ about: "Acerca de"
 
 # Forms
 contactForm: "Formulario de Contacto"
+contactMessage: "Enviar mensaje"
 subject: "Asunto"
 formMessage: "Mensaje"
 send: "Enviar"
