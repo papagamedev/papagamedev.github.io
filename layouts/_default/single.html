@@ -26,7 +26,7 @@
       <div class="translation-notice">
         {{ range .Translations }}
           <a href="{{ .Permalink }}">
-            {{ if eq .Lang "en" }}🇺🇸 Read in English{{ else }}🇪🇸 Leer en Español{{ end }}
+            {{ if eq .Lang "en" }}🇺🇸 {{ T "readMore" }}{{ else }}🇪🇸 {{ T "readMore" }}{{ end }}
           </a>
         {{ end }}
       </div>

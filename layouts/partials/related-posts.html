@@ -2,7 +2,7 @@
 {{ $related = $related | complement (slice .) }}
 {{ if $related }}
 <section class="related-posts">
-  <h3>{{ if eq .Lang "en" }}Related Posts{{ else }}Artículos Relacionados{{ end }}</h3>
+  <h3>{{ T "relatedPosts" }}</h3>
   <div class="post-list">
     {{ range first 3 $related }}
       {{ partial "post-card.html" . }}

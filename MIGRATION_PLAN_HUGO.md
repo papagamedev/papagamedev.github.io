@@ -568,40 +568,36 @@ After copying posts, run find/replace:
 
 ---
 
-## Phase 6: Internationalization (Day 3)
+## Phase 6: Internationalization (Day 3) ✅ COMPLETED
 
-### 6.1 Create Translation Files
+### 6.1 Create Translation Files ✅
 
-**i18n/es.yaml**:
-```yaml
-featuredPosts: "Artículos Destacados"
-recentPosts: "Artículos Recientes"
-readMore: "Leer más"
-comments: "Comentarios"
-relatedPosts: "Artículos Relacionados"
-search: "Buscar..."
-noResults: "No se encontraron resultados."
-submit: "Enviar"
-```
+Created complete internationalization system with YAML files:
 
-**i18n/en.yaml**:
-```yaml
-featuredPosts: "Featured Posts"
-recentPosts: "Recent Posts"
-readMore: "Read more"
-comments: "Comments"
-relatedPosts: "Related Posts"
-search: "Search..."
-noResults: "No results found."
-submit: "Submit"
-```
+**i18n/es.yaml** - Spanish translations with keys for:
+- Home page (featuredPosts, recentPosts)
+- Post sections (categories, author, date, share)
+- Comments (comments, noComments, addComment)
+- Navigation (blog, projects, interviews, recommendedGames, contact)
+- Forms and messages
+- Pagination and time strings
 
-### 6.2 Use Translations in Templates
+**i18n/en.yaml** - English translations with all corresponding keys
 
-```html
-<h2>{{ T "featuredPosts" }}</h2>
-<button>{{ T "submit" }}</button>
-```
+### 6.2 Use Translations in Templates ✅
+
+Updated all templates to use `{{ T "key" }}` translation function:
+- [layouts/index.html](layouts/index.html) - Home page sections
+- [layouts/_default/single.html](layouts/_default/single.html) - Post pages
+- [layouts/partials/related-posts.html](layouts/partials/related-posts.html) - Related posts section
+- [layouts/partials/comments.html](layouts/partials/comments.html) - Comments section
+
+**Results**:
+- Spanish home page displays: "Artículos Destacados" & "Artículos Recientes"
+- English home page displays: "Featured Posts" & "Recent Posts"
+- All other sections properly localized
+
+**Build status**: ✅ Clean build with 54 ES + 39 EN pages
 
 ---
 

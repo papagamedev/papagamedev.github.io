@@ -1,0 +1,80 @@
+# Spanish translations for Papa Game Dev
+
+# Home page
+featuredPosts: "Artículos Destacados"
+recentPosts: "Artículos Recientes"
+
+# Post navigation
+readMore: "Leer más"
+viewPost: "Ver artículo"
+
+# Post sections
+categories: "Categorías"
+category: "Categoría"
+author: "Autor"
+date: "Fecha"
+share: "Compartir"
+
+# Comments
+comments: "Comentarios"
+relatedPosts: "Artículos Relacionados"
+noComments: "No hay comentarios aún"
+addComment: "Agregar comentario"
+name: "Nombre"
+email: "Correo electrónico"
+message: "Mensaje"
+submit: "Enviar"
+commentSuccess: "¡Comentario enviado exitosamente!"
+commentError: "Error al enviar el comentario"
+loading: "Cargando..."
+
+# Search
+search: "Buscar..."
+searchPlaceholder: "Buscar artículos..."
+noResults: "No se encontraron resultados."
+results: "Resultados de búsqueda"
+
+# Navigation
+blog: "Blog"
+projects: "Proyectos"
+interviews: "Entrevistas"
+recommendedGames: "Juegos Recomendados"
+contact: "Contacto"
+about: "Acerca de"
+
+# Forms
+contactForm: "Formulario de Contacto"
+subject: "Asunto"
+formMessage: "Mensaje"
+send: "Enviar"
+sending: "Enviando..."
+sent: "¡Mensaje enviado!"
+formError: "Error al enviar el mensaje"
+
+# Pagination
+previous: "Anterior"
+next: "Siguiente"
+page: "Página"
+of: "de"
+
+# Time
+january: "Enero"
+february: "Febrero"
+march: "Marzo"
+april: "Abril"
+may: "Mayo"
+june: "Junio"
+july: "Julio"
+august: "Agosto"
+september: "Septiembre"
+october: "Octubre"
+november: "Noviembre"
+december: "Diciembre"
+
+# Other
+language: "Idioma"
+spanish: "Español"
+english: "English"
+home: "Inicio"
+moreInfo: "Más información"
+seeMore: "Ver más"

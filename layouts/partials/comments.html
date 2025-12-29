@@ -1,13 +1,9 @@
 {{/* Comments section - placeholder for now */}}
 <section class="comments">
-  <h3>{{ if eq .Lang "en" }}Comments{{ else }}Comentarios{{ end }}</h3>
+  <h3>{{ T "comments" }}</h3>
   
   {{/* Comment display will be added in Phase 7 */}}
   <p class="comments-placeholder">
-    {{ if eq .Lang "en" }}
-      Comments section coming soon.
-    {{ else }}
-      Sección de comentarios próximamente.
-    {{ end }}
+    {{ T "noComments" }}
   </p>
 </section>
