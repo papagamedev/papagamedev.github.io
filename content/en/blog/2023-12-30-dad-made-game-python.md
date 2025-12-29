@@ -5,7 +5,7 @@ date: 2023-12-30
 title: “Dad, check out this game I made in Python!”
 image: /images/made-python-game.jpg
 author: jpl
-translationKey: dad-made-game-python
+translationKey: papa-hice-juego-python
 description: Create and design video games. Learn programming with C#, PSeInt, and Python. New challenges with Godot.
 featured: true
 ---
@@ -83,3 +83,4 @@ For my part, I'm happy that he learned to program, as it's a tool that will serv
 {{< image url="made-python-game.jpg" caption="Looking forward to seeing how the next version of Labyrinth Quest XII turns out!" >}}
 
 *Does anyone else know about PSeInt? Any Godot experts out there who can recommend resources for Diego?*
+

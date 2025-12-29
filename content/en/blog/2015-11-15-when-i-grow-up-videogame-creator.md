@@ -5,7 +5,7 @@ date: 2015-11-15
 title: “When I grow up, I want to be a Videogames Creator”
 image: /images/minecraft-padre-hijo.jpg
 author: jpl
-translationKey: when-i-grow-up-videogame-creator
+translationKey: cuando-sea-grande-quiero-ser-creador-de-videojuegos
 description: Videogames industry is very competitive and sometimes frustrating. Why do we still do this? Why is it still growing? Do I want my son to work on videogames?
 ---
 

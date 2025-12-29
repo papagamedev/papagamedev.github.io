@@ -5,7 +5,7 @@ date: 2016-07-06
 title: “Dad, play Clash Royale with me!”
 image: /images/clash_royale_banner-750x350.jpg
 author: jpl
-translationKey: dad-play-clash-royale
+translationKey: papa-juega-clash-royale-conmigo
 description: Clash Royale, one of the most popular mobile games nowadays. I used to say I would never play it, but my son convinced me to try it.
 ---
 
@@ -60,4 +60,5 @@ Additionally, I belong to a clan with several friends from my job Behaviour and 
 More importantly, the experience of sharing many hours with my son in a game that he likes a lot, and having him guiding and teaching me, has been very rewarding. **Thank you a lot Diego for giving me those moments.**
 
 *Have you had a similar experience? Have you felt that a game looked boring and then, after playing it, did you get engaged and you enjoyed it?*
+
 

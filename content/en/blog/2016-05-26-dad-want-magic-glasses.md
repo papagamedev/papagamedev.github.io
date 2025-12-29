@@ -5,7 +5,7 @@ date: 2016-05-26
 title: “Dad, I want the magic glasses!”
 image: /images/lentes_magicos_banner-750x350.jpg
 author: jpl
-translationKey: dad-want-magic-glasses
+translationKey: papa-quiero-lentes-magicos
 description: Virtual Reality is here. Two devices were already released this year and more will come soon. What are their differences? Does Virtual Reality work?
 ---
 
@@ -127,4 +127,5 @@ The technology is still far from being perfect, that’s super clear. But **they
 Maybe in about ten or fifteen years, for both Santi and Diego “the magic glasses” will be just another common accessory in their life.
 
 *What do you think? Have you tried Virtual Reality? Have you shared the experience with your family, with your children? Do you think that the current challenges of this technology will be somehow resolved?*
+
 

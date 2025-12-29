@@ -6,7 +6,7 @@ title: >
     Global Game Jam 2016: Everyone can create videogames!
 image: /images/ggj2016-banner-750x350.jpg
 author: jpl
-translationKey: global-game-jam-2016-everyone-can-create-videogames
+translationKey: global-game-jam-2016-todos-pueden-crear-videojuegos
 description: Global Game Jam 2016, the largest videogame development event in the world, has started. In Chile and Latin America there are thousands of participants.
 ---
 
@@ -41,4 +41,5 @@ In other South American countries there are also numerous sites. **Brazil** with
 No doubt it will be an unforgettable experience. **Best success to all!**
 
 Check the [full sites list](http://globalgamejam.org/2016/jam-sites) or the [published games](http://globalgamejam.org/2016/games) from previous years.
+
 

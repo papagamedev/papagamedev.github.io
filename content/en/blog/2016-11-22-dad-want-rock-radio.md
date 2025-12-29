@@ -5,7 +5,7 @@ date: 2016-11-22
 title: “Dad, I want the Rock Radio!”
 image: /images/rock_banner-750x350.jpg
 author: jpl
-translationKey: dad-want-rock-radio
+translationKey: papa-quiero-radio-rock
 description: Music and rock have been part of videogames since they appeared, classical themes or popular songs. Playing instruments, concerts and experiences.
 ---
 
@@ -64,4 +64,5 @@ And I thank to the music, to Rock in this case, for giving me that gift.
 {{< image url="gunsnroses_concierto.jpg" caption="The Guns’n Roses concert I went with Diego some weeks ago. It was an amazing experience, and probably both of us will never forget it." >}}
 
 *What videogame rock themes do you like? Have you had similar experiences with your children / nephews or younger siblings?*
+
 

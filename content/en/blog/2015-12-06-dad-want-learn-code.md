@@ -5,7 +5,7 @@ date: 2015-12-06
 title: “Dad, I want to learn how to code!”
 image: /images/programar-banner-750x350.jpg
 author: jpl
-translationKey: dad-want-learn-code
+translationKey: quiero-estudiar-videojuegos
 description: Learning how to code helps improving problem-solving skills, logic and creativity. Join The Hour of Code to bring coding to every student.
 ---
 
@@ -180,4 +180,5 @@ We can all be part of this. We can all put our two cents in this, to provide our
 **Because their future is our responsibility.**
 
 *More information about how to participate in the Hour of Code in their [website](http://horadelcodigo.cl/).*
+
 

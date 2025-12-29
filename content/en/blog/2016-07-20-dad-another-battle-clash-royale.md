@@ -5,7 +5,7 @@ date: 2016-07-20
 title: “Dad, let’s play another battle in Clash Royale!”
 image: /images/clarsh_royale_messages_banner-750x350.jpg
 author: jpl
-translationKey: dad-another-battle-clash-royale
+translationKey: papa-otra-batalla-clash-royale
 description: Having battled against hundreds of opponents, why do I keep playing Clash Royale? Three reasons explaining why I still enjoy this popular mobile game.
 ---
 
@@ -64,4 +64,5 @@ But the interesting thing about Clash Royale is that it makes you live this kind
 This is ideal for me. With a lot of family and other responsibilities, I do not have the time to play 30 or 60 minute matches of minutes Starcraft or Call of Duty. But I do have the time to play several games Clash Royale throughout the day: one at lunch, one in the morning, a couple of matches while waiting at the bank or… in the bathroom.
 
 *What casual games have you played? Have you ever been “captured” by a casual game like me in Clash Royale? What elements of the game are the ones you think that make you play it again regularly?*
+
 

@@ -5,7 +5,7 @@ date: 2016-01-28
 title: Farewell 2015! Two short stories and new challenges
 image: /images/adios2015.jpg
 author: jpl
-translationKey: farewell-2015-two-short-stories
+translationKey: adios-2015-dos-breves-historias
 description: >
     2015 is gone and two short meaningful stories were left untold: an unexpected finding and a very enriching trip
 ---
@@ -101,4 +101,5 @@ But what really matters to me is that I believe that my main objective with this
 2016 is here and I’m sure it will be full of good challenges and nice opportunities for everyone. I wish you all the best success!
 
 **Farewell 2015! Welcome 2016!**
+
 

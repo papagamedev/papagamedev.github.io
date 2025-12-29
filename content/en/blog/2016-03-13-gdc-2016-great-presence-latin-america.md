@@ -5,7 +5,7 @@ date: 2016-03-13
 title: GDC 2016 is here and Latin America will be present!
 image: /images/gdc-2016-banner-750x350.jpg
 author: jpl
-translationKey: gdc-2016-great-presence-latin-america
+translationKey: gdc-2016-gran-presencia-latinoamerica
 description: GDC 2016 edition will have a lot of Latin American companies and professionals in the Expo and business meetings, plus there will be a Latam Meetup
 ---
 
@@ -52,4 +52,5 @@ Whether in the conference, exhibition, business meetings or parties, I’m sure 
 **Much success to everyone at GDC 2016!**
 
 {{< image url="gdc-2016-fiesta-latam.jpg" caption="Third Latin American Meetup at GDC poster" >}}
+
 

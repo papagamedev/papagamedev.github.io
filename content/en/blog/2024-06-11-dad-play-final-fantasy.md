@@ -8,7 +8,7 @@ description: Enjoying Final Fantasy VII Rebirth with my kids. Great battles, ent
 featured: true
 image: /images/ff7_rebirth.jpg
 title: "Dad, please play Final Fantasy!"
-translationKey: dad-play-final-fantasy
+translationKey: papa-juega-final-fantasy
 ---
 
 A few months ago, *Final Fantasy VII Rebirth*, the second part of the *Final Fantasy VII Remake* trilogy, was finally released. The game had generated very high expectations, as the first installment, launched at the beginning of the pandemic, had set the bar very high. I had thoroughly enjoyed it and was more than eager to continue the journey.
@@ -76,3 +76,4 @@ Moreover, composer *Nobuo Uematsu* took the liberty of composing a new theme and
 Now that I’ve finished it, I can say *Final Fantasy VII Rebirth* lived up to my high expectations. Playing it was a tremendous experience, and I am very glad to have shared that experience with my kids.
 
 *Have you had similar experiences playing with your kids on this or other games of the same genre?*
+

@@ -5,7 +5,7 @@ date: 2016-03-28
 title: “Dad, can we go on vacation?”
 image: /images/vamos-vacaciones-banner-750x350.jpg
 author: jpl
-translationKey: dad-can-go-vacation
+translationKey: nos-vamos-de-vacaciones
 description: Going on vacation is an unforgettable experience for children and adults. Making videogames while on vacation? Stugan, a summer camp for game developers.
 ---
 
@@ -102,4 +102,5 @@ One last thought. **What we are we waiting for to replicate the Stugan experienc
 In our region there are hundreds of wonderful places like the one that Bruman and Palm chose for their initiative. There are also talents and important figures that could support candidates and share their experience.
 
 Perhaps, it is time to start a new project.
+
 

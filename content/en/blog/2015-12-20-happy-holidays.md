@@ -5,7 +5,7 @@ date: 2015-12-20
 title: Happy Holidays to all of you!
 image: /images/saludo_navidad_papagamedev-750x410.jpg
 author: jpl
-translationKey: happy-holidays
+translationKey: felices-fiestas
 description: Happy holidays to all of you, especially to those who feel that parenthood and family are one of the main pillars in life.
 ---
 

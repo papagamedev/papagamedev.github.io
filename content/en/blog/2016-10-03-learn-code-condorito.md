@@ -5,7 +5,7 @@ date: 2016-10-03
 title: Learn to code with Condorito!
 image: /images/condorito_banner-750x350.jpg
 author: jpl
-translationKey: learn-code-condorito
+translationKey: aprende-programar-condorito
 description: Condorito, the classic cartoon character, has a key role in the Hour of Code Chile 2016, an initiative to motivate children to learn how to code.
 ---
 
@@ -46,4 +46,5 @@ Santi was immediately motivated when he saw Condorito on the computer screen and
 I know that with this experience he did not learn to code, but I am sure that he got some minimal programming notions. And as it grows, I will continue motivating him to get closer to the world of code programming. I don’t care if he wants to be an actor, a football player, a scientist or a writer. **Computers, robots and being able to communicate with machines is something he will need in his future and the sooner he masters these skills, the better for him.**
 
 *Have you already participated in the Hour of Code? Get on board and help spreading the message to reach many more children!*
+
 

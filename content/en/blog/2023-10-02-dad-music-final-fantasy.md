@@ -5,7 +5,7 @@ date: 2023-10-02
 title: “Dad, Final Fantasy music again!”
 image: /images/ff7_ff16_screenshot.jpg
 author: jpl
-translationKey: dad-music-final-fantasy
+translationKey: papa-musica-final-fantasy
 description: The music of Final Fantasy XVI and Final Fantasy VII Remake is immersive and of high quality, and it is enjoyed both inside and outside the game.
 ---
 
@@ -60,4 +60,5 @@ It's clear, and I openly admit it, that I'm a die-hard Final Fantasy fan. So I r
 As for me, I'll continue listening to the music of these tremendous games. Moreover, in February 2024, *Final Fantasy VII Rebirth*, the sequel to the Remake, is set to be released, surely with more incredible music. Poor kids, they'll have to keep listening to it with me!
 
 *Do you enjoy the music of Final Fantasy as much as I do? Do you have other favorite games whose music you listen to non-stop after playing them?*
+
 

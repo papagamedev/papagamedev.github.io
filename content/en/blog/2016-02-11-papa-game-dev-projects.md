@@ -5,7 +5,7 @@ date: 2016-02-11
 title: Papa Game Dev Projects!
 image: /images/proyectos_banner-750x350.jpg 
 author: jpl
-translationKey: papa-game-dev-projects
+translationKey: proyectos-en-papa-game-dev
 description: New projects section at Papa Game Dev, with my own ideas, experiments, tutorials and progress updates on projects.
 ---
 
@@ -34,4 +34,5 @@ Welcome to the Papa Game Dev [Projects]({% link category/projects-en.md %}) sect
 I will post a small update each time I do some progress, describing what was done and perhaps sharing a version of the updated game itself. I have no idea how fast I will be able to finish or publish anything, but I am sure that I will enjoy the ride.
 
 **It’s time to get down to work!**
+
 

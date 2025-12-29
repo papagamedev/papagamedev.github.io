@@ -5,7 +5,7 @@ date: 2017-02-28
 title: “Dad, what happened to your Papa Game Dev?”
 image: /images/que_paso_papagamedev_banner-750x350.jpg
 author: jpl
-translationKey: dad-happened-papa-game-dev
+translationKey: papa-paso-papa-game-dev
 description: Why did it took me almost two months to write a new article for Papa Game Dev? New projects and reflections. The end of an era for Wanako / Behaviour Chile.
 ---
 
@@ -74,4 +74,5 @@ That is why it is inevitable to sit down and reflect on what all these years hav
 Although today, rather than reflect, I’d better take some rest. Today is my last day of vacations and tomorrow I must return to the office, to Behavior Chile.
 
 *Side note: I’m glad that Diego asked me about Papa Game Dev, which is what finally made me get back to writing. The next article will not take so long, I promise.*
+
 

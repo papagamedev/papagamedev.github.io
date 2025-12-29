@@ -5,7 +5,7 @@ date: 2016-05-11
 title: “Dad, I want to try Virtual Reality!”
 image: /images/probar-oculus-banner-750x350.jpg
 author: jpl
-translationKey: dad-want-try-virtual-reality
+translationKey: papa-probar-realidad-virtual
 description: Virtual Reality is here, with a growing range of devices and accessories. What is Virtual Reality? How has Virtual Reality evolved?
 ---
 
@@ -104,4 +104,5 @@ If we now think of an average user who does not necessarily understand the techn
 *What is the difference between the Oculus Rift, the HTC Vive and the Google Cardboard? Does Virtual Reality work well? Is it true that VR causes dizziness or headaches? Does this technology have any future?*
 
 They are all valid questions and they don’t have obvious answers, so I will get deeper on these topics on the [next Papa Game Dev article]({% post_url /articles/blog/2016-05-26-dad-want-magic-glasses %}). Stay tuned!
+
 

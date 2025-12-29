@@ -5,7 +5,7 @@ date: 2016-08-18
 title: “Are you playing Pokémon GO?”
 image: /images/pokemongo_banner-750x350.jpg
 author: jpl
-translationKey: playing-pokemon-go
+translationKey: ya-instalaste-pokemon-go
 description: Pokémon GO is a global phenomenon. The great expectations since its announcement and video trailer, and the huge popularity since its recent release.
 ---
 
@@ -64,4 +64,5 @@ I really wonder:
 Anyway, it does not matter what do I think, or if I like it or not. **Pokémon GO is a global phenomenon.**
 
 *Do you play Pokémon GO? What do you like about it? Do you believe you will still be playing it in three months or in a year from now?*
+
 

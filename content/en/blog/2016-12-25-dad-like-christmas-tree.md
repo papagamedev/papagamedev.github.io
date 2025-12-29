@@ -5,7 +5,7 @@ date: 2016-12-25
 title: “Dad, I like the Christmas tree!”
 image: /images/navidad-papagamedev_banner-750x350.jpg
 author: jpl
-translationKey: dad-like-christmas-tree
+translationKey: papa-me-gusta-arbol-navidad
 description: Christmas is a holiday full of joy and gifts, but it is also an opportunity to reflect and value, with our children, our family and friends.
 ---
 
@@ -70,4 +70,5 @@ That is why, in addition to wishing all of you Happy Holidays, **I would like to
 *Merry Christmas to all of you!*
 
 {{< image url="navidad-papagamedev.jpg" caption="Papa Game Dev wishes all of you Happy Holidays!" >}}
+
 

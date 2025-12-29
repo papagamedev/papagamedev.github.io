@@ -5,7 +5,7 @@ date: 2016-02-11
 title: “ibb and obb”, upside down puzzles
 image: /images/ibbandobb_banner-750x350.jpg
 author: jpl
-translationKey: ibb-obb-upside-puzzles
+translationKey: ibb-and-obb-puzzles-de-cabeza
 description: A brief review of “ibb and obb”, a fun cooperative puzzle game that is perfect for parents to play with their kids.
 ---
 
@@ -126,4 +126,5 @@ Undoubtedly, we have had a great time. I highly recommend playing **ibb and obb*
 |*Developer:*|[Sparpweed](http://www.sparpweed.nl/)|
 |*Platforms:*|[PlayStation 3](https://www.playstation.com/en-us/games/ibb-and-obb-ps3/), [PC, Mac, Linux](http://store.steampowered.com/app/95400/)|
 |*Website:*|[ibbandobb.com](http://ibbandobb.com/)|
+
 

@@ -5,7 +5,7 @@ date: 2016-06-20
 title: “Dad, I want to watch football!”
 image: /images/ver_futbol_banner-750x350.jpg
 author: jpl
-translationKey: dad-want-watch-football
+translationKey: papa-yo-quiero-ver-futbol
 description: Football (soccer) in video games. How have football games evolved? Football as a social experience. The dream of creating a football video game.
 ---
 
@@ -99,5 +99,6 @@ In short, **I found that making a video game is not as easy as it seems**. I am 
 Anyway, it was amazing as a professional growth experience. Maybe now, twenty years later, that distant dream could be resumed. Maybe now I could allocate some of my “free time” and start working on such a project, just for fun. Anyone else is up to the challenge?
 
 *A final question: what is your favorite football game?*
+
 
 

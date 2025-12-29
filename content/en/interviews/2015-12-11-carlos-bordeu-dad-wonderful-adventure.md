@@ -7,7 +7,7 @@ title: >
 author: jpl
 description: Interview with Carlos Bordeu, successful entrepreneur, founding member of ACE Team, and one of the pioneers of video game development in Chile.
 image: /images/carlosbordeu-banner-750x350.jpg
-translationKey: carlos-bordeu-dad-wonderful-adventure
+translationKey: carlos-bordeu-ser-papa-es-una-aventura-maravillosa
 ---
 
 *I've known Carlos Bordeu, one of the pioneers of the video game industry in Chile, for over fifteen years now. Although we were both Civil Engineering classmates at PUC, truth be told, we probably would've never crossed paths if it weren't for a mutual friend who decided to introduce me to "the twins who are crazy about making video games, just like you," meaning Carlos and his brother Andrés.*
@@ -151,3 +151,4 @@ Also, to share another personal project I'm working on, still in the very early 
 **Carlos Bordeu**: Juan Pablo, many thanks to you. It's an honor to be the first interviewee of the blog.
 
 *You can see more information about Carlos's work and ACE Team on their [official website](http://aceteam.cl/), or on their new [Steam group](http://steamcommunity.com/groups/aceteam).*
+

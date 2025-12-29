@@ -5,7 +5,7 @@ date: 2015-11-29
 title: “Dad, why do earthquakes happen?”
 image: /images/simcity-2000.jpg
 author: jpl
-translationKey: why-earthquakes-happen
+translationKey: papa-por-que-ocurren-los-terremotos
 description: Earthquakes, flooding and other natural catastrophes are present in videogames. Learning while playing games and the story about Rebuild Chile Game.
 ---
 

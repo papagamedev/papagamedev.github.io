@@ -5,7 +5,7 @@ date: 2016-12-31
 title: Goodbye 2016! A year of Virtual Reality and Projects
 image: /images/adios2016_banner-750x350.jpg
 author: jpl
-translationKey: goodbye-2016-virtual-reality-projects
+translationKey: adios-2016-realidad-virtual-proyectos
 description: The year 2016 is over! The arrival of Virtual Reality to the mass public, interesting projects and great opportunities for 2017.
 ---
 
@@ -62,4 +62,5 @@ I discovered that **Construct 2** is an excellent tool for making 2D games. It i
 Although they were short experiences, I was very happy to have been able to know both tools, since it allowed me to expand my professional horizons and be better prepared for possible future interesting projects.
 
 *Let’s start 2017, I’m looking forward to it! Happy New Year to everyone!*
+
 

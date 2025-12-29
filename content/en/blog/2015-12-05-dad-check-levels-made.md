@@ -7,7 +7,7 @@ description: The role of level designer in video game development. Level editors
   games like Geometry Dash for mobile devices or Boulder Dash for Atari.
 image: /images/geometrydash-darkangel.jpg
 title: “Dad, check out the levels I made!”
-translationKey: dad-check-levels-made
+translationKey: papa-mira-los-niveles-que-hice
 ---
 
 > "Dad, check out the levels I made!"
@@ -99,3 +99,4 @@ Or maybe he'll take other directions and end up being an architect, doctor, athl
 What I do know is that he has a lot of eagerness and quite a bit of talent, at least when it comes to level design, and that's already a good start.
 
 The rest will depend on him.
+

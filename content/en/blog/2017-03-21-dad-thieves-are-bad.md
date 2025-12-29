@@ -5,7 +5,7 @@ date: 2017-03-21
 title: “Dad, thieves are very bad!”
 image: /images/ladrones_banner-750x350.jpg
 author: jpl
-translationKey: dad-thieves-are-bad
+translationKey: papa-malos-los-ladrones
 description: Since the robbery I suffered in my car, I had to explain to my son that some people don’t have good intentions. Cops and thieves videogames.
 ---
 
@@ -50,4 +50,5 @@ The late 1940s Los Angeles setting is excellent, the story is entertaining and t
 Truth being said, there are video games about crimes, thieves and cops for all publics. As crime is a topic that is always relevant in society, and many videogame designers try to create experiences in which the player identifies with the characters and empathizes with the story, there will always be material for this videogames genre.
 
 *What other games of cops and thieves or similar topics have you played? Which ones do you think are the best?*
+
 
