@@ -1152,15 +1152,23 @@ button:hover, .btn-submit:hover {
 }
 
 .social-links a {
-  display: block;
-  padding: 5px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
   color: var(--brand-color);
   text-decoration: none;
-  font-weight: 500;
+  transition: color 0.3s, transform 0.2s;
 }
 
 .social-links a:hover {
-  text-decoration: underline;
+  color: var(--text-color);
+  transform: scale(1.1);
+}
+
+.social-links svg {
+  width: 24px;
+  height: 24px;
 }
 
 /* Pagination */
