@@ -1,20 +1,22 @@
 <footer class="site-footer">
   <div class="wrapper">
-    <div class="footer-col-wrapper">
-      <div class="footer-col">
-        <p>{{ .Site.Params.description }}</p>
-        <ul class="social-links">
-          {{ with site.Params.social.twitter }}
-            <li><a href="https://twitter.com/{{ . }}">Twitter</a></li>
-          {{ end }}
-          {{ with site.Params.social.github }}
-            <li><a href="https://github.com/{{ . }}">GitHub</a></li>
-          {{ end }}
-          {{ with site.Params.social.instagram }}
-            <li><a href="https://instagram.com/{{ . }}">Instagram</a></li>
-          {{ end }}
-        </ul>
-      </div>
+    <div class="footer-content">
+      <p class="footer-tagline">{{ if eq .Lang "es" }}Paternidad y Videojuegos{{ else }}Parenting and Video Games{{ end }}</p>
+      
+      <ul class="social-links">
+        {{ with site.Params.social.github }}
+          <li><a href="https://github.com/{{ . }}" aria-label="GitHub" title="GitHub">github</a></li>
+        {{ end }}
+        {{ with site.Params.social.twitter }}
+          <li><a href="https://twitter.com/{{ . }}" aria-label="Twitter" title="Twitter">twitter</a></li>
+        {{ end }}
+        {{ with site.Params.social.instagram }}
+          <li><a href="https://instagram.com/{{ . }}" aria-label="Instagram" title="Instagram">instagram</a></li>
+        {{ end }}
+        {{ with site.Params.social.facebook }}
+          <li><a href="https://facebook.com/{{ . }}" aria-label="Facebook" title="Facebook">facebook</a></li>
+        {{ end }}
+      </ul>
     </div>
   </div>
 </footer>
