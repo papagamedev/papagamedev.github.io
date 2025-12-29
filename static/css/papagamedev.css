@@ -348,7 +348,7 @@ table th {
 .post-card p {
   margin: 0;
   font-size: 0.95em;
-  color: #333;
+  color: #555;
   line-height: 1.5;
 }
 
@@ -406,6 +406,22 @@ table th {
   font-weight: bold;
 }
 
+.flag-icon-inline {
+  width: 24px;
+  height: 16px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+.flag-icon-inline {
+  width: 24px;
+  height: 16px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
 .post-image {
   margin: 20px 0;
   text-align: center;
@@ -421,6 +437,52 @@ table th {
   font-size: 1em;
   line-height: 1.7;
   margin-bottom: 30px;
+}
+
+/* Images in post content - centered with card-like styling */
+.post-content img {
+  display: block;
+  max-width: 750px;
+  width: 100%;
+  height: auto;
+  margin: 30px auto;
+  padding: 10px;
+  background-color: #f8f8f8;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.post-content figure {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.post-content figure img {
+  margin: 0 auto;
+}
+
+/* Images in post content */
+.post-content img {
+  display: block;
+  max-width: 750px;
+  width: 100%;
+  height: auto;
+  margin: 30px auto;
+  padding: 10px;
+  background-color: #f8f8f8;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.post-content figure {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.post-content figure img {
+  margin: 0 auto;
 }
 
 .post-footer {

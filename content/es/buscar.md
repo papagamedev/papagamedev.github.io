@@ -3,6 +3,7 @@ title: "Buscar"
 description: "Formulario de búsqueda de artículos en Papa Game Dev"
 slug: "buscar"
 layout: search
+translationKey: "search"
 ---
 
 ## Buscar artículos

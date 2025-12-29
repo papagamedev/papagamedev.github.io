@@ -8,7 +8,11 @@
     <div class="post-card-content">
       <h3>{{ .Title }}</h3>
       <time datetime="{{ .Date.Format "2006-01-02" }}">
-        {{ .Date.Format "Jan 2, 2006" }}
+        {{ if eq .Lang "es" }}
+          {{ .Date.Day }} {{ index (slice "enero" "febrero" "marzo" "abril" "mayo" "junio" "julio" "agosto" "septiembre" "octubre" "noviembre" "diciembre") (sub .Date.Month 1) }} {{ .Date.Year }}
+        {{ else }}
+          {{ .Date.Format "January 2, 2006" }}
+        {{ end }}
       </time>
       {{ with .Description }}
         <p>{{ . | truncate 120 }}</p>

@@ -1,6 +1,7 @@
 ---
 title: "Projects"
 description: "Video game development projects"
+translationKey: "projects"
 slug: "projects"
 ---
 
