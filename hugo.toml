@@ -45,7 +45,7 @@ enableGitInfo = true
 [[menus.main]]
   identifier = "projects"
   name = "Proyectos"
-  url = "/categories/projects/"
+  url = "/proyectos/"
   weight = 20
 
 [[menus.main]]
@@ -64,7 +64,7 @@ enableGitInfo = true
 [[languages.en.menus.main]]
   identifier = "projects"
   name = "Projects"
-  url = "/en/categories/projects/"
+  url = "/en/projects/"
   weight = 20
 
 [[languages.en.menus.main]]

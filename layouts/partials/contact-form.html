@@ -1,0 +1,92 @@
+<!-- Contact Form -->
+<div class="contact-form-section">
+  <h3>{{ T "contactForm" }}</h3>
+  <form id="contact-form" class="comment-form">
+    <div class="form-group">
+      <label for="contact-name">{{ T "name" }} *
+        <input type="text" id="contact-name" name="name" required>
+      </label>
+    </div>
+    
+    <div class="form-group">
+      <label for="contact-email">{{ T "email" }} *
+        <input type="email" id="contact-email" name="email" required>
+      </label>
+    </div>
+    
+    <div class="form-group">
+      <label for="contact-subject">{{ T "subject" }} *
+        <input type="text" id="contact-subject" name="subject" required>
+      </label>
+    </div>
+    
+    <div class="form-group">
+      <label for="contact-message">{{ T "formMessage" }} *
+        <textarea id="contact-message" name="message" required rows="5"></textarea>
+      </label>
+    </div>
+    
+    {{ if site.Params.reCaptcha.siteKey }}
+      <div class="g-recaptcha" data-sitekey="{{ site.Params.reCaptcha.siteKey }}"></div>
+    {{ end }}
+    
+    <button type="submit" class="btn btn-primary">{{ T "send" }}</button>
+    <span class="form-message" id="contact-message-status"></span>
+  </form>
+</div>
+
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<script>
+(function() {
+  const form = document.getElementById('contact-form');
+  const messageEl = document.getElementById('contact-message-status');
+  
+  if (!form) return;
+  
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    
+    const submitBtn = form.querySelector('button[type="submit"]');
+    const originalText = submitBtn.textContent;
+    submitBtn.disabled = true;
+    submitBtn.textContent = '{{ T "sending" }}';
+    messageEl.textContent = '';
+    messageEl.className = 'form-message';
+    
+    try {
+      const formData = new FormData(form);
+      const data = {
+        name: formData.get('name'),
+        email: formData.get('email'),
+        subject: formData.get('subject'),
+        message: formData.get('message'),
+        date: new Date().toISOString()
+      };
+      
+      const response = await fetch('{{ site.Params.backend.contactApi }}', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data)
+      });
+      
+      if (response.ok) {
+        messageEl.textContent = 'Mensaje enviado exitosamente. Nos pondremos en contacto pronto.';
+        messageEl.className = 'form-message success';
+        form.reset();
+      } else {
+        messageEl.textContent = 'Error al enviar el mensaje. Por favor intente más tarde.';
+        messageEl.className = 'form-message error';
+      }
+    } catch (err) {
+      console.error('Contact form submission error:', err);
+      messageEl.textContent = 'Error al enviar el mensaje. Por favor intente más tarde.';
+      messageEl.className = 'form-message error';
+    } finally {
+      submitBtn.disabled = false;
+      submitBtn.textContent = originalText;
+    }
+  });
+})();
+</script>

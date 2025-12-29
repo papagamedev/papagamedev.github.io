@@ -17,16 +17,16 @@
       <div class="lang-toggle">
         {{ if .IsTranslated }}
           {{ range .Translations }}
-            <a href="{{ .Permalink }}" title="{{ .Language.LanguageName }}">
+            <a href="{{ .Permalink }}" title="{{ .Language.LanguageName }}" class="lang-link">
               {{ if eq .Lang "en" }}🇺🇸{{ else }}🇪🇸{{ end }}
             </a>
           {{ end }}
         {{ else }}
           {{/* Link to home of other language if no translation exists */}}
           {{ if eq .Lang "es" }}
-            <a href="/en/" title="English">🇺🇸</a>
+            <a href="/en/" title="English" class="lang-link">🇺🇸</a>
           {{ else }}
-            <a href="/" title="Español">🇪🇸</a>
+            <a href="/" title="Español" class="lang-link">🇪🇸</a>
           {{ end }}
         {{ end }}
       </div>
