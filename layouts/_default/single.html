@@ -30,14 +30,12 @@
     {{ if .IsTranslated }}
       <div class="translation-notice">
         {{ range .Translations }}
-          <a href="{{ .Permalink }}">
-            <img src="{{ (printf "images/flag-%s.svg" (cond (eq .Lang "en") "english" "spanish")) | relURL }}" alt="{{ .Language.LanguageName }}" class="flag-icon-inline" />
-            {{ if eq $.Lang "es" }}
-              También puedes leer este artículo en <a href="{{ .Permalink }}">English</a>
-            {{ else }}
-              You can also read this article in <a href="{{ .Permalink }}">Español</a>
-            {{ end }}
-          </a>
+          <a href="{{ .Permalink }}"><img src="{{ (printf "images/flag-%s.svg" (cond (eq .Lang "en") "english" "spanish")) | relURL }}" alt="{{ .Language.LanguageName }}" class="flag-icon-inline" /></a>
+          {{ if eq $.Lang "es" }}
+            También puedes leer este artículo en <a href="{{ .Permalink }}">English</a>
+          {{ else }}
+            You can also read this article in <a href="{{ .Permalink }}">Español</a>
+          {{ end }}
         {{ end }}
       </div>
     {{ end }}
