@@ -1,5 +1,6 @@
 ---
 title: "Blog"
-url: "/category/blog/"
+url: "/blog/"
+aliases: ["/category/blog/"]
 type: "category-term"
 ---

@@ -1,5 +1,6 @@
 ---
 title: "Entrevistas"
-url: "/category/interviews/"
+url: "/interviews/"
+aliases: ["/category/interviews/"]
 type: "category-term"
 ---

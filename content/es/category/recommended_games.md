@@ -1,5 +1,6 @@
 ---
 title: "Juegos Recomendados"
-url: "/category/recommended-games/"
+url: "/recommended-games/"
+aliases: ["/category/recommended-games/"]
 type: "category-term"
 ---

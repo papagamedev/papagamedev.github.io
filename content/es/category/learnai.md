@@ -1,5 +1,6 @@
 ---
 title: "Aprender AI"
-url: "/category/learnai/"
+url: "/learnai/"
+aliases: ["/category/learnai/"]
 type: "category-term"
 ---

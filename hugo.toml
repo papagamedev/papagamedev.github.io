@@ -43,13 +43,13 @@ disableKinds = ["taxonomy", "term"]
 [[menus.main]]
   identifier = "articles"
   name = "Artículos"
-  url = "/category/articles.html"
+  url = "/articles/"
   weight = 10
 
 [[menus.main]]
   identifier = "projects"
   name = "Proyectos"
-  url = "/category/projects.html"
+  url = "/projects/"
   weight = 20
 
 [[menus.main]]
@@ -68,13 +68,13 @@ disableKinds = ["taxonomy", "term"]
 [[languages.en.menus.main]]
   identifier = "articles"
   name = "Articles"
-  url = "/en/category/articles.html"
+  url = "/en/articles/"
   weight = 10
 
 [[languages.en.menus.main]]
   identifier = "projects"
   name = "Projects"
-  url = "/en/category/projects.html"
+  url = "/en/projects/"
   weight = 20
 
 [[languages.en.menus.main]]

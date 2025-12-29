@@ -1,5 +1,6 @@
 ---
 title: "Interviews"
-url: "/en/category/interviews/"
+url: "/en/interviews/"
+aliases: ["/en/category/interviews/"]
 type: "category-term"
 ---

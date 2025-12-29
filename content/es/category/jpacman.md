@@ -1,5 +1,6 @@
 ---
 title: "JPacman"
-url: "/category/jpacman/"
+url: "/jpacman/"
+aliases: ["/category/jpacman/"]
 type: "category-term"
 ---

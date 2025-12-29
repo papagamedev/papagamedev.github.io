@@ -1,5 +1,6 @@
 ---
 title: "Downloads"
-url: "/en/category/downloads/"
+url: "/en/downloads/"
+aliases: ["/en/category/downloads/"]
 type: "category-term"
 ---

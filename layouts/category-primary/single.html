@@ -1,0 +1,78 @@
+{{ define "main" }}
+<div class="primary-category-page">
+  <h1>{{ .Title }}</h1>
+  
+  {{ $categoryKey := "" }}
+  {{ if strings.Contains .RelPermalink "/articles" }}
+    {{ $categoryKey = "articles" }}
+  {{ else if strings.Contains .RelPermalink "/projects" }}
+    {{ $categoryKey = "projects" }}
+  {{ end }}
+  
+  {{ $lang := .Lang }}
+  {{ $categoryData := index .Site.Data.categories $categoryKey }}
+  
+  {{ if $categoryData }}
+    {{ $description := "" }}
+    {{ if eq $lang "es" }}
+      {{ $description = $categoryData.description.es }}
+    {{ else }}
+      {{ $description = $categoryData.description.en }}
+    {{ end }}
+    {{ if $description }}
+      <div class="primary-category-description">
+        <p>{{ $description }}</p>
+      </div>
+    {{ end }}
+  {{ end }}
+  
+  {{ with .Content }}
+    <div class="primary-category-content">
+      {{ . }}
+    </div>
+  {{ end }}
+  
+  {{/* Get all subcategories for this primary category */}}
+  {{ $subcategories := slice }}
+  {{ range $key, $value := .Site.Data.categories }}
+    {{ if and (isset $value "parent") (eq $value.parent $categoryKey) }}
+      {{ $subcategories = $subcategories | append (dict "key" $key "data" $value) }}
+    {{ end }}
+  {{ end }}
+  
+  {{/* Display each subcategory with recent posts */}}
+  {{ range $subcategories }}
+    {{ $subKey := .key }}
+    {{ $subData := .data }}
+    
+    {{/* Get subcategory name */}}
+    {{ $subName := "" }}
+    {{ if eq $lang "es" }}
+      {{ $subName = $subData.es }}
+    {{ else }}
+      {{ $subName = $subData.en }}
+    {{ end }}
+    
+    {{/* Get posts for this subcategory */}}
+    {{ $posts := where (where site.RegularPages "Lang" $lang) "Params.categories" "intersect" (slice $subKey) }}
+    
+    {{ if $posts }}
+      <section class="subcategory-section">
+        <h2>{{ $subName }}</h2>
+        <div class="post-list">
+          {{ range first 3 $posts }}
+            {{ partial "post-card.html" . }}
+          {{ end }}
+        </div>
+        {{ if gt (len $posts) 3 }}
+          <div class="view-more">
+            <a href="{{ printf "/%s/" $subKey | relLangURL }}" class="view-more-link">
+              {{ if eq $lang "es" }}Ver más...{{ else }}View more...{{ end }}
+            </a>
+          </div>
+        {{ end }}
+      </section>
+    {{ end }}
+  {{ end }}
+</div>
+{{ end }}
