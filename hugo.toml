@@ -1,4 +1,4 @@
-baseURL = "https://papagamedev.github.io/"
+baseURL = "https://papagame.dev/"
 title = "Papa Game Dev"
 languageCode = "es"
 defaultContentLanguage = "es"
@@ -33,19 +33,19 @@ enableGitInfo = true
 
 # Taxonomies
 [taxonomies]
-  category = "categories"
+  category = "category"
 
 # Main menu
 [[menus.main]]
   identifier = "articles"
   name = "Artículos"
-  url = "/articles/"
+  url = "/category/articles.html"
   weight = 10
 
 [[menus.main]]
   identifier = "projects"
   name = "Proyectos"
-  url = "/projects/"
+  url = "/category/projects.html"
   weight = 20
 
 [[menus.main]]
@@ -64,13 +64,13 @@ enableGitInfo = true
 [[languages.en.menus.main]]
   identifier = "articles"
   name = "Articles"
-  url = "/en/articles/"
+  url = "/en/category/articles.html"
   weight = 10
 
 [[languages.en.menus.main]]
   identifier = "projects"
   name = "Projects"
-  url = "/en/projects/"
+  url = "/en/category/projects.html"
   weight = 20
 
 [[languages.en.menus.main]]
@@ -88,7 +88,7 @@ enableGitInfo = true
 # Site parameters
 [params]
   author = "Juan Pablo Lastra"
-  mainSections = ["blog", "projects"]
+  mainSections = ["articles", "projects"]
   
   [params.reCaptcha]
     siteKey = "6LeaCwsTAAAAAC1B4rTP9IbD9O4WACfBXbbpWsdv"

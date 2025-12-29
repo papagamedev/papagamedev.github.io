@@ -29,7 +29,7 @@
             {{ else }}
               {{ $categoryName = . }}
             {{ end }}
-            <a href="{{ printf "/categories/%s/" . | relLangURL }}" class="post-card-category">{{ $categoryName }}</a>
+            <a href="{{ printf "/category/%s/" . | relLangURL }}" class="post-card-category">{{ $categoryName }}</a>
           {{ end }}
         </span>
       {{ end }}
