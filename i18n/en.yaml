@@ -38,11 +38,13 @@ results: "Search results"
 
 # Navigation
 blog: "Blog"
+articles: "Articles"
 projects: "Projects"
 interviews: "Interviews"
 recommendedGames: "Recommended Games"
 contact: "Contact"
 about: "About"
+viewMore: "View more..."
 
 # Forms
 contactForm: "Contact Form"

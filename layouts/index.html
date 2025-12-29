@@ -33,7 +33,7 @@
   {{ $articles := where (where site.RegularPages ".Lang" .Lang) "Type" "in" (slice "articles" "blog" "interviews" "recommended-games") }}
   {{ if $articles }}
     <section class="recent-posts">
-      <h2>{{ if eq .Lang "es" }}Artículos{{ else }}Articles{{ end }}</h2>
+      <h2>{{ i18n "articles" }}</h2>
       <div class="post-list">
         {{ range first 3 $articles }}
           {{ partial "post-card.html" . }}
@@ -41,7 +41,7 @@
       </div>
       <div class="view-more">
         <a href="{{ if eq .Lang "es" }}/articles/{{ else }}/en/articles/{{ end }}" class="view-more-link">
-          {{ if eq .Lang "es" }}Ver todos los artículos...{{ else }}View all articles...{{ end }}
+          {{ i18n "viewMore" }}
         </a>
       </div>
     </section>
@@ -51,7 +51,7 @@
   {{ $projects := where (where site.RegularPages ".Lang" .Lang) "Type" "in" (slice "projects") }}
   {{ if $projects }}
     <section class="recent-projects">
-      <h2>{{ if eq .Lang "es" }}Proyectos{{ else }}Projects{{ end }}</h2>
+      <h2>{{ i18n "projects" }}</h2>
       <div class="post-list">
         {{ range first 3 $projects }}
           {{ partial "post-card.html" . }}
@@ -59,7 +59,7 @@
       </div>
       <div class="view-more">
         <a href="{{ if eq .Lang "es" }}/projects/{{ else }}/en/projects/{{ end }}" class="view-more-link">
-          {{ if eq .Lang "es" }}Ver todos los proyectos...{{ else }}View all projects...{{ end }}
+          {{ i18n "viewMore" }}
         </a>
       </div>
     </section>
