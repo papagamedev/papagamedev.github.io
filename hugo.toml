@@ -37,15 +37,15 @@ enableGitInfo = true
 
 # Main menu
 [[menus.main]]
-  identifier = "blog"
-  name = "Blog"
-  url = "/categories/blog/"
+  identifier = "articles"
+  name = "Artículos"
+  url = "/articles/"
   weight = 10
 
 [[menus.main]]
   identifier = "projects"
   name = "Proyectos"
-  url = "/proyectos/"
+  url = "/projects/"
   weight = 20
 
 [[menus.main]]
@@ -62,9 +62,9 @@ enableGitInfo = true
 
 # English menu override
 [[languages.en.menus.main]]
-  identifier = "blog"
-  name = "Blog"
-  url = "/en/categories/blog/"
+  identifier = "articles"
+  name = "Articles"
+  url = "/en/articles/"
   weight = 10
 
 [[languages.en.menus.main]]

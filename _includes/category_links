@@ -1,9 +1,0 @@
-<span>
-  {%- assign categories = include.categories -%}
-  {%- for category in categories -%}
-    {% assign categorydata = site.data.categories[category] %}
-    {%- if include.showprimary == true or categorydata.primary == false %}
-      • {% include category_link category=category class="categorylink" -%}
-    {%- endif -%}
-  {%- endfor -%}
-</span>

@@ -1,0 +1,21 @@
+{{ define "main" }}
+<div class="subcategory-page">
+  <h1>{{ .Title }}</h1>
+  
+  {{ with .Content }}
+    <div class="subcategory-description">
+      {{ . }}
+    </div>
+  {{ end }}
+  
+  <div class="post-list">
+    {{ range .Pages }}
+      {{ partial "post-card.html" . }}
+    {{ end }}
+  </div>
+  
+  {{ if eq (len .Pages) 0 }}
+    <p>{{ if eq .Lang "es" }}No hay entradas disponibles.{{ else }}No posts available.{{ end }}</p>
+  {{ end }}
+</div>
+{{ end }}

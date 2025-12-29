@@ -30,36 +30,36 @@
   {{ end }}
   
   <!-- Recent articles -->
-  {{ $articles := where (where site.RegularPages ".Lang" .Lang) "Type" "in" (slice "blog" "interviews" "recommended-games") }}
+  {{ $articles := where (where site.RegularPages ".Lang" .Lang) "Type" "in" (slice "blog" "entrevistas" "juegos-recomendados") }}
   {{ if $articles }}
     <section class="recent-posts">
       <h2>{{ if eq .Lang "es" }}Artículos{{ else }}Articles{{ end }}</h2>
       <div class="post-list">
-        {{ range first 3 $articles }}
+        {{ range first 4 $articles }}
           {{ partial "post-card.html" . }}
         {{ end }}
       </div>
       <div class="view-more">
-        <a href="{{ "/categories/blog/" | relLangURL }}" class="view-more-link">
-          {{ if eq .Lang "es" }}Ver todas las entradas...{{ else }}View all entries...{{ end }}
+        <a href="{{ if eq .Lang "es" }}/articles/{{ else }}/en/articles/{{ end }}" class="view-more-link">
+          {{ if eq .Lang "es" }}Ver todos los artículos...{{ else }}View all articles...{{ end }}
         </a>
       </div>
     </section>
   {{ end }}
   
   <!-- Recent projects -->
-  {{ $projects := where (where site.RegularPages ".Lang" .Lang) "Type" "in" (slice "proyectos" "projects") }}
+  {{ $projects := where (where site.RegularPages ".Lang" .Lang) "Type" "in" (slice "jpacman" "learnai" "downloads") }}
   {{ if $projects }}
     <section class="recent-projects">
       <h2>{{ if eq .Lang "es" }}Proyectos{{ else }}Projects{{ end }}</h2>
       <div class="post-list">
-        {{ range first 3 $projects }}
+        {{ range first 4 $projects }}
           {{ partial "post-card.html" . }}
         {{ end }}
       </div>
       <div class="view-more">
-        <a href="{{ "/proyectos/" | relLangURL }}" class="view-more-link">
-          {{ if eq .Lang "es" }}Ver todas las entradas...{{ else }}View all entries...{{ end }}
+        <a href="{{ if eq .Lang "es" }}/projects/{{ else }}/en/projects/{{ end }}" class="view-more-link">
+          {{ if eq .Lang "es" }}Ver todos los proyectos...{{ else }}View all projects...{{ end }}
         </a>
       </div>
     </section>

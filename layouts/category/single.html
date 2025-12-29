@@ -1,0 +1,39 @@
+{{ define "main" }}
+<div class="category-page">
+  <h1>{{ .Title }}</h1>
+  
+  {{ with .Content }}
+    <div class="category-description">
+      {{ . }}
+    </div>
+  {{ end }}
+  
+  {{ $lang := .Lang }}
+  {{ $subcategories := .Params.subcategories }}
+  
+  {{ range $subcategories }}
+    {{ $subcat := . }}
+    {{ $subcatType := .type }}
+    {{ $subcatTitle := .title }}
+    {{ $subcatLink := .link }}
+    
+    {{ $posts := where (where site.RegularPages ".Lang" $lang) "Type" $subcatType }}
+    
+    {{ if $posts }}
+      <section class="subcategory-section">
+        <h2>{{ $subcatTitle }}</h2>
+        <div class="post-list">
+          {{ range first 3 $posts }}
+            {{ partial "post-card.html" . }}
+          {{ end }}
+        </div>
+        <div class="view-more">
+          <a href="{{ $subcatLink | relLangURL }}" class="view-more-link">
+            {{ if eq $lang "es" }}Ver todos...{{ else }}View all...{{ end }}
+          </a>
+        </div>
+      </section>
+    {{ end }}
+  {{ end }}
+</div>
+{{ end }}

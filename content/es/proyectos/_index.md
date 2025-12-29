@@ -5,5 +5,5 @@ translationKey: "projects"
 slug: "proyectos"
 ---
 
-Aquí están nuestros proyectos principales de desarrollo de videojuegos.
+
 

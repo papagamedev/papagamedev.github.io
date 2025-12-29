@@ -1,1 +1,0 @@
-{% include message_script btn_sent_loc_key="comment_btn_submitted" btn_loc_key="contact_btn_submit" error_loc_key="contact_error_msg" success_loc_key="contact_success_msg" %}

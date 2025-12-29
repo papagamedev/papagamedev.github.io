@@ -391,6 +391,41 @@ table th {
   text-decoration: none;
 }
 
+/* Category Page */
+.category-page {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.category-description {
+  font-size: 1.1em;
+  line-height: 1.8;
+  margin-bottom: 40px;
+}
+
+.subcategory-section {
+  margin-bottom: 50px;
+}
+
+.subcategory-section h2 {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid var(--grey-color-light);
+  padding-bottom: 10px;
+}
+
+/* Subcategory Page */
+.subcategory-page {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.subcategory-description {
+  font-size: 1.1em;
+  line-height: 1.8;
+  margin-bottom: 40px;
+}
+
 .post-list {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
