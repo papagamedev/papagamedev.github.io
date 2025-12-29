@@ -1,6 +1,8 @@
 <header class="site-header">
   <div class="wrapper">
-    <a class="site-title" href="{{ "/" | relLangURL }}">{{ site.Title }}</a>
+    <a class="site-logo" href="{{ "/" | relLangURL }}">
+      <img alt="{{ site.Title }}" src="{{ "images/papagamedev_logo_web.png" | relURL }}" width="300"/>
+    </a>
     
     <nav class="site-nav">
       <ul class="nav-links">
@@ -11,25 +13,30 @@
             </a>
           </li>
         {{ end }}
-      </ul>
-      
-      <!-- Language toggle -->
-      <div class="lang-toggle">
-        {{ if .IsTranslated }}
-          {{ range .Translations }}
-            <a href="{{ .Permalink }}" title="{{ .Language.LanguageName }}" class="lang-link">
-              {{ if eq .Lang "en" }}🇺🇸{{ else }}🇪🇸{{ end }}
-            </a>
-          {{ end }}
-        {{ else }}
-          {{/* Link to home of other language if no translation exists */}}
-          {{ if eq .Lang "es" }}
-            <a href="/en/" title="English" class="lang-link">🇺🇸</a>
+        
+        <!-- Language toggle as part of nav -->
+        <li class="lang-toggle-item">
+          {{/* Show current language flag, link to translation */}}
+          {{ if .IsTranslated }}
+            {{ range .Translations }}
+              <a href="{{ .Permalink }}" title="{{ .Language.LanguageName }}" class="lang-link">
+                <img src="{{ (printf "images/flag-%s.svg" (cond (eq $.Lang "en") "english" "spanish")) | relURL }}" alt="{{ $.Language.LanguageName }}" class="flag-icon" />
+              </a>
+            {{ end }}
           {{ else }}
-            <a href="/" title="Español" class="lang-link">🇪🇸</a>
+            {{/* Link to home of other language if no translation exists, but show current language flag */}}
+            {{ if eq .Lang "es" }}
+              <a href="/en/" title="English" class="lang-link">
+                <img src="{{ "images/flag-spanish.svg" | relURL }}" alt="Español" class="flag-icon" />
+              </a>
+            {{ else }}
+              <a href="/" title="Español" class="lang-link">
+                <img src="{{ "images/flag-english.svg" | relURL }}" alt="English" class="flag-icon" />
+              </a>
+            {{ end }}
           {{ end }}
-        {{ end }}
-      </div>
+        </li>
+      </ul>
     </nav>
   </div>
 </header>

@@ -54,6 +54,12 @@ enableGitInfo = true
   url = "/contacto/"
   weight = 30
 
+[[menus.main]]
+  identifier = "search"
+  name = "Buscar"
+  url = "/buscar/"
+  weight = 40
+
 # English menu override
 [[languages.en.menus.main]]
   identifier = "blog"
@@ -72,6 +78,12 @@ enableGitInfo = true
   name = "Contact"
   url = "/en/contact/"
   weight = 30
+
+[[languages.en.menus.main]]
+  identifier = "search"
+  name = "Search"
+  url = "/en/search/"
+  weight = 40
 
 # Site parameters
 [params]
