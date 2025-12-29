@@ -11,6 +11,9 @@ defaultContentLanguageInSubdir = false
 enableRobotsTXT = true
 enableGitInfo = true
 
+# Disable auto-generated taxonomy term pages (we'll use custom pages under /category/)
+disableKinds = ["taxonomy", "term"]
+
 # Multilingual configuration
 [languages]
   [languages.es]
@@ -30,6 +33,7 @@ enableGitInfo = true
 [permalinks]
   posts = "/:year/:month/:slug/"
   blog = "/:year/:month/:slug/"
+  category = "/category/:slug/"
 
 # Taxonomies
 [taxonomies]
