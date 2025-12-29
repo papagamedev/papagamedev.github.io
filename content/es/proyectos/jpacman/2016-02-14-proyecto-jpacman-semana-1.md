@@ -1,10 +1,12 @@
 ---
 title: >
     Proyecto JPacman: Semana #1
-image: images/jpacman-semana1-banner-750x350.jpg
+date: 2016-02-14
+image: /images/jpacman-semana1-banner-750x350.jpg
 author: jpl
 lang: es
-translation_url: project-jpacman-week-1.html
+categories: ["projects", "jpacman"]
+translationKey: proyecto-jpacman-semana-1
 description: >
     Empieza el proyecto JPacman: retomar un juego que desarrollé con fines no comerciales hace mucho tiempo. ¡Descarga la versión original construida en 1999!
 ---
@@ -17,9 +19,9 @@ Sin embargo, en el viejo disco de respaldo no sólo estaba el código fuente. ¡
 
 Incrédulo, observé cómo empezaba la melodía y se animaba la introducción que había programado tanto tiempo atrás.
 
-{% include image url="jpacman-intro.png" caption="Hace diecisiete años, estaba decidido a tener mi propia empresa de videojuegos. Su nombre sería JPL Soft, otro chispazo notable de creatividad." %}
+{{< image url="jpacman-intro.png" caption="Hace diecisiete años, estaba decidido a tener mi propia empresa de videojuegos. Su nombre sería JPL Soft, otro chispazo notable de creatividad." >}}
 
-A principios de este año, medité bastante acerca de mis experiencias del año anterior e incluso escribí un artículo al respecto ([«¡Adios 2015! Dos breves historias y nuevos desafíos»]({% post_url /articles/blog/2016-01-24-adios-2015-dos-breves-historias %})). Sentí que era hora de poner manos a la obra y me propuse retomar, durante el 2016, algunos de estos proyectos.
+A principios de este año, medité bastante acerca de mis experiencias del año anterior e incluso escribí un artículo al respecto ([«¡Adios 2015! Dos breves historias y nuevos desafíos»]({{< relref "blog/2016-01-24-adios-2015-dos-breves-historias.md" >}})). Sentí que era hora de poner manos a la obra y me propuse retomar, durante el 2016, algunos de estos proyectos.
 
 *Ha llegado el momento de revivir JPacman.*
 
@@ -31,7 +33,7 @@ Hay que ser realistas. No puedo olvidar que **JPacman es un clon de Pacman, un m
 
 La última que publicaron se llama Pacman 256 y está disponible para Android ([enlace a Google Play](https://play.google.com/store/apps/details?id=eu.bandainamcoent.pacman256&hl=es_419)) y para iOS ([enlace a Apple Store](https://itunes.apple.com/us/app/pac-man-256-endless-arcade/id1002340615?mt=8)), y tal vez para otras plataformas. Es un juego entretenido y al parecer le ha ido muy bien, tanto comercialmente como a nivel de la recepción de la crítica especializada.
 
-{% include image url="pacman256-screenshot.jpg" caption="Pacman 256, publicado por Namco Bandai. Aunque es un juego exitoso, en mi humilde opinión mataron el espíritu de Pacman con la modernización que hicieron." %}
+{{< image url="pacman256-screenshot.jpg" caption="Pacman 256, publicado por Namco Bandai. Aunque es un juego exitoso, en mi humilde opinión mataron el espíritu de Pacman con la modernización que hicieron." >}}
 
 Quiero dejar claro (y por escrito) que **mi intención no es infringir los derechos de autor de Namco Bandai**, por lo que sé que no puedo publicar JPacman en alguna tienda tal cual está.
 
@@ -47,7 +49,7 @@ Esta semana, al empezar a trabajar en el proyecto, me encontré rápidamente con
 
 Cuando probé el juego hace varios meses, lo hice en el computador que tenemos en casa, con Windows 7 instalado. Hace algunas semanas, sin embargo, me decidí a aceptar el insistente ofrecimiento que Microsoft me hacía de actualizar a Windows 10 y, para sorpresa mía, ¡en esta nueva versión el juego ya no funciona!
 
-{% include image url="jpacman-intro-broken.png" caption="En Windows 8 y Windows 10, el juego aparece en una ventana y funciona muy muy muy lento, algo así como a 2 cuadros por segundo. ¡No se puede jugar!" %}
+{{< image url="jpacman-intro-broken.png" caption="En Windows 8 y Windows 10, el juego aparece en una ventana y funciona muy muy muy lento, algo así como a 2 cuadros por segundo. ¡No se puede jugar!" >}}
 
 El primer desafío técnico había aparecido: **descubrir por qué el juego ya no funcionaba en el último Windows e, idealmente, encontrar una solución**.
 
@@ -67,8 +69,9 @@ He decidido llamar **JPacman 0.1999** a esta versión original del juego, por el
 
 Sé que no puedo publicar el juego por el tema de los derechos de autor, pero espero no tener problemas por compartir en Papá Game Dev esta versión, desarrollada sin ningún fin comercial, hace más de quince años.
 
-{% include image url="jpacman.jpg" caption="¡Descarga JPacman 0.1999 ahora!" %}
+{{< image url="jpacman.jpg" caption="¡Descarga JPacman 0.1999 ahora!" >}}
 
-Puedes obtenerlo desde la página de [descarga de JPacman 0.1999]({% post_url /projects/downloads/2016-02-14-descarga-jpacman-01999 %})
+Puedes obtenerlo desde la página de [descarga de JPacman 0.1999]({{< relref "proyectos/downloads/2016-02-14-descarga-jpacman-01999.md" >}})
 
-También puedes revisar en esta sección todas las actualizaciones al [Proyecto JPacman]({% link category/jpacman-es.md  %})
+También puedes revisar en esta sección todas las actualizaciones al [Proyecto JPacman]({{< relref "proyectos/jpacman/_index.md" >}})
+

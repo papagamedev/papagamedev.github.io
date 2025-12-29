@@ -1,14 +1,16 @@
 ---
 title: >
     Project JPacman #4: First Signs of Life
-image: images/jpacman_alive_banner-750x350.jpg
+date: 2016-09-04
+image: /images/jpacman_alive_banner-750x350.jpg
 author: jpl
 lang: en
-translation_url: proyecto-jpacman-4-primeras-vida.html
+categories: ["projects", "jpacman"]
+translationKey: proyecto-jpacman-4-primeras-vida
 description: The JPacman production has been started. Analysis of the source code modules. Making the game code compile with Cocos2d-x.
 ---
 
-During the second half of February, after [choosing Cocos2d-x]({% post_url /projects/jpacman/2016-07-29-project-jpacman-3-new-toolset %}) as the game engine to use, I had completed all the **pre-production** phase of my JPacman Project. As a result, I had a goal, tools, and a plan.
+During the second half of February, after [choosing Cocos2d-x]({{< relref "projects/jpacman/2016-07-29-project-jpacman-3-new-toolset.md" >}}) as the game engine to use, I had completed all the **pre-production** phase of my JPacman Project. As a result, I had a goal, tools, and a plan.
 
 The goal was clear: to resurrect **JPacman**, a clone of the classic Pac-Man game that I originally developed in 1999 and whose latest version barely worked in modern computers given the obsolete tools with which it was developed.
 
@@ -20,7 +22,7 @@ I did not have time to look at the project until the end of March, when I could 
 
 ## JPacman source code inspection
 
-To move forward, I had to do a further inspection of the original JPacman source code (available in the [Bitbucket repository]({% post_url /projects/jpacman/2016-07-09-project-jpacman-version-control %})). I could then classify the files into four groups:
+To move forward, I had to do a further inspection of the original JPacman source code (available in the [Bitbucket repository]({{< relref "projects/jpacman/2016-07-09-project-jpacman-version-control.md" >}}))). I could then classify the files into four groups:
 
 1. **Game Module**: contains the gameplay and interfaces logic, and it did not directly use anything related to the obsolete libraries. (Files: *Game.cpp, Intro.cpp, Menu.cpp, Puntajes.cpp*)
 1. **Resources Module**: contains an abstraction for managing the game controls, graphics and sounds, allowing the rest of the game to use such resources without calling directly to the now obsolete DirectX libraries. (Files: *Input.cpp, Input.h, Gfx.cpp, Sfx.cpp, Music.cpp*)
@@ -29,7 +31,7 @@ To move forward, I had to do a further inspection of the original JPacman source
 
 The following diagram shows the relationship between the modules, DirectX and the operating system:
 
-{% include image url="modulos_jpacman.png" caption="The modules of the JPacman original version and their relationship with DirectX and the Operating System." %}
+{{< image url="modulos_jpacman.png" caption="The modules of the JPacman original version and their relationship with DirectX and the Operating System." >}}
 
 **Cocos2d-x**, as most videogame engines, provides an implementation that facilitates **an abstraction of the whole graphics and sound systems**, as well as **controls** management. It also **implements the main game loop** and provides numerous debugging helpers, among many other support features.
 
@@ -48,7 +50,7 @@ To begin with the Resources module re-implementation, I added all files in the R
 
 The first and most obvious thing to do was to disable all the DirectX related code. For this purpose, I added a pre-processor definition called **JPACMAN_COCOS2DX** that would be defined only in the Cocos2d-x version of the game. I then used it to remove large portions of the Resources module code from the build, and also some small references in the Game module.
 
-{% include image url="jpacman_prepdef.png" caption="The JPACMAN_COCOS2DX preprocessor definition was used to disable large sections of code that were using DirectX libraries. In some cases, this code was replaced by empty functions that would later be filled with calls to Cocos2d-x API." %}
+{{< image url="jpacman_prepdef.png" caption="The JPACMAN_COCOS2DX preprocessor definition was used to disable large sections of code that were using DirectX libraries. In some cases, this code was replaced by empty functions that would later be filled with calls to Cocos2d-x API." >}}
 
 I also had to make some changes to definitions belonging to older versions of the Windows SDK that were no longer available. The same thing happened with some system library files that I had to add that were not previously required.
 
@@ -62,6 +64,7 @@ The game window was completely black. But the output console had two clear and a
 
 **JPacman was showing some signs of life again.**
 
-{% include image url="jpacman_alive.png" caption="Although the game window looked completely black, you could read “Menu setup” on the console, indicating that the Menu module was initialized after finishing the game Intro." %}
+{{< image url="jpacman_alive.png" caption="Although the game window looked completely black, you could read “Menu setup” on the console, indicating that the Menu module was initialized after finishing the game Intro." >}}
 
 *Have you been through a similar experience? Have you ported code that worked with DirectX to a more modern engine such as Cocos2d -x? Did you have similar issues?*
+

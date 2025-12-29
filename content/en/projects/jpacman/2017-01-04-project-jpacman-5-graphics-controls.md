@@ -1,14 +1,16 @@
 ---
 title: >
     Project JPacman #5: Graphics and Controls
-image: images/jpacman_graphics_banner-750x350.jpg
+date: 2017-01-04
+image: /images/jpacman_graphics_banner-750x350.jpg
 author: jpl
 lang: en
-translation_url: proyecto-jpacman-5-graficos-controles.html
+categories: ["projects", "jpacman"]
+translationKey: proyecto-jpacman-5-graficos-controles
 description: JPacman logic was working with Cocos2d-x, so it’s time to make the graphics and controls work so that the game is playable again.
 ---
 
-After JPacman had given the [first signs of life]({% post_url /projects/jpacman/2016-09-04-project-jpacman-4-first-signs-life %}) using Cocos2d-x, it was time to make it finally playable again. What was missing for this? Two things: to see the graphics on screen and to use the keyboard to control menus and main character.
+After JPacman had given the [first signs of life]({{< relref "projects/jpacman/2016-09-04-project-jpacman-4-first-signs-life.md" >}}) using Cocos2d-x, it was time to make it finally playable again. What was missing for this? Two things: to see the graphics on screen and to use the keyboard to control menus and main character.
 
 ## Graphics on Screen
 
@@ -16,11 +18,11 @@ In order to display the graphics on the screen and keep the logic that I had alr
 
 I discovered that JPacman loaded only one large image per scene. At the top of each image there was the background of the scene at full screen size, which meant a resolution of 640 by 480 pixels. There were four different scenes in the game and so there were four image files: *intro, main menu, best scores screen and the game scene*.
 
-{% include image url="jpacman_fondos.jpg" caption="The backgrounds of the four JPacman scenes: the scene to play has the maze painted in the background; the intro has a black background; the menus have a (horrible) green bricks background, and the main menu has the game logo over it." %}
+{{< image url="jpacman_fondos.jpg" caption="The backgrounds of the four JPacman scenes: the scene to play has the maze painted in the background; the intro has a black background; the menus have a (horrible) green bricks background, and the main menu has the game logo over it." >}}
 
 Each of the four files had repeated in the bottom a series of images with all the drawings of the animations of the game characters and dynamic objects. It surprised me that almost twenty years ago I actually used what is known in the industry as a textures atlas, because it is one of the most efficient ways to handle image files in a videogame of this type.
 
-{% include image url="jpacman_sprites.jpg" caption="The images and animations of the characters and dynamic objects of JPacman, using the technique known as texture atlas." %}
+{{< image url="jpacman_sprites.jpg" caption="The images and animations of the characters and dynamic objects of JPacman, using the technique known as texture atlas." >}}
 
 I had to convert image files to PNG, because the original version of JPacman used image files in BMP format, and Cocos2d-x does not support that format. Also, I separated the texture atlas sectipn from the backgrounds in the image files because I thought it would be better for managing the loading and unloading of the images.
 
@@ -38,4 +40,5 @@ Then I added the code to register a Cocos2d-x event listener and added the handl
 
 *JPacman was playable again!*
 
-{% include image url="jpacman_cocos2dx.jpg" caption="Having connected the graphics and keyboard of the original code with Cocos2d-x, JPacman was playable again!" %}
+{{< image url="jpacman_cocos2dx.jpg" caption="Having connected the graphics and keyboard of the original code with Cocos2d-x, JPacman was playable again!" >}}
+

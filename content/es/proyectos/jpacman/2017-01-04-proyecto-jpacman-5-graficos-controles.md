@@ -1,14 +1,16 @@
 ---
 title: >
     Proyecto JPacman #5: Gráficos y Controles
-image: images/jpacman_graphics_banner-750x350.jpg
+date: 2017-01-04
+image: /images/jpacman_graphics_banner-750x350.jpg
 author: jpl
 lang: es
-translation_url: project-jpacman-5-graphics-controls.html
+categories: ["projects", "jpacman"]
+translationKey: proyecto-jpacman-5-graficos-controles
 description: La lógica de JPacman ya funciona con Cocos2d-x, y es hora de hacer funcionar los gráficos y los controles para hacerlo jugable nuevamente.
 ---
 
-Después de que JPacman había dado [las primeras señales]({% post_url /projects/jpacman/2016-09-04-proyecto-jpacman-4-primeras-vida %}) de vida usando Cocos2d-x, era hora de hacer que por fin se pudiera volver a jugar. ¿Qué faltaba para esto? Dos cosas: que se vieran los gráficos en pantalla y que se pudiera usar el teclado para controlar menús y personaje.
+Después de que JPacman había dado [las primeras señales]({{< relref "proyectos/jpacman/2016-09-04-proyecto-jpacman-4-primeras-vida.md" >}}) de vida usando Cocos2d-x, era hora de hacer que por fin se pudiera volver a jugar. ¿Qué faltaba para esto? Dos cosas: que se vieran los gráficos en pantalla y que se pudiera usar el teclado para controlar menús y personaje.
 
 ## Gráficos en Pantalla
 
@@ -16,11 +18,11 @@ Para poder mostrar los gráficos en pantalla y mantener la lógica que ya tenía
 
 Descubrí que JPacman cargaba sólo una gran imagen por escena. En la parte superior de cada imagen estaba el fondo de la escena, del tamaño de la pantalla completa a una resolución de 640 por 480 pixeles. Había cuatro escenas diferentes en el juego y por tanto había cuatro archivos de imagen: *introducción, menú principal, pantalla de mejores puntajes y la escena del juego*.
 
-{% include image url="jpacman_fondos.jpg" caption="Los fondos de las cuatro escenas de JPacman: la escena para jugar tiene el laberinto pintado en el fondo, la introducción tiene un fondo negro, los menús tienen un fondo (horrible) de ladrillos verdes, y el menú principal tiene el nombre del juego superpuesto." %}
+{{< image url="jpacman_fondos.jpg" caption="Los fondos de las cuatro escenas de JPacman: la escena para jugar tiene el laberinto pintado en el fondo, la introducción tiene un fondo negro, los menús tienen un fondo (horrible) de ladrillos verdes, y el menú principal tiene el nombre del juego superpuesto." >}}
 
 Cada una de los cuatro archivos tenía repetido en la parte inferior una serie de imágenes con todos los dibujos de las animaciones de los personajes y objetos dinámicos del juego. Me llamó mucho la atención que hace casi veinte años ya hubiera usado lo que se conoce en la industria como un atlas de texturas, pues es una de las maneras más eficientes de manejar archivos de imágenes en un videojuego de este tipo.
 
-{% include image url="jpacman_sprites.jpg" caption="Los dibujos y las animaciones de personajes y objetos dinámicos de JPacman, utilizando la técnica conocida como atlas de texturas." %}
+{{< image url="jpacman_sprites.jpg" caption="Los dibujos y las animaciones de personajes y objetos dinámicos de JPacman, utilizando la técnica conocida como atlas de texturas." >}}
 
 Tuve que convertir los archivos de imagen a PNG, pues la versión original de JPacman usaba archivos de imágenes en formato BMP, y Cocos2d-x no soporta ese formato. Además, separé el atlas de los fondos de las imágenes pues me pareció que sería mejor para manejar la carga y descarga de las imágenes.
 
@@ -38,4 +40,5 @@ Luego, agregué el código para registrar un receptor de eventos (event listener
 
 *¡JPacman ya se podía jugar nuevamente!*
 
-{% include image url="jpacman_cocos2dx.jpg" caption="Habiendo conectado los gráficos y el teclado del código original con Cocos2d-x, ¡JPacman se podía jugar nuevamente!" %}
+{{< image url="jpacman_cocos2dx.jpg" caption="Habiendo conectado los gráficos y el teclado del código original con Cocos2d-x, ¡JPacman se podía jugar nuevamente!" >}}
+

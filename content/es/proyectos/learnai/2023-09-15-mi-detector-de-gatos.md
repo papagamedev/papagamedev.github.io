@@ -1,9 +1,11 @@
 ---
 title: Mi detector de gatos
-image: images/learnai/ori_y_gateto.jpg
+date: 2023-09-15
+image: /images/learnai/ori_y_gateto.jpg
 author: jpl
 lang: es
-translation_url: my-cat-detector.html
+categories: ["projects", "learnai"]
+translationKey: mi-detector-de-gatos
 description: Construyendo un modelo de IA para reconocer fotos de mis dos gatos.
 featured: true
 ---
@@ -14,7 +16,7 @@ El desafío en esta ocasión ([del capítulo 2 del curso](https://github.com/fas
 
 Como el tema era libre, y a mi me gustan los gatos, decidí que mi primer proyecto personal sería un modelo que pudiera distinguir entre mis dos gatos: Ori y Gateto.
 
-{% include image url="learnai/ori_y_gateto.jpg" caption="Mis dos gatos: Gateto a la izquierda y Ori a la derecha." %}
+{{< image url="learnai/ori_y_gateto.jpg" caption="Mis dos gatos: Gateto a la izquierda y Ori a la derecha." >}}
 
 ## Obteniendo data
 
@@ -26,7 +28,7 @@ Después de algunas horas de trabajo y bastante paciencia, pude tener dos carpet
 
 ¿Por qué sincronicé las fotos a mi Google Drive? Porque la herramienta que usé para el siguiente paso del proceso se puede conectar fácilmente con Drive para tomar desde ahí las fotos.
 
-{% include image url="learnai/catdetector_pictures.jpg" caption="Decenas de fotos de mis gatos, subidas en Google Drive" %}
+{{< image url="learnai/catdetector_pictures.jpg" caption="Decenas de fotos de mis gatos, subidas en Google Drive" >}}
 
 ## Entrenando al modelo
 
@@ -36,30 +38,30 @@ Además, hay plataformas web que integran una herramienta llamada "Jupyter noteb
 
 En Google Colab, creé un nuevo Notebook, lo conecté con mi Google Drive, y fui escribiendo código según lo aprendido en el curso. Primero, actualizar los paquetes de Python y cargar las librerías de FastAI que permiten hacer el entrenamiento y uso del modelo de AI.
 
-{% highlight python %}
+```python
 !pip install --upgrade ipywidgets
 !pip install --upgrade fastai
 !pip install --upgrade fastbook
 
 from fastai.vision.all import *
 from fastai.vision.widgets import *
-{% endhighlight %}
+```
 
 Luego, cargar los nombres de los archivos y limpiar cualquier imagen que el modelo no pueda cargar. Esto me ocurrió, por ejemplo, con fotos que había tomado con mi celular y habían sido grabadas en formato HEIC (High Eficiency Image, una especie de super-JPG), que la librería de Fast.Ai no lee. Luego las convertí localmente a JPG y las volví a subir para que funcionaran bien.
 
-{% highlight python %}
+```python
 path="drive/MyDrive/ColabNotebooks/Gatos"
 fns = get_image_files(path)
 
 failed = verify_images(fns)
 failed.map(Path.unlink)
-{% endhighlight %}
+```
 
 A continuación hay que cargar la data para que el modelo la tenga disponible. Se usa "get_image_files" para obtener todos los archivos en la ruta definida, "RandomSplitter" para separar un set de validación de 20% (y dejar el 80% de las imágenes para el entrenamiento).
 
 También se usa "Resize" para escalar todas las imagenes a cuadrados de 192 pixeles cortando lo que sobre vertical u horizontalmente. Originalmente había usado "RandomResizeCrop" como se sugiere en el curso, pero tuve peores resultados que con "Resize", aparentemente porque tengo pocas imágenes de Ori comparado con lo que tengo de Gateto.
 
-{% highlight python %}
+```python
 dls = DataBlock(
     blocks=(ImageBlock, CategoryBlock),
     get_items=get_image_files,
@@ -68,16 +70,16 @@ dls = DataBlock(
     item_tfms=[Resize(192, method='crop')]
 ).dataloaders(path, bs=32)
 dls.show_batch(max_n=6)
-{% endhighlight %}
+```
 
-{% include image url="learnai/catdetector_datablock.jpg" caption="El modelo carga las imágenes de los gatos y las identifica correctamente según el nombre de la carpeta." %}
+{{< image url="learnai/catdetector_datablock.jpg" caption="El modelo carga las imágenes de los gatos y las identifica correctamente según el nombre de la carpeta." >}}
 
 El siguiente paso es ejecutar el modelo de reconocimiento de imágenes para entrenarlo con las imágenes de la data.
 
-{% highlight python %}
+```python
 learn = vision_learner(dls, resnet18, metrics=error_rate)
 learn.fine_tune(3)
-{% endhighlight %}
+```
 
 epoch|train_loss|valid_loss|error_rate|time
 ---|---|---|---|---
@@ -87,26 +89,26 @@ epoch|train_loss|valid_loss|error_rate|time
 
 El proceso muestra un error de 7.5% después de terminar las 3 fases de entrenamiento. La librería de fast.ai también incluye una manera de interpretar los resultados y poder entender, por ejemplo, cuáles son los errores detectados que no pudieron ser resueltos.
 
-{% highlight python %}
+```python
 interp = ClassificationInterpretation.from_learner(learn)
 interp.plot_confusion_matrix()
-{% endhighlight %}
+```
 
-{% include image url="learnai/catdetector_confussionmatrix.png" caption="La Matriz de Confusión muestra cuántas fotos de cada tipo fueron incorrectamente clasificas con la versión entrenada del modelo. En este caso, 3 fotos de Gateto fueron detectadas como Ori incorrectamente." %}
+{{< image url="learnai/catdetector_confussionmatrix.png" caption="La Matriz de Confusión muestra cuántas fotos de cada tipo fueron incorrectamente clasificas con la versión entrenada del modelo. En este caso, 3 fotos de Gateto fueron detectadas como Ori incorrectamente." >}}
 
 Hice múltiples pruebas, las primeras con menos imágenes, y luego fui agregando más para mejorar la precisión del reconocimiento. Lo mejor que pude conseguir fue un 7.5% de eror, y según lo que he aprendido, creo que la única manera de mejorar esto es tener más fotos, especialmente de Ori. 
 
-{% highlight python %}
+```python
 interp.plot_top_losses(5, nrows=1)
-{% endhighlight %}
+```
 
-{% include image url="learnai/catdetector_toplosses.jpg" caption="La herramienta tambien permite ver exactamente cuáles son las imágenes que no son correctamente reconocidas." %}
+{{< image url="learnai/catdetector_toplosses.jpg" caption="La herramienta tambien permite ver exactamente cuáles son las imágenes que no son correctamente reconocidas." >}}
 
 Tal vez al ir avanzando en el curso aprenda otras técnicas que me permitan mejorarlo. De todas maneras, con la precisión actual sentí que era suficiente para un primer proyecto personal, por lo que seguí con la siguiente fase que es exportar el modelo de datos para luego poder usarlo para detectar a mis gatos:
 
-{% highlight python %}
+`python
 learn.export('model_ori_gateto.pkl')
-{% endhighlight %}
+```
 
 ## Publicando el detector de gatos
 
@@ -114,7 +116,7 @@ El último desafío del proyecto es publicar el modelo para poder "usarlo". En e
 
 Creé una cuenta nueva, primero una personal y luego una para PapaGameDev. A continuación creé un nuevo "Space" en la plataforma y agregué los archivos que el tutorial indicaba, usando este código para el archivo principal en Python.
 
-{% highlight python %}
+```python
 import gradio as gr
 from fastai.vision.all import *
 import skimage
@@ -132,16 +134,17 @@ interpretation='default'
 enable_queue=True
 
 gr.Interface(fn=predict,inputs=gr.inputs.Image(shape=(512, 512)),outputs=gr.outputs.Label(num_top_classes=3),title=title,description=description,examples=examples,interpretation=interpretation,enable_queue=enable_queue).launch()
-{% endhighlight %}
+```
 
 El código usa una herramienta llamada Gradio para usar modelos ya entrenados en una interfaz web muy simple que permite generar un formulario, con descripción, ejemplos y entregar resultados.
 
 En este sitio web se puede ver funcionando el modelo de [Mi Detector de Gatos](https://huggingface.co/spaces/papagamedev/mycatdetector). Hay dos imágenes de ejemplo, una de cada uno de mis gatos, y las reconoce correctamente. 
 
-{% include image url="learnai/catdetector_huggingface.jpg" caption="¡Mi detector de gatos en acción!" %}
+{{< image url="learnai/catdetector_huggingface.jpg" caption="¡Mi detector de gatos en acción!" >}}
 
 Lo he usado mostrándoselo a mi familia, sacándole fotos a los gatos y usando esas nuevas fotos con el modelo, ¡y funciona perfecto! Así que me doy por satisfecho con el resultado, y cierro con esto mi primer proyecto personal de AI. 
 
 Seguro que alguien con más experiencia encuentra fallos en lo que hice y a lo mejor me puede ayudar a aprender algo nuevo y mejorarlo. Pero por lo pronto, seguiré con el curso aprendiendo y practicando a mi ritmo.
 
 *¿Qué opinan de este primer proyecto? ¿Han hecho algo similar o se atreven a probar por su cuenta?*
+

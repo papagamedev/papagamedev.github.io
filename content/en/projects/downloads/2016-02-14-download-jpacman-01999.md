@@ -1,14 +1,15 @@
 ---
 title: Download JPacman 0.1999
-image: images/jpacman.jpg
+date: 2016-02-14
+image: /images/jpacman.jpg
 author: jpl
 lang: en
-translation_url: descarga-jpacman-01999.html
-category: jpacman
+categories: ["projects", "downloads"]
+translationKey: descarga-jpacman-01999
 description: Download the original version of JPacman 0.1999
 ---
 
-{% include image url="jpacman.jpg" %}
+{{< image url="jpacman.jpg" >}}
 
 |File|[JPacman-0.1999.zip](/downloads/JPacman-0.1999.zip)|
 |Plataform|Windows|
@@ -56,3 +57,4 @@ JPacman was developed with a recreational and educational purpose and it's not a
 Pac-man is a registered trademark and it's a property of Namco Bandai. [http://pacman.com/](http://pacman.com/)
 
 Aqrit's ddWrapper was developed by Aqrit. [http://bitpatch.com/ddwrapper.html](http://bitpatch.com/ddwrapper.html)
+

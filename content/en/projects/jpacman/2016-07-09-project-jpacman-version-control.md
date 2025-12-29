@@ -1,10 +1,12 @@
 ---
 title: >
     Project JPacman #2: Version Control System
-image: images/jpacman_scm_banner-750x350.jpg
+date: 2016-07-09
+image: /images/jpacman_scm_banner-750x350.jpg
 author: jpl
 lang: en
-translation_url: proyecto-jpacman-control-de-versiones.html
+categories: ["projects", "jpacman"]
+translationKey: proyecto-jpacman-control-de-versiones
 description: Resuming Project JPacman after several months without working on it. Creating the Version Control System repository. The source code first public version.
 ---
 
@@ -20,7 +22,7 @@ Until now.
 
 First things first. **No matter if the project is small or large, if you work alone or in a team of a hundred people. You must use a Version Control System** to keep changes under control and to have a backup in case anything unforeseen happens.
 
-{% include image url="scm_diagrama.jpg" caption="In a traditional version control system, developers work on their computers and send their modifications (and receive changes from the rest of the team) through a central repository, which can be on another computer or in the cloud." %}
+{{< image url="scm_diagrama.jpg" caption="In a traditional version control system, developers work on their computers and send their modifications (and receive changes from the rest of the team) through a central repository, which can be on another computer or in the cloud." >}}
 
 There are many version control systems, some more popular than others. Some of them can be installed directly as a service or application on the computer, while others are offered as a cloud service.
 
@@ -37,16 +39,17 @@ To work with GIT, you need to create a **working repository**, and then **clone 
 
 It is not my intention to explain how to use GIT in this article, but there are hundreds of tutorials and very detailed documentation online. GIT has plenty of advanced features that can be accessed using its command line interface, but if you **use a graphical user interface (GUI) application like [SourceTree](http://sourcetreeapp.com/)** (my favorite), its usage gets really simplified.
 
-{% include image url="jpacman_sourcetree.jpg" caption="SourceTree, an excellent UI app to work with GIT repositories." %}
+{{< image url="jpacman_sourcetree.jpg" caption="SourceTree, an excellent UI app to work with GIT repositories." >}}
 
 Having created and cloned the repository, the next step was to version (i.e. added to the version control system) everything that I recovered from the JPacman backup disk. I chose to use the following folder structure:
 
-- **JPacman1999/BinOriginal**: The working **game binaries** that I published in the previous article. You can also get them from the downloads page.
+- **JPacman1999/BinOriginal**: The working **game binaries** that I published in the previous article. You can also get them from the [downloads page]({{< relref "projects/downloads/2016-02-14-download-jpacman-01999.md" >}}).
 - **JPacman1999/Music**: The game music source files, that correspond to a **DirectMusic project**, a (now obsolete) tool used to compose music.
 - **JPacman1999/Src**: The **original game source code**, including a **map editor** that I never completed.
 
-{% include image url="jpacman_bitbucket.jpg" caption="The JPacman repository in Bitbucket, a cloud service for GIT version control repositories." %}
+{{< image url="jpacman_bitbucket.jpg" caption="The JPacman repository in Bitbucket, a cloud service for GIT version control repositories." >}}
 
 I invite you to browse the [JPacman repository in Bitbucket](https://bitbucket.org/papagamedev/jpacman) and clone it if you want to check it in more detail. It does not only include the original code, but also everything I did during February and April. I’ll write about those in the next articles of Papa Game Dev Projects section.
 
 *What version control system have you used in your projects? Have you used GIT + Bitbucket + SourceTree? How was your experience with such tools?*
+
