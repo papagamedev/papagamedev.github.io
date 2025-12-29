@@ -11,7 +11,7 @@ description: >
     New challenge: find a new toolset for JPacman. Source code inspection, game engine alternatives and the integration of Cocos2d-x.
 ---
 
-In late February, I was very motivated to move forward in the [project JPacman]({{< relref "projects/jpacman/_index.md" >}}). In a couple of weeks, I had already managed to run the original game binaries and I had the BitBucket repository ready to go. There I had uploaded all the source code and assets that had been used to create the first version of the game more than 15 years ago.
+In late February, I was very motivated to move forward in the [project JPacman](/en/category/jpacman/). In a couple of weeks, I had already managed to run the original game binaries and I had the BitBucket repository ready to go. There I had uploaded all the source code and assets that had been used to create the first version of the game more than 15 years ago.
 
 However, there was a small issue. When I worked on the project in 1999, I used a set of tools that are currently obsolete. To move forward, then, the next challenge to solve was to **define and integrate new tools which would allow me to build new versions of the game again**.
 

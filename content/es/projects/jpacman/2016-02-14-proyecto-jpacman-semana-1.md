@@ -71,7 +71,7 @@ Sé que no puedo publicar el juego por el tema de los derechos de autor, pero es
 
 {{< image url="jpacman.jpg" caption="¡Descarga JPacman 0.1999 ahora!" >}}
 
-Puedes obtenerlo desde la página de [descarga de JPacman 0.1999]({{< relref "proyectos/downloads/2016-02-14-descarga-jpacman-01999.md" >}})
+Puedes obtenerlo desde la página de [descarga de JPacman 0.1999]({{< relref "projects/downloads/2016-02-14-descarga-jpacman-01999.md" >}})
 
-También puedes revisar en esta sección todas las actualizaciones al [Proyecto JPacman]({{< relref "proyectos/jpacman/_index.md" >}})
+También puedes revisar en esta sección todas las actualizaciones al [Proyecto JPacman](/category/jpacman/)
 

@@ -71,5 +71,5 @@ I know that I can’t publish the game, because of the copyright issue, but I ho
 
 You can get it from the [JPacman 0.1999 download]({{< relref "projects/downloads/2016-02-14-download-jpacman-01999.md" >}}) page
 
-You can also check all updates to the [Project JPacman]({{< relref "projects/jpacman/_index.md" >}})
+You can also check all updates to the [Project JPacman](/en/category/jpacman/)
 

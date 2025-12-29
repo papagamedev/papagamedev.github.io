@@ -10,7 +10,7 @@ translationKey: proyecto-jpacman-5-graficos-controles
 description: La lógica de JPacman ya funciona con Cocos2d-x, y es hora de hacer funcionar los gráficos y los controles para hacerlo jugable nuevamente.
 ---
 
-Después de que JPacman había dado [las primeras señales]({{< relref "proyectos/jpacman/2016-09-04-proyecto-jpacman-4-primeras-vida.md" >}}) de vida usando Cocos2d-x, era hora de hacer que por fin se pudiera volver a jugar. ¿Qué faltaba para esto? Dos cosas: que se vieran los gráficos en pantalla y que se pudiera usar el teclado para controlar menús y personaje.
+Después de que JPacman había dado [las primeras señales]({{< relref "projects/jpacman/2016-09-04-proyecto-jpacman-4-primeras-vida.md" >}}) de vida usando Cocos2d-x, era hora de hacer que por fin se pudiera volver a jugar. ¿Qué faltaba para esto? Dos cosas: que se vieran los gráficos en pantalla y que se pudiera usar el teclado para controlar menús y personaje.
 
 ## Gráficos en Pantalla
 
@@ -28,7 +28,7 @@ Tuve que convertir los archivos de imagen a PNG, pues la versión original de JP
 
 Ya enfocado en el código, hacer funcionar los gráficos no fue difícil. Debí trabajar el archivo Gfx.cpp, en especial la función DrawSprite para poder registrar en el sistema de escena de Cocos2d-x a las imágenes que debían ser mostradas. También tuve que tener precaución con los sistemas de coordenadas pues descubrí, por las malas, que la coordenada Y estaba invertida entre Direct X y Cocos2d-x.
 
-Por último, arreglé un fallo grosero que tenía en el código respecto a la variable GFXFile, con la que estaba haciendo lo que se conoce como «pisar memoria». Eso seguramente explica caídas inesperadas que había en la versión original y que nunca entendí por qué ocurrían. Para más detalles, pueden ver el [código en Bitbucket y el cambio que hice](https://bitbucket.org/papagamedev/jpacman/commits/9c2ad628a05cfc58d09199d0cfcd3b4a52790db7#chg-JPacman1999/Src/JPacman/gfx.cpp).
+Por último, arreglé un fallo grosero que tenía en el código respecto a la variable GFXFile, con la que estaba haciendo lo que se conoce como «pisar memoria». Eso seguramente explica caídas inesperadas que había en la versión original y que nunca entendí por qué ocurrían. Para más detalles, pueden ver el [código en Github y el cambio que hice](https://github.com/papagamedev/JPacman/commits/9c2ad628a05cfc58d09199d0cfcd3b4a52790db7#chg-JPacman1999/Src/JPacman/gfx.cpp).
 
 ## Controles y Teclado
 

@@ -3,6 +3,24 @@
 <div class="subcategory-page">
   <h1>{{ .Title }}</h1>
   
+  {{ $categoryKey := .Title | lower | urlize }}
+  {{ $lang := .Lang }}
+  {{ $categoryData := index .Site.Data.categories $categoryKey }}
+  
+  {{ if $categoryData }}
+    {{ $description := "" }}
+    {{ if eq $lang "es" }}
+      {{ $description = $categoryData.description.es }}
+    {{ else }}
+      {{ $description = $categoryData.description.en }}
+    {{ end }}
+    {{ if $description }}
+      <div class="subcategory-description">
+        <p>{{ $description }}</p>
+      </div>
+    {{ end }}
+  {{ end }}
+  
   {{ with .Content }}
     <div class="subcategory-description">
       {{ . }}

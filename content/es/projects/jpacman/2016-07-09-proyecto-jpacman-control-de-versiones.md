@@ -43,7 +43,7 @@ No es mi intención explicar cómo usar GIT en este artículo, pero hay cientos 
 
 Habiendo creado y clonado el repositorio, el siguiente paso fue versionar (es decir, agregar al sistema de versiones) todo lo que había recuperado del respaldo de JPacman, con la siguiente estructura de carpetas:
 
-- **JPacman1999/BinOriginal**: Los **binarios del juego** funcionando que publiqué en el artículo anterior, que también se pueden obtener de la [página de descargas]({{< relref "proyectos/downloads/2016-02-14-descarga-jpacman-01999.md" >}}).
+- **JPacman1999/BinOriginal**: Los **binarios del juego** funcionando que publiqué en el artículo anterior, que también se pueden obtener de la [página de descargas]({{< relref "projects/downloads/2016-02-14-descarga-jpacman-01999.md" >}}).
 - **JPacman1999/Music**: Los archivos originales de la música del juego, que corresponden a un **proyecto de DirectMusic**, una herramienta para componer música que ya está obsoleta.
 - **JPacman1999/Src**: El **código fuente original** del juego, incluyendo un **Editor de mapas** que nunca fue terminado.
 
