@@ -7,25 +7,65 @@
     <p class="post-meta">
       <time datetime="{{ .Date.Format "2006-01-02" }}">
         {{ if eq .Lang "es" }}
-          {{ .Date.Day }} de {{ index (slice "enero" "febrero" "marzo" "abril" "mayo" "junio" "julio" "agosto" "septiembre" "octubre" "noviembre" "diciembre") (sub .Date.Month 1) }} de {{ .Date.Year }}
+          {{ .Date.Day }} {{ index (slice "enero" "febrero" "marzo" "abril" "mayo" "junio" "julio" "agosto" "septiembre" "octubre" "noviembre" "diciembre") (sub .Date.Month 1) }} {{ .Date.Year }}
         {{ else }}
           {{ .Date.Format "January 2, 2006" }}
         {{ end }}
       </time>
       {{ with .Params.author }}
-        • {{ . }}
+        {{ $authorData := index $.Site.Data.authors . }}
+        {{ if $authorData }}
+          • {{ $authorData.name }}
+        {{ else }}
+          • {{ . }}
+        {{ end }}
       {{ end }}
-    </p>
     
     <!-- Categories -->
     {{ with .Params.categories }}
-      <div class="post-categories">
+      • <span class="post-categories">
+        {{ $displayedCategories := slice }}
         {{ range . }}
-          <a href="{{ "/category/" | relLangURL }}{{ . | urlize }}/" class="category-link">{{ . }}</a>
+          {{ $categoryKey := . }}
+          {{ $categoryData := index $.Site.Data.categories $categoryKey }}
+          
+          {{ if $categoryData }}
+            {{/* Add parent category if it exists and not already in the list */}}
+            {{ if and (isset $categoryData "parent") (not (in $.Params.categories $categoryData.parent)) }}
+              {{ $parentData := index $.Site.Data.categories $categoryData.parent }}
+              {{ if $parentData }}
+                {{ if not (in $displayedCategories $categoryData.parent) }}
+                  {{ $displayedCategories = $displayedCategories | append $categoryData.parent }}
+                  {{ $parentName := "" }}
+                  {{ if eq $.Lang "es" }}
+                    {{ $parentName = $parentData.es }}
+                  {{ else }}
+                    {{ $parentName = $parentData.en }}
+                  {{ end }}
+                  <a href="{{ printf "/%s/" $categoryData.parent | relLangURL }}" class="category-link">{{ $parentName }}</a>
+                {{ end }}
+              {{ end }}
+            {{ end }}
+            
+            {{/* Add the category itself */}}
+            {{ if not (in $displayedCategories $categoryKey) }}
+              {{ $displayedCategories = $displayedCategories | append $categoryKey }}
+              {{ $categoryName := "" }}
+              {{ if eq $.Lang "es" }}
+                {{ $categoryName = $categoryData.es }}
+              {{ else }}
+                {{ $categoryName = $categoryData.en }}
+              {{ end }}
+              <a href="{{ printf "/%s/" $categoryKey | relLangURL }}" class="category-link">{{ $categoryName }}</a>
+            {{ end }}
+          {{ else }}
+            {{/* Fallback if category not found in data */}}
+            <a href="{{ printf "/%s/" . | relLangURL }}" class="category-link">{{ . }}</a>
+          {{ end }}
         {{ end }}
       </div>
     {{ end }}
-    
+    </p>    
     <!-- Translation link -->
     {{ if .IsTranslated }}
       <div class="translation-notice">
