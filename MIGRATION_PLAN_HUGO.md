@@ -373,9 +373,66 @@ In Hugo templates, access data via:
 
 ---
 
-## Phase 5: Migrate Content (Day 2-3)
+## Phase 5: Migrate Content (Day 2-3) ✅ COMPLETED
 
-### 5.1 Create Content Structure
+### 5.1 Create Content Structure ✅
+
+All content has been migrated to:
+```
+content/
+├── es/
+│   ├── blog/ (36 posts)
+│   ├── entrevistas/ (1 post)
+│   └── juegos-recomendados/ (1 post)
+└── en/
+    ├── blog/ (26 posts)
+    ├── interviews/ (1 post)
+    └── recommended-games/ (1 post)
+```
+
+### 5.2 Convert Post Front Matter ✅
+
+All posts migrated with updated front matter:
+- Added `date` field extracted from filename
+- Added `categories` array
+- Added `translationKey` for linking translations
+- Removed `lang` field (location determines language)
+- Fixed image paths to include leading `/`
+
+### 5.3 Post Migration Script ✅
+
+Created `migrate-posts.ps1` script that:
+- Moves files (not copies) to preserve git history
+- Extracts date from Jekyll filename pattern
+- Updates front matter automatically
+- Determines language and places in correct directory
+
+**Migrated**:
+- 62 blog posts (36 ES, 26 EN)
+- 2 interview posts (1 ES, 1 EN)
+- 2 recommended game posts (1 ES, 1 EN)
+
+### 5.4 Convert Liquid to Hugo Shortcodes ✅
+
+Created shortcodes in `layouts/shortcodes/`:
+- `image.html` - For displaying images with captions
+- `image-r.html` - For right-aligned images
+- `youtube.html` - For embedding YouTube videos
+
+### 5.5 Find/Replace in Content ✅
+
+Created and ran `convert-includes.ps1` script that converted:
+- Jekyll `{% include image %}` → Hugo `{{< image >}}`
+- Jekyll `{% include image-r %}` → Hugo `{{< image-r >}}`
+- Jekyll `{% include youtube %}` → Hugo `{{< youtube >}}`
+
+All 68 posts with includes were successfully converted.
+
+**Build results**: 54 ES pages, 39 EN pages generated successfully.
+
+---
+
+## Phase 6: Internationalization (Day 3)
 
 ```
 content/
