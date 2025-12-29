@@ -14,6 +14,25 @@
           {{ .Date.Format "January 2, 2006" }}
         {{ end }}
       </time>
+      {{ with .Params.categories }}
+        <span class="post-card-categories">
+          {{ range . }}
+            {{ $categoryKey := . }}
+            {{ $categoryData := index $.Site.Data.categories $categoryKey }}
+            {{ $categoryName := "" }}
+            {{ if $categoryData }}
+              {{ if eq $.Lang "es" }}
+                {{ $categoryName = $categoryData.es }}
+              {{ else }}
+                {{ $categoryName = $categoryData.en }}
+              {{ end }}
+            {{ else }}
+              {{ $categoryName = . }}
+            {{ end }}
+            <a href="{{ printf "/categories/%s/" . | relLangURL }}" class="post-card-category">{{ $categoryName }}</a>
+          {{ end }}
+        </span>
+      {{ end }}
       {{ with .Description }}
         <p>{{ . | truncate 120 }}</p>
       {{ end }}
