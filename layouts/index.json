@@ -1,0 +1,15 @@
+{{- $pages := where site.RegularPages "Lang" .Lang -}}
+{{- $pages := where $pages "Type" "in" (slice "blog" "interviews" "recommended-games" "proyectos" "projects") -}}
+[
+{{- range $index, $page := $pages -}}
+  {{- if $index }},{{ end }}
+  {
+    "title": {{ $page.Title | jsonify }},
+    "url": {{ $page.RelPermalink | jsonify }},
+    "date": {{ $page.Date.Format "2006-01-02" | jsonify }},
+    "description": {{ ($page.Description | default ($page.Summary | plainify) | default (substr $page.Plain 0 200) | default "") | jsonify }},
+    "categories": {{ (delimit $page.Params.categories ", ") | default "" | jsonify }},
+    "content": {{ (substr $page.Plain 0 500) | default "" | jsonify }}
+  }
+{{- end }}
+]
