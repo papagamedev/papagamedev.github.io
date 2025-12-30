@@ -15,7 +15,9 @@
     {{ end }}
   </div>
   
-  <!-- Pagination -->
-  {{ template "_internal/pagination.html" . }}
+  <!-- Pagination (disabled for articles/projects sections as they use custom category pages) -->
+  {{ if not (or (eq .Section "articles") (eq .Section "projects")) }}
+    {{ template "_internal/pagination.html" . }}
+  {{ end }}
 </div>
 {{ end }}

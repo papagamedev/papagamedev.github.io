@@ -1,12 +1,25 @@
 {{ define "main" }}
 
 <div class="subcategory-page">
-  <h1>{{ .Title }}</h1>
-  
-  {{ $categoryKey := .Title | lower | urlize }}
   {{ $lang := .Lang }}
+  
+  {{/* Extract category key from URL (e.g., /learnai/ or /en/learnai/ → learnai) */}}
+  {{ $categoryKey := path.Base .RelPermalink }}
+  
   {{ $categoryData := index .Site.Data.categories $categoryKey }}
   
+  {{/* Get title from category data */}}
+  {{ $title := .Title }}
+  {{ if $categoryData }}
+    {{ if eq $lang "es" }}
+      {{ $title = $categoryData.es }}
+    {{ else }}
+      {{ $title = $categoryData.en }}
+    {{ end }}
+  {{ end }}
+  
+  <h1>{{ $title }}</h1>
+
   {{ if $categoryData }}
     {{ $description := "" }}
     {{ if eq $lang "es" }}
@@ -31,24 +44,9 @@
     {{/* For custom category pages, filter all site posts by category */}}
     {{ $pages := slice }}
     {{ if .IsPage }}
-      {{/* This is a custom page, extract the category from URL */}}
-      {{ $categoryFromURL := "" }}
-      {{ if strings.Contains .RelPermalink "/jpacman/" }}
-        {{ $categoryFromURL = "jpacman" }}
-      {{ else if strings.Contains .RelPermalink "/learnai/" }}
-        {{ $categoryFromURL = "learnai" }}
-      {{ else if strings.Contains .RelPermalink "/downloads/" }}
-        {{ $categoryFromURL = "downloads" }}
-      {{ else if strings.Contains .RelPermalink "/blog/" }}
-        {{ $categoryFromURL = "blog" }}
-      {{ else if strings.Contains .RelPermalink "/interviews/" }}
-        {{ $categoryFromURL = "interviews" }}
-      {{ else if strings.Contains .RelPermalink "/recommended-games/" }}
-        {{ $categoryFromURL = "recommended-games" }}
-      {{ end }}
-      
-      {{ if $categoryFromURL }}
-        {{ range where .Site.RegularPages "Params.categories" "intersect" (slice $categoryFromURL) }}
+      {{/* This is a custom page, use the category key extracted from URL */}}
+      {{ if $categoryKey }}
+        {{ range where .Site.RegularPages "Params.categories" "intersect" (slice $categoryKey) }}
           {{ if eq .Lang $lang }}
             {{ $pages = $pages | append . }}
           {{ end }}
