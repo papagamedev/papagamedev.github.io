@@ -49,7 +49,7 @@
   }
   
   :root:not([data-theme="light"]) a {
-    color: #66b2ff;
+    color: inherit;
   }
   
   :root:not([data-theme="light"]) a:visited {
@@ -94,7 +94,7 @@
 }
 
 :root[data-theme="dark"] a {
-  color: #66b2ff;
+  color: inherit;
 }
 
 :root[data-theme="dark"] a:visited {
