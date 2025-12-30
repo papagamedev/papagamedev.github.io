@@ -7,6 +7,12 @@ image: /images/vamos-vacaciones-banner-750x350.jpg
 author: jpl
 translationKey: nos-vamos-de-vacaciones
 description: Las vacaciones son momentos inolvidables para niños y adultos. ¿Hacer juegos en vacaciones? Stugan, un campamento de verano para hacer juegos.
+tags:
+  - family
+  - parenting
+  - vacations
+  - chile
+  - game-jam
 ---
 
 > «Papá, ¿vamos de vacaciones?»

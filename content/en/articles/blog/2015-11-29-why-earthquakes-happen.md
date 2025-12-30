@@ -7,6 +7,12 @@ image: /images/simcity-2000.jpg
 author: jpl
 translationKey: papa-por-que-ocurren-los-terremotos
 description: Earthquakes, flooding and other natural catastrophes are present in videogames. Learning while playing games and the story about Rebuild Chile Game.
+tags:
+  - simcity
+  - learning
+  - chile
+  - education
+  - natural-disasters
 ---
 
 > “Dad, why do earthquakes happen?”

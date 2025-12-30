@@ -8,6 +8,12 @@ author: jpl
 translationKey: papa-juega-final-fantasy
 description: Disfrutando Final Fantasy VII Rebirth con mis hijos. Grandes batallas, entretenidos minijuegos, una gran historia y música épica.  
 featured: true
+tags:
+  - final-fantasy
+  - jrpg
+  - playstation
+  - square-enix
+  - parenting
 ---
 
 Hace unos meses, por fin se lanzó *Final Fantasy VII Rebirth*, la segunda parte de la trilogía *Final Fantasy VII Remake*. El juego había generado expectativas muy altas, ya que la primera entrega lanzada a principios de la pandemia había dejado la vara muy alta. Yo la había disfrutado mucho, y tenía muchas muchas muchas ganas de continuar la experiencia.

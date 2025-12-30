@@ -7,6 +7,12 @@ image: /images/adios2015.jpg
 author: jpl
 translationKey: adios-2015-dos-breves-historias
 description: Se fue el 2015 y me quedaron dos breves historias por contar acerca de un hallazgo inesperado y un viaje enriquecedor
+tags:
+  - game-development
+  - chile
+  - behaviour
+  - parenting
+  - year-in-review
 ---
 
 {{< image url="2015.jpg" caption="" >}}

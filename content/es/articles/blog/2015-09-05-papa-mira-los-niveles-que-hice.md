@@ -7,6 +7,12 @@ image: /images/geometrydash-darkangel.jpg
 author: jpl
 description: El rol de diseñador de niveles en el desarrollo de videojuegos. Editores de niveles en juegos como Geometry Dash de dispositivos móviles o Boulder Dash de Atari.
 translationKey: papa-mira-los-niveles-que-hice
+tags:
+  - geometry-dash
+  - level-design
+  - game-development
+  - mobile-games
+  - creativity
 ---
 
 > «Papá, ¡mira los niveles que hice!»

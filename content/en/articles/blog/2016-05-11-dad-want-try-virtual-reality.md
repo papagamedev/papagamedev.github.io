@@ -7,6 +7,12 @@ image: /images/probar-oculus-banner-750x350.jpg
 author: jpl
 translationKey: papa-probar-realidad-virtual
 description: Virtual Reality is here, with a growing range of devices and accessories. What is Virtual Reality? How has Virtual Reality evolved?
+tags:
+  - virtual-reality
+  - oculus
+  - technology
+  - vr
+  - festigame
 ---
 
 > “Dad, I want to try Virtual Reality!”

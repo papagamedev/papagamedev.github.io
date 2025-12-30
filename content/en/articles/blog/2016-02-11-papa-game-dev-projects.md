@@ -7,6 +7,12 @@ image: /images/proyectos_banner-750x350.jpg
 author: jpl
 translationKey: proyectos-en-papa-game-dev
 description: New projects section at Papa Game Dev, with my own ideas, experiments, tutorials and progress updates on projects.
+tags:
+  - game-development
+  - pacman
+  - projects
+  - programming
+  - personal
 ---
 
 New Year, new challenges!

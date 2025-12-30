@@ -1,10 +1,9 @@
-{{ $related := first 3 (where (where site.RegularPages ".Lang" .Lang) ".Params.categories" "intersect" .Params.categories) }}
-{{ $related = $related | complement (slice .) }}
+{{ $related := .Site.RegularPages.Related . | first 3 }}
 {{ if $related }}
 <section class="related-posts">
   <h3>{{ T "relatedPosts" }}</h3>
   <div class="post-list">
-    {{ range first 3 $related }}
+    {{ range $related }}
       {{ partial "post-card.html" . }}
     {{ end }}
   </div>

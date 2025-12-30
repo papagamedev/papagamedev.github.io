@@ -7,6 +7,12 @@ image: /images/pokemongo_banner-750x350.jpg
 author: jpl
 translationKey: ya-instalaste-pokemon-go
 description: Pokémon GO is a global phenomenon. The great expectations since its announcement and video trailer, and the huge popularity since its recent release.
+tags:
+  - pokemon-go
+  - mobile-games
+  - augmented-reality
+  - pokemon
+  - niantic
 ---
 
 > “Are you playing Pokémon Go?”

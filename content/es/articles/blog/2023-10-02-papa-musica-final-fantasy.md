@@ -7,6 +7,12 @@ image: /images/ff7_ff16_screenshot.jpg
 author: jpl
 translationKey: papa-musica-final-fantasy
 description: La música de Final Fantasy XVI y Final Fantasy VII Remake es inmersiva y de calidad, y se disfruta tanto dentro como fuera del juego.
+tags:
+  - final-fantasy
+  - music
+  - jrpg
+  - square-enix
+  - playstation
 ---
 
 Todas las mañanas, voy a dejar a Santi (11) y Sami (8) al colegio.

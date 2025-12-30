@@ -7,6 +7,11 @@ image: /images/saludo_navidad_papagamedev-750x410.jpg
 author: jpl
 translationKey: felices-fiestas
 description: Happy holidays to all of you, especially to those who feel that parenthood and family are one of the main pillars in life.
+tags:
+  - family
+  - parenting
+  - holidays
+  - christmas
 ---
 
 {{< image url="saludo_navidad_papagamedev.jpg" caption="Happy Holidays to all of you!" >}}

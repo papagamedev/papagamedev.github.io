@@ -7,6 +7,11 @@ image: /images/saludo_navidad_papagamedev-750x410.jpg
 author: jpl
 translationKey: felices-fiestas
 description: Un afectuoso saludo de Felices Fiestas para todos los que tienen a la paternidad y a la familia como uno de los pilares más grandes de sus vidas.
+tags:
+  - family
+  - parenting
+  - holidays
+  - christmas
 ---
 
 {{< image url="saludo_navidad_papagamedev.jpg" caption="¡Felices Fiestas a todos!" >}}

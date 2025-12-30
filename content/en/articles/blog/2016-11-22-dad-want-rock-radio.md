@@ -7,6 +7,12 @@ image: /images/rock_banner-750x350.jpg
 author: jpl
 translationKey: papa-quiero-radio-rock
 description: Music and rock have been part of videogames since they appeared, classical themes or popular songs. Playing instruments, concerts and experiences.
+tags:
+  - music
+  - rock
+  - parenting
+  - family
+  - guitar-hero
 ---
 
 Santi, my 4 year-old-son, likes music a lot, just like my two other kids.

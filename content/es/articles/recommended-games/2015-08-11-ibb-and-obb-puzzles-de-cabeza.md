@@ -7,6 +7,12 @@ image: /images/ibbandobb_banner-750x350.jpg
 author: jpl
 translationKey: ibb-and-obb-puzzles-de-cabeza
 description: Una breve revisión de «ibb and obb», un entretenido juego de puzles cooperativo ideal para que padres jueguen con sus hijos.
+tags:
+  - puzzle
+  - cooperative
+  - indie
+  - family
+  - steam
 ---
 
 **ibb and obb** es un videojuego que jugamos con Diego, mi hijo mayor.

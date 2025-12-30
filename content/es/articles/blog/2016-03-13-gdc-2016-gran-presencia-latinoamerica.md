@@ -7,6 +7,12 @@ image: /images/gdc-2016-banner-750x350.jpg
 author: jpl
 translationKey: gdc-2016-gran-presencia-latinoamerica
 description: La edición 2016 de GDC tendrá gran cantidad de empresas y profesionales de la región en las ruedas de negocios y en la Expo, además de una Fiesta Latina.
+tags:
+  - gdc
+  - events
+  - latin-america
+  - chile
+  - game-development
 ---
 
 Durante la próxima semana, decenas de miles de desarrolladores de videojuegos se reunirán en el evento anual más importante de la industria: la **Game Developers Conference**, o **GDC**.

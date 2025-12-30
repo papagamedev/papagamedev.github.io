@@ -7,6 +7,12 @@ image: /images/adios2016_banner-750x350.jpg
 author: jpl
 translationKey: adios-2016-realidad-virtual-proyectos
 description: The year 2016 is over! The arrival of Virtual Reality to the mass public, interesting projects and great opportunities for 2017.
+tags:
+  - virtual-reality
+  - vr
+  - year-in-review
+  - game-development
+  - projects
 ---
 
 2016 is over!

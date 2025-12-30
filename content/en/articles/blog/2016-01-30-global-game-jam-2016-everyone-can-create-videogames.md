@@ -8,6 +8,12 @@ image: /images/ggj2016-banner-750x350.jpg
 author: jpl
 translationKey: global-game-jam-2016-todos-pueden-crear-videojuegos
 description: Global Game Jam 2016, the largest videogame development event in the world, has started. In Chile and Latin America there are thousands of participants.
+tags:
+  - game-jam
+  - game-development
+  - events
+  - chile
+  - latin-america
 ---
 
 {{< image url="global-game-jam.png" caption="Official Global Game Jam 2016 poster" >}}

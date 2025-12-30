@@ -7,6 +7,11 @@ image: /images/navidad-papagamedev_banner-750x350.jpg
 author: jpl
 translationKey: papa-me-gusta-arbol-navidad
 description: Christmas is a holiday full of joy and gifts, but it is also an opportunity to reflect and value, with our children, our family and friends.
+tags:
+  - christmas
+  - family
+  - parenting
+  - holidays
 ---
 
 > “Dad, I like the Christmas tree!”

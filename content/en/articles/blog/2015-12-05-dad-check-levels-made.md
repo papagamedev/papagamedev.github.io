@@ -8,6 +8,12 @@ description: The role of level designer in video game development. Level editors
 image: /images/geometrydash-darkangel.jpg
 title: “Dad, check out the levels I made!”
 translationKey: papa-mira-los-niveles-que-hice
+tags:
+  - geometry-dash
+  - level-design
+  - game-development
+  - mobile-games
+  - creativity
 ---
 
 > "Dad, check out the levels I made!"

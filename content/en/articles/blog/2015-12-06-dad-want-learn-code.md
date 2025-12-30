@@ -7,6 +7,12 @@ image: /images/programar-banner-750x350.jpg
 author: jpl
 translationKey: quiero-estudiar-videojuegos
 description: Learning how to code helps improving problem-solving skills, logic and creativity. Join The Hour of Code to bring coding to every student.
+tags:
+  - programming
+  - education
+  - hour-of-code
+  - learning
+  - kids
 ---
 
 Almost thirty years ago, my dad shown me two written lines on the TV screen that was connected to our Atari 800 XL.

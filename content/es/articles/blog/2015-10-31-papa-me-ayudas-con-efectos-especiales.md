@@ -7,6 +7,12 @@ title: «Papá, ¿me ayudas con efectos especiales?»
 image: /images/juegos_del_hambre.png
 author: jpl
 description: Efectos especiales en los videojuegos. Consolas y avances tecnológicos. Juegos multiplataforma.
+tags:
+  - graphics
+  - technology
+  - consoles
+  - parenting
+  - visual-effects
 ---
 
 > «Papá, ¿me ayudas con efectos especiales?»

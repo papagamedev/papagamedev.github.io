@@ -7,6 +7,12 @@ image: /images/condorito_banner-750x350.jpg
 author: jpl
 translationKey: aprende-programar-condorito
 description: Condorito, the classic cartoon character, has a key role in the Hour of Code Chile 2016, an initiative to motivate children to learn how to code.
+tags:
+  - programming
+  - education
+  - hour-of-code
+  - condorito
+  - latin-america
 ---
 
 **My kids know Condorito since they were very young.** When Diego (12) learned to read, I started buying Condorito magazines at least once a month, and he always enjoyed and shared with me the jokes he liked the most. And Santi (4), although he can’t read yet, he has always seen the older brother read those magazines and perfectly knows Condorito and his nephew Coné.

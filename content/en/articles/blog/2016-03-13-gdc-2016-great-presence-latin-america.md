@@ -7,6 +7,12 @@ image: /images/gdc-2016-banner-750x350.jpg
 author: jpl
 translationKey: gdc-2016-gran-presencia-latinoamerica
 description: GDC 2016 edition will have a lot of Latin American companies and professionals in the Expo and business meetings, plus there will be a Latam Meetup
+tags:
+  - gdc
+  - events
+  - latin-america
+  - chile
+  - game-development
 ---
 
 Next week, thousands of game developers will gather in the most important annual event of the industry: the **Game Developers Conference**, or **GDC**.

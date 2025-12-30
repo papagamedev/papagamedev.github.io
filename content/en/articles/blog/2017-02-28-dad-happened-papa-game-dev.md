@@ -7,6 +7,12 @@ image: /images/que_paso_papagamedev_banner-750x350.jpg
 author: jpl
 translationKey: papa-paso-papa-game-dev
 description: Why did it took me almost two months to write a new article for Papa Game Dev? New projects and reflections. The end of an era for Wanako / Behaviour Chile.
+tags:
+  - blogging
+  - personal
+  - game-development
+  - behaviour
+  - chile
 ---
 
 > “Dad, what happened to your Papa Game Dev?”

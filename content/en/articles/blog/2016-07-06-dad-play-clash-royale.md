@@ -7,6 +7,12 @@ image: /images/clash_royale_banner-750x350.jpg
 author: jpl
 translationKey: papa-juega-clash-royale-conmigo
 description: Clash Royale, one of the most popular mobile games nowadays. I used to say I would never play it, but my son convinced me to try it.
+tags:
+  - clash-royale
+  - mobile-games
+  - parenting
+  - family
+  - supercell
 ---
 
 > “Dad, play Clash Royale with me!”

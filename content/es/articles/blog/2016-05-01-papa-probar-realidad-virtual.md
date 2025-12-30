@@ -7,6 +7,12 @@ image: /images/probar-oculus-banner-750x350.jpg
 author: jpl
 translationKey: papa-probar-realidad-virtual
 description: La Realidad Virtual ha llegado, con una oferta creciente de dispositivos y accesorios. ¿Qué es la Realidad Virtual? ¿Cómo ha evolucionado?
+tags:
+  - virtual-reality
+  - oculus
+  - technology
+  - vr
+  - festigame
 ---
 
 > «Papá, ¡quiero probar la Realidad Virtual!»

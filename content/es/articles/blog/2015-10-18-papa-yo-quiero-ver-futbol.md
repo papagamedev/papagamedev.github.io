@@ -7,6 +7,12 @@ image: /images/ver_futbol_banner-750x350.jpg
 author: jpl
 translationKey: papa-yo-quiero-ver-futbol
 description: El fútbol en los videojuegos y la evolución a lo largo de los años. El fútbol como experiencia social y el sueño de crear un videojuego de fútbol.
+tags:
+  - football
+  - sports
+  - fifa
+  - pes
+  - parenting
 ---
 
 > «Papá, ¡yo quiero ver fútbol!»

@@ -7,6 +7,12 @@ image: /images/ladrones_banner-750x350.jpg
 author: jpl
 translationKey: papa-malos-los-ladrones
 description: Since the robbery I suffered in my car, I had to explain to my son that some people don’t have good intentions. Cops and thieves videogames.
+tags:
+  - parenting
+  - gta
+  - family
+  - crime
+  - life-lessons
 ---
 
 A couple of months ago, I took my son Diego (12) to play a game for his Hockey team, and since the guards did not allow me to park inside the stadium, I had to leave the car parked on the street, with around 20 or 30 other cars.

@@ -7,6 +7,11 @@ image: /images/Link-To-The-Past-Rain.jpg
 author: jpl
 translationKey: papa-esta-cayendo-agua-del-cielo
 description: La lluvia en los videojuegos. Algunas ideas para jugar en estas vacaciones de invierno.
+tags:
+  - zelda
+  - game-design
+  - weather
+  - parenting
 ---
 
 > «Papá, ¡está cayendo agua del cielo!»

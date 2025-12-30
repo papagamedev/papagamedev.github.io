@@ -7,6 +7,12 @@ image: /images/pokemongo_banner-750x350.jpg
 author: jpl
 translationKey: ya-instalaste-pokemon-go
 description: Pokémon GO es un fenómeno mundial. La expectativa de su anuncio y video promocional, y el lanzamiento y su tremenda popularidad.
+tags:
+  - pokemon-go
+  - mobile-games
+  - augmented-reality
+  - pokemon
+  - niantic
 ---
 
 > «¿Ya estás jugando Pokémon Go?»

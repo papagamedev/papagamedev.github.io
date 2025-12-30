@@ -9,6 +9,12 @@ featured: true
 image: /images/ff7_rebirth.jpg
 title: "Dad, please play Final Fantasy!"
 translationKey: papa-juega-final-fantasy
+tags:
+  - final-fantasy
+  - jrpg
+  - playstation
+  - square-enix
+  - parenting
 ---
 
 A few months ago, *Final Fantasy VII Rebirth*, the second part of the *Final Fantasy VII Remake* trilogy, was finally released. The game had generated very high expectations, as the first installment, launched at the beginning of the pandemic, had set the bar very high. I had thoroughly enjoyed it and was more than eager to continue the journey.

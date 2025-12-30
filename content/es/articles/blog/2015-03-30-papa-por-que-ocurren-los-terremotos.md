@@ -7,6 +7,12 @@ image: /images/simcity-2000.jpg
 author: jpl
 translationKey: papa-por-que-ocurren-los-terremotos
 description: Los terremotos, inundaciones y otras catástrofes naturales siempre han estado presentes en los videojuegos. Aprender jugando videojuegos y la historia acerca del juego Rebuild Chile.
+tags:
+  - simcity
+  - learning
+  - chile
+  - education
+  - natural-disasters
 ---
 
 > «Papá, ¿por qué ocurren los terremotos?»

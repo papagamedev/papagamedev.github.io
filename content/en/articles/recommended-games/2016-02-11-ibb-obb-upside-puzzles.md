@@ -7,6 +7,12 @@ image: /images/ibbandobb_banner-750x350.jpg
 author: jpl
 translationKey: ibb-and-obb-puzzles-de-cabeza
 description: A brief review of “ibb and obb”, a fun cooperative puzzle game that is perfect for parents to play with their kids.
+tags:
+  - puzzle
+  - cooperative
+  - indie
+  - family
+  - steam
 ---
 
 *ibb and obb* is a game we play with Diego (11), my eldest son.

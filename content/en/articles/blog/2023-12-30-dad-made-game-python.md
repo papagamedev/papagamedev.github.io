@@ -8,6 +8,12 @@ author: jpl
 translationKey: papa-hice-juego-python
 description: Create and design video games. Learn programming with C#, PSeInt, and Python. New challenges with Godot.
 featured: true
+tags:
+  - python
+  - programming
+  - education
+  - game-development
+  - learning
 ---
 
 A few weeks ago, my eldest son Diego (19) told me with pride:

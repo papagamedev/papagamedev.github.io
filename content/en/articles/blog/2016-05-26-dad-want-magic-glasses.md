@@ -7,6 +7,12 @@ image: /images/lentes_magicos_banner-750x350.jpg
 author: jpl
 translationKey: papa-quiero-lentes-magicos
 description: Virtual Reality is here. Two devices were already released this year and more will come soon. What are their differences? Does Virtual Reality work?
+tags:
+  - virtual-reality
+  - oculus
+  - vr
+  - parenting
+  - technology
 ---
 
 

@@ -7,6 +7,12 @@ image: /images/rock_banner-750x350.jpg
 author: jpl
 translationKey: papa-quiero-radio-rock
 description: La música y el rock están en los videojuegos desde sus inicios, con clásicas melodías o populares temas. Tocar instrumentos, conciertos y experiencias.
+tags:
+  - music
+  - rock
+  - parenting
+  - family
+  - guitar-hero
 ---
 
 A Santi, mi hijo de 4 años, le gusta la música desde muy pequeño. A mis tres hijos, a decir verdad.

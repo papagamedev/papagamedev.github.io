@@ -7,6 +7,12 @@ image: /images/condorito_banner-750x350.jpg
 author: jpl
 translationKey: aprende-programar-condorito
 description: Condorito, el clásico personaje de historietas, es el protagonista de las actividades para aprender a programar en la Hora del Código 2016
+tags:
+  - programming
+  - education
+  - hour-of-code
+  - condorito
+  - latin-america
 ---
 
 **Mis hijos reconocen el personaje de Condorito desde muy pequeños.** Cuando Diego (12) aprendió leer, empecé a comprar revistas del clásico personaje al menos una vez al mes, y él siempre las disfrutaba y compartía conmigo los chistes que más le gustaban. Y Santi (4), aunque todavía no sabe leer, desde siempre ha visto al hermano mayor leer esas revistas y sabe perfectamente quienes son Condorito y su sobrino Coné.

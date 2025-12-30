@@ -8,6 +8,12 @@ image: /images/mariokart-wheel.jpg
 author: jpl
 description: >
     La Wii y su revolución en los videojuegos: los controles naturales y el legado innovador de Satoru Iwata.
+tags:
+  - nintendo
+  - wii
+  - innovation
+  - family
+  - consoles
 ---
 
 > «Papá, ¡yo quiero tener una Wii!»

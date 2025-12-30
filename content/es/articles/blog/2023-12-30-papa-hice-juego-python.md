@@ -8,6 +8,12 @@ author: jpl
 translationKey: papa-hice-juego-python
 description: Crear y diseñar videojuegos. Aprender programación con C#, PSeInt y Python. Nuevos desafíos con Godot.
 featured: true
+tags:
+  - python
+  - programming
+  - education
+  - game-development
+  - learning
 ---
 
 Hace unas semanas, mi hijo mayor Diego (19) me dijo orgulloso:

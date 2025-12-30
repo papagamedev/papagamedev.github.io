@@ -7,6 +7,12 @@ title: «Papá, ¡ganamos la Copa Pistón!»
 image: /images/triunfo-copa-america.jpg
 author: jpl
 description: Chile celebra la Copa América 2015. El amor a la camiseta no sólo se da en el fútbol. No a la guerra y sí a la solidaridad entre los países de América.
+tags:
+  - chile
+  - parenting
+  - football
+  - family
+  - sports
 ---
 
 > «Papá, ¡ganamos la Copa Pistón!»

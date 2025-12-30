@@ -7,6 +7,12 @@ image: /images/ver_futbol_banner-750x350.jpg
 author: jpl
 translationKey: papa-yo-quiero-ver-futbol
 description: Football (soccer) in video games. How have football games evolved? Football as a social experience. The dream of creating a football video game.
+tags:
+  - football
+  - sports
+  - fifa
+  - pes
+  - parenting
 ---
 
 

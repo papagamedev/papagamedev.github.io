@@ -7,6 +7,12 @@ image: /images/minecraft-padre-hijo.jpg
 author: jpl
 translationKey: cuando-sea-grande-quiero-ser-creador-de-videojuegos
 description: La industria de desarrollo de videojuegos es muy competitiva y a veces frustrante. ¿Por qué seguimos trabajando en esto? ¿Por qué sigue creciendo? ¿Me gustaría que mi hijo trabaje en videouegos?
+tags:
+  - game-development
+  - parenting
+  - career
+  - education
+  - minecraft
 ---
 
 {{< image url="minecraft-padre-hijo.jpg" caption="" >}}

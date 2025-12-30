@@ -7,6 +7,12 @@ image: /images/vamos-vacaciones-banner-750x350.jpg
 author: jpl
 translationKey: nos-vamos-de-vacaciones
 description: Going on vacation is an unforgettable experience for children and adults. Making videogames while on vacation? Stugan, a summer camp for game developers.
+tags:
+  - family
+  - parenting
+  - vacations
+  - chile
+  - game-jam
 ---
 
 

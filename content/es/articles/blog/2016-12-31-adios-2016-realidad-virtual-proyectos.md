@@ -7,6 +7,12 @@ image: /images/adios2016_banner-750x350.jpg
 author: jpl
 translationKey: adios-2016-realidad-virtual-proyectos
 description: ¡Se terminó el 2016! La llegada de la Realidad Virtual al público masivo, interesantes proyectos y grandes oportunidades para el 2017.
+tags:
+  - virtual-reality
+  - vr
+  - year-in-review
+  - game-development
+  - projects
 ---
 
 ¡Se terminó el 2016!

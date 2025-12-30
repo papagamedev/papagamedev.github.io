@@ -7,6 +7,12 @@ image: /images/clarsh_royale_messages_banner-750x350.jpg
 author: jpl
 translationKey: papa-otra-batalla-clash-royale
 description: Having battled against hundreds of opponents, why do I keep playing Clash Royale? Three reasons explaining why I still enjoy this popular mobile game.
+tags:
+  - clash-royale
+  - mobile-games
+  - game-design
+  - supercell
+  - parenting
 ---
 
 > “Dad, let’s play another battle in Clash Royale!”

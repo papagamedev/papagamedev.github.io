@@ -7,6 +7,11 @@ image: /images/Link-To-The-Past-Rain.jpg
 author: jpl
 translationKey: papa-esta-cayendo-agua-del-cielo
 description: Rain in videogames, and some ideas about games that can be played with our children during the winter holidays.
+tags:
+  - zelda
+  - game-design
+  - weather
+  - parenting
 ---
 
 

@@ -7,6 +7,12 @@ image: /images/clarsh_royale_messages_banner-750x350.jpg
 author: jpl
 translationKey: papa-otra-batalla-clash-royale
 description: Después de haber batallado contra cientos de rivales, ¿por qué sigo jugando Clash Royale? Tres razones por las que sigo pegado a este popular juego móvil.
+tags:
+  - clash-royale
+  - mobile-games
+  - game-design
+  - supercell
+  - parenting
 ---
 
 > «Papá, ¿juguemos otra batalla de Clash Royale?»

@@ -7,6 +7,12 @@ image: /images/programar-banner-750x350.jpg
 author: jpl
 translationKey: hora-del-codigo-programar
 description: Aprender a programar es muy importante, pues es el lenguaje del futuro. La Hora del Código, una iniciativa para que niños empiecen a programar.
+tags:
+  - programming
+  - education
+  - hour-of-code
+  - learning
+  - kids
 ---
 
 Hace casi treinta años, mi padre me mostró dos líneas escritas en la pantalla de la televisión que estaba conectada a nuestro Atari 800 XL.

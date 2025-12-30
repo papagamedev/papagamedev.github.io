@@ -7,6 +7,12 @@ title: «Papá, ¡mira una bandera de Chile!»
 image: /images/banderas-chilenas.jpg
 author: jpl
 description: Chile celebra sus Fiestas Patrias con banderas en las calles. Nacionalismo, temáticas en videojuegos y público objetivo. El Día del Videojuego Chileno y su impacto en la industria local.
+tags:
+  - chile
+  - game-development
+  - culture
+  - independence-day
+  - vg-chile
 ---
 
 > «Papá, ¡mira una bandera de Chile!»

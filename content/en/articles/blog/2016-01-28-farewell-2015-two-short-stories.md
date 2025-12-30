@@ -8,6 +8,12 @@ author: jpl
 translationKey: adios-2015-dos-breves-historias
 description: >
     2015 is gone and two short meaningful stories were left untold: an unexpected finding and a very enriching trip
+tags:
+  - game-development
+  - chile
+  - behaviour
+  - parenting
+  - year-in-review
 ---
 
 {{< image url="2015.jpg" caption="" >}}

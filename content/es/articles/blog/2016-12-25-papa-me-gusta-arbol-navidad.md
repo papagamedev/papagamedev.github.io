@@ -7,6 +7,11 @@ image: /images/navidad-papagamedev_banner-750x350.jpg
 author: jpl
 translationKey: papa-me-gusta-arbol-navidad
 description: La Navidad es una fiesta llena de alegría y regalos, pero también es una época para reflexionar y valorar, junto a nuestros hijos, nuestro lado más humano.
+tags:
+  - christmas
+  - family
+  - parenting
+  - holidays
 ---
 
 > «Papá, ¡me gusta el árbol de Navidad!»
