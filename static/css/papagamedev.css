@@ -84,8 +84,8 @@ h6 { font-size: 1em; }
 p { margin-bottom: 15px; line-height: 1.6; }
 
 blockquote {
-  color: var(--grey-color);
   border-left: 4px solid var(--grey-color-light);
+  font-style: italic;
   padding-left: 15px;
   margin-left: 0;
   margin-right: 0;
@@ -693,8 +693,8 @@ a.category-link {
 .translation-notice {
   font-style: italic;
   border-radius: 4px;
-  padding: 12px 15px;
-  margin: 15px 0;
+  padding: 0 15px;
+  margin: 0 0;
 }
 
 .translation-notice a {

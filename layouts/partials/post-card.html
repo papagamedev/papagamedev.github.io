@@ -9,7 +9,7 @@
       <h3>{{ .Title }}</h3>
       <time datetime="{{ .Date.Format "2006-01-02" }}">
         {{ if eq .Lang "es" }}
-          {{ .Date.Day }} {{ index (slice "enero" "febrero" "marzo" "abril" "mayo" "junio" "julio" "agosto" "septiembre" "octubre" "noviembre" "diciembre") (sub .Date.Month 1) }} {{ .Date.Year }}
+          {{ .Date.Day }} {{ T (lower .Date.Month) }} {{ .Date.Year }}
         {{ else }}
           {{ .Date.Format "January 2, 2006" }}
         {{ end }}

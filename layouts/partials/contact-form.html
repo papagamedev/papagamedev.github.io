@@ -72,16 +72,16 @@
       });
       
       if (response.ok) {
-        messageEl.textContent = 'Mensaje enviado exitosamente. Nos pondremos en contacto pronto.';
+        messageEl.textContent = '{{ T "successMessage" }}';
         messageEl.className = 'form-message success';
         form.reset();
       } else {
-        messageEl.textContent = 'Error al enviar el mensaje. Por favor intente más tarde.';
+        messageEl.textContent = '{{ T "errorMessage" }}';
         messageEl.className = 'form-message error';
       }
     } catch (err) {
       console.error('Contact form submission error:', err);
-      messageEl.textContent = 'Error al enviar el mensaje. Por favor intente más tarde.';
+      messageEl.textContent = '{{ T "errorMessage" }}';
       messageEl.className = 'form-message error';
     } finally {
       submitBtn.disabled = false;

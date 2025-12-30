@@ -51,7 +51,7 @@
     const submitBtn = form.querySelector('button[type="submit"]');
     const originalText = submitBtn.textContent;
     submitBtn.disabled = true;
-    submitBtn.textContent = 'Enviando...';
+    submitBtn.textContent = '{{ T "sending" }}';
     messageEl.textContent = '';
     messageEl.className = 'form-message';
     

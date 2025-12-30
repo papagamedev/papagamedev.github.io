@@ -7,7 +7,7 @@
     <p class="post-meta">
       <time datetime="{{ .Date.Format "2006-01-02" }}">
         {{ if eq .Lang "es" }}
-          {{ .Date.Day }} {{ index (slice "enero" "febrero" "marzo" "abril" "mayo" "junio" "julio" "agosto" "septiembre" "octubre" "noviembre" "diciembre") (sub .Date.Month 1) }} {{ .Date.Year }}
+          {{ .Date.Day }} {{ T (lower .Date.Month) }} {{ .Date.Year }}
         {{ else }}
           {{ .Date.Format "January 2, 2006" }}
         {{ end }}
@@ -71,11 +71,7 @@
       <div class="translation-notice">
         {{ range .Translations }}
           <a href="{{ .Permalink }}"><img src="{{ (printf "images/flag-%s.svg" (cond (eq .Lang "en") "english" "spanish")) | relURL }}" alt="{{ .Language.LanguageName }}" class="flag-icon-inline" /></a>
-          {{ if eq $.Lang "es" }}
-            También puedes leer este artículo en <a href="{{ .Permalink }}">English</a>
-          {{ else }}
-            You can also read this article in <a href="{{ .Permalink }}">Español</a>
-          {{ end }}
+          {{ T "alsoReadIn" }} <a href="{{ .Permalink }}">{{ if eq .Lang "es" }}Español{{ else }}English{{ end }}</a>
         {{ end }}
       </div>
     {{ end }}

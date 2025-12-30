@@ -14,7 +14,7 @@
         type="text" 
         id="search-input" 
         class="search-input"
-        placeholder="{{ if eq .Lang "es" }}buscar...{{ else }}search...{{ end }}"
+        placeholder="{{ T "searchPlaceholderShort" }}"
         aria-label="{{ .Title }}"
       >
     </div>
@@ -35,7 +35,7 @@
     resultsContainer: document.getElementById('search-results'),
     json: searchDataUrl,
     searchResultTemplate: '<li><h3><a href="{url}">{title}</a></h3><p class="search-result-meta"><time>{date}</time> <span class="categories">{categories}</span></p><p class="search-result-description">{description}</p></li>',
-    noResultsText: '{{ if eq .Lang "es" }}No se encontraron resultados.{{ else }}No results were found.{{ end }}',
+    noResultsText: '{{ T "noResultsFound" }}',
     limit: 50,
     fuzzy: false,
     exclude: [],
