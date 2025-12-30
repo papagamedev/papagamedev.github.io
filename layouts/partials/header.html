@@ -4,7 +4,14 @@
       <img alt="{{ site.Title }}" src="{{ "images/papagamedev_logo_web.png" | relURL }}" width="300"/>
     </a>
     
-    <nav class="site-nav">
+    <!-- Hamburger menu button -->
+    <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    
+    <nav class="site-nav" id="site-nav">
       <ul class="nav-links">
         {{ range site.Menus.main }}
           <li>
