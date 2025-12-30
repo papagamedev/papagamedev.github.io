@@ -111,9 +111,8 @@ disableKinds = ["taxonomy", "term"]
     siteKey = "6LeaCwsTAAAAAC1B4rTP9IbD9O4WACfBXbbpWsdv"
   
   [params.backend]
-    baseUrl = "https://papagamedevsite.azurewebsites.net/api"
-    commentApi = "/comment"
-    contactApi = "/contact"
+    commentApi = "https://papagamedevsite.azurewebsites.net/api/comment"
+    contactApi = "https://papagamedevsite.azurewebsites.net/api/contact"
 
   [params.social]
     twitter = "papagamedev"
