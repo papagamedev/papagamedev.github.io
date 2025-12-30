@@ -13,7 +13,7 @@
       <div class="carousel-container">
         {{ range $index, $post := first 5 $featured }}
           <div class="carousel-item{{ if eq $index 0 }} active{{ end }}" data-index="{{ $index }}">
-            {{ partial "post-card.html" $post }}
+            {{ partial "post-card-featured.html" $post }}
           </div>
         {{ end }}
       </div>

@@ -388,8 +388,8 @@ table th {
 .featured-posts-carousel {
   position: relative;
   max-width: 800px;
-  margin: 40px auto;
-  padding: 20px 60px;
+  margin: 10px auto;
+  padding: 20px 40px;
 }
 
 .carousel-container {
@@ -414,7 +414,7 @@ table th {
 .carousel-prev,
 .carousel-next {
   position: absolute;
-  top: 50%;
+  top: 45%;
   transform: translateY(-50%);
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
@@ -528,6 +528,14 @@ table th {
   margin: 10px auto;
 }
 
+.post-card-featured {
+  border: 1px solid var(--grey-color-light);
+  border-radius: 5px;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease;
+  margin: 0 auto;
+}
+
 .post-card {
   border: 1px solid var(--grey-color-light);
   border-radius: 5px;
@@ -544,6 +552,25 @@ table th {
 .post-card a {
   color: inherit;
   text-decoration: none;
+}
+
+.post-card-featured a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.post-card-featured-image {
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  background-color: var(--grey-color-light);
+}
+
+.post-card-featured-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .post-card-image {
@@ -564,7 +591,17 @@ table th {
   padding: 15px;
 }
 
+.post-card-featured-content {
+  padding: 0 20px;
+}
+
 .post-card h3 {
+  margin: 0 0 10px 0;
+  font-size: 1.2em;
+  color: var(--text-color);
+}
+
+.post-card-featured h3 {
   margin: 0 0 10px 0;
   font-size: 1.2em;
   color: var(--text-color);
