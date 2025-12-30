@@ -430,15 +430,16 @@ table th {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 20px;
-  margin-bottom: 20px;
+  margin: 10px auto;
 }
 
-/* Post Card */
 .post-card {
   border: 1px solid var(--grey-color-light);
   border-radius: 5px;
   overflow: hidden;
   transition: box-shadow 0.3s ease;
+  max-width: 300px;
+  margin: 0 auto;
 }
 
 .post-card:hover {
@@ -601,50 +602,27 @@ a.category-link {
   margin-bottom: 30px;
 }
 
-/* Images in post content - centered with card-like styling */
 .post-content img {
   display: block;
-  max-width: 750px;
-  width: 100%;
   height: auto;
   margin: 30px auto;
   padding: 10px;
-  background-color: #f8f8f8;
-  border: 1px solid #e0e0e0;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 .post-content figure {
   text-align: center;
-  margin: 30px 0;
-}
-
-.post-content figure img {
-  margin: 0 auto;
-}
-
-/* Images in post content */
-.post-content img {
-  display: block;
-  max-width: 750px;
-  width: 100%;
-  height: auto;
-  margin: 30px auto;
-  padding: 10px;
-  background-color: #f8f8f8;
-  border: 1px solid #e0e0e0;
+  max-width: 600px;
+  margin: 20px auto;
+  background-color: var(--grey-color-light);
+  border: 1px solid var(--grey-color);
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-.post-content figure {
-  text-align: center;
-  margin: 30px 0;
-}
-
 .post-content figure img {
   margin: 0 auto;
+  width: 95%;
+  max-width: 95%;
 }
 
 .post-footer {
@@ -660,7 +638,7 @@ figure {
 }
 
 .figure-image-container, .figure-image-container-right {
-  max-width: 500px;
+  max-width: 600px;
   margin: 20px 0;
 }
 
@@ -678,6 +656,7 @@ figure {
 
 .figure-caption {
   padding-top: 10px;
+  margin: 0 20px;
   text-align: center;
   white-space: pre-wrap;
   font-style: italic;
@@ -1102,7 +1081,7 @@ button:hover, .btn-submit:hover {
 
 /* Related Posts */
 .related-posts {
-  margin-top: 40px;
+  margin: 10px 10%;
   padding-top: 20px;
   border-top: 2px solid var(--grey-color-light);
 }

@@ -1,4 +1,4 @@
-{{ $related := .Site.RegularPages.Related . | first 3 }}
+{{ $related := .Site.RegularPages.Related . | first 2 }}
 {{ if $related }}
 <section class="related-posts">
   <h3>{{ T "relatedPosts" }}</h3>
