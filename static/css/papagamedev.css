@@ -207,11 +207,12 @@ table th {
   padding-left: 20px;
 }
 
-/* Site Header */
+/* Site Header - Always Dark */
 .site-header {
-  border-bottom: 1px solid var(--grey-color-light);
+  background-color: #1e1e1e;
+  border-bottom: 1px solid #2a2a2a;
   min-height: 55px;
-  position: relative;
+  color: #e0e0e0;
 }
 
 .site-title {
@@ -221,14 +222,13 @@ table th {
   letter-spacing: -1px;
   margin-bottom: 0;
   float: left;
-  color: var(--brand-color);
+  color: #FF8533;
 }
 
-.site-title:visited { color: var(--brand-color); }
+.site-title:visited { color: #FF8533; }
 
 .site-logo {
   float: left;
-  margin-right: 20px;
   display: flex;
   align-items: center;
 }
@@ -252,22 +252,24 @@ table th {
 }
 
 .site-nav .nav-links li {
-  margin: 0 15px;
   margin-bottom: 0;
 }
 
 .site-nav .nav-links a {
   display: block;
   padding: 5px 10px;
+  color: #e0e0e0;
+  text-decoration: none;
 }
 
 .site-nav .nav-links a:hover {
-  background-color: var(--grey-color-light);
+  background-color: #2a2a2a;
   border-radius: 5px;
+  color: #e0e0e0;
 }
 
 .site-nav .nav-links a.active {
-  color: var(--grey-color);
+  color: #bdbdbd;
 }
 
 .lang-toggle-item {
@@ -342,12 +344,12 @@ table th {
     right: -100%;
     width: 280px;
     height: 100vh;
-    background-color: var(--background-color);
-    border-left: 1px solid var(--grey-color-light);
+    background-color: #1e1e1e;
+    border-left: 1px solid #2a2a2a;
     transition: right 0.3s ease;
     z-index: 1000;
     overflow-y: auto;
-    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.3);
   }
 
   .site-nav.active {
@@ -366,18 +368,36 @@ table th {
 
   .site-nav .nav-links > li > a {
     padding: 15px 20px;
-    border-bottom: 1px solid var(--grey-color-light);
+    border-bottom: 1px solid #2a2a2a;
+    color: #e0e0e0;
   }
 
   .site-nav .nav-links a:hover {
-    background-color: var(--grey-color-light);
+    background-color: #2a2a2a;
     border-radius: 0;
+    color: #e0e0e0;
   }
 
   .lang-toggle-item {
     justify-content: center;
     margin: 20px 0 !important;
     padding: 15px 20px;
+  }
+
+  .theme-toggle-item {
+    justify-content: center;
+    margin: 20px 0 !important;
+    padding: 15px 20px;
+  }
+
+  .theme-toggle-item .theme-toggle {
+    color: #e0e0e0;
+  }
+
+  .theme-toggle-item .theme-menu {
+    right: auto;
+    left: 50%;
+    transform: translateX(-50%);
   }
   
   .site-logo img {
@@ -1532,6 +1552,8 @@ button:hover, .btn-submit:hover {
 /* Theme Switcher Styles */
 .theme-toggle-item {
   position: relative;
+  display: flex;
+  align-items: center;
 }
 
 .theme-toggle {
@@ -1542,13 +1564,13 @@ button:hover, .btn-submit:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--text-color);
+  color: #e0e0e0;
   border-radius: 4px;
   transition: background-color 0.2s ease;
 }
 
 .theme-toggle:hover {
-  background-color: var(--grey-color-light);
+  background-color: #2a2a2a;
 }
 
 .theme-icon {
@@ -1557,12 +1579,13 @@ button:hover, .btn-submit:hover {
 }
 
 /* Show/hide icons based on theme */
-.sun-icon {
-  display: none;
+/* In header, always show sun icon since header is always dark */
+.site-header .sun-icon {
+  display: block;
 }
 
-.moon-icon {
-  display: block;
+.site-header .moon-icon {
+  display: none;
 }
 
 /* Theme menu dropdown */
