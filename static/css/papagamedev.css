@@ -499,7 +499,7 @@ table th {
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background-color: #ddd;
+  background-color: var(--text-color);
   margin: 0 5px;
   cursor: pointer;
   transition: background-color 0.3s;
@@ -510,7 +510,7 @@ table th {
 }
 
 .dot:hover {
-  background-color: #999;
+  background-color: var(--grey-color);
 }
 
 /* View more link */
@@ -523,7 +523,7 @@ table th {
   display: inline-block;
   padding: 10px 20px;
   background-color: var(--grey-color-light);
-  color: white;
+  color: var(--text-color);
   text-decoration: none;
   border-radius: 5px;
   font-weight: 500;
@@ -665,7 +665,7 @@ table th {
 .post-card p {
   margin: 10px;
   font-size: 0.95em;
-  color: var(--grey-color);
+  color: var(--grey-color-dark);
   line-height: 1.5;
 }
 
@@ -688,7 +688,7 @@ table th {
 
 .post-card-category:hover {
   background-color: var(--brand-color);
-  color: white;
+  color: var(--background-color);
 }
 
 /* Post */
@@ -731,6 +731,7 @@ table th {
 
 .category-link:hover {
   background-color: var(--brand-color);
+  color: var(--background-color);
   text-decoration: none;
 }
 
@@ -1388,7 +1389,7 @@ button:hover, .btn-submit:hover {
   padding: 30px 0;
   margin-top: 30px;
   background-color: var(--grey-color-light);
-  color: var(--grey-color);
+  color: var(--grey-color-dark);
 }
 
 .footer-content {
