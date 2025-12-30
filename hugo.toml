@@ -1,0 +1,148 @@
+baseURL = "https://papagame.dev/"
+title = "Papa Game Dev"
+languageCode = "es"
+defaultContentLanguage = "es"
+defaultContentLanguageInSubdir = false
+
+# Theme (we'll build our own templates)
+# theme = ""
+
+# Build settings
+enableRobotsTXT = true
+enableGitInfo = true
+
+# Disable auto-generated taxonomy term pages (we'll use custom pages under /category/)
+disableKinds = ["taxonomy", "term"]
+
+# Disable default taxonomies (we use custom pages)
+[taxonomies]
+
+# Related content configuration
+[related]
+  threshold = 80
+  includeNewer = true
+  toLower = true
+  [[related.indices]]
+    name = "tags"
+    weight = 80
+  [[related.indices]]
+    name = "categories"
+    weight = 60
+  [[related.indices]]
+    name = "date"
+    weight = 10
+
+# Multilingual configuration
+[languages]
+  [languages.es]
+    languageName = "Español"
+    weight = 1
+    contentDir = "content/es"
+    [languages.es.params]
+      description = "Un blog sobre desarrollo de videojuegos y paternidad"
+  [languages.en]
+    languageName = "English"
+    weight = 2
+    contentDir = "content/en"
+    [languages.en.params]
+      description = "A blog about game development and parenting"
+
+# URL structure matching current Jekyll permalinks
+[permalinks]
+  posts = "/:year/:month/:slug/"
+  blog = "/:year/:month/:slug/"
+  category = "/category/:slug/"
+
+# Main menu
+[[menus.main]]
+  identifier = "articles"
+  name = "Artículos"
+  url = "/articles/"
+  weight = 10
+
+[[menus.main]]
+  identifier = "projects"
+  name = "Proyectos"
+  url = "/projects/"
+  weight = 20
+
+[[menus.main]]
+  identifier = "contact"
+  name = "Contacto"
+  url = "/contacto/"
+  weight = 30
+
+[[menus.main]]
+  identifier = "search"
+  name = "Buscar"
+  url = "/buscar/"
+  weight = 40
+
+# English menu override
+[[languages.en.menus.main]]
+  identifier = "articles"
+  name = "Articles"
+  url = "/en/articles/"
+  weight = 10
+
+[[languages.en.menus.main]]
+  identifier = "projects"
+  name = "Projects"
+  url = "/en/projects/"
+  weight = 20
+
+[[languages.en.menus.main]]
+  identifier = "contact"
+  name = "Contact"
+  url = "/en/contact/"
+  weight = 30
+
+[[languages.en.menus.main]]
+  identifier = "search"
+  name = "Search"
+  url = "/en/search/"
+  weight = 40
+
+# Site parameters
+[params]
+  author = "Juan Pablo Lastra"
+  
+  [params.reCaptcha]
+    siteKey = "6LeaCwsTAAAAAC1B4rTP9IbD9O4WACfBXbbpWsdv"
+  
+  [params.backend]
+    commentApi = "https://papagamedevsite.azurewebsites.net/api/comment"
+    contactApi = "https://papagamedevsite.azurewebsites.net/api/contact"
+
+  [params.social]
+    twitter = "papagamedev"
+    github = "papagamedev"
+    instagram = "papagamedev"
+    facebook = "papagamedev"
+
+# Google Analytics
+[services]
+  [services.googleAnalytics]
+    id = "G-DTFYGQX4WT"
+
+# Markdown rendering
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true  # Allow raw HTML in Markdown
+  [markup.highlight]
+    style = "monokai"
+    lineNos = false
+
+# Output formats
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+  section = ["HTML", "RSS"]
+  page = ["HTML"]
+  taxonomy = ["HTML"]
+  term = ["HTML"]
+
+[outputFormats.JSON]
+  mediaType = "application/json"
+  baseName = "index"
+  isPlainText = true

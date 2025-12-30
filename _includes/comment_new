@@ -1,3 +1,0 @@
-{% if site.comments_enabled and page.comments_enabled %}  
-  {% include message_form title_loc_key="comments_label" button_loc_key="comment_btn_submit" send_api="comment_api" %}
-{% endif %}

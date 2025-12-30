@@ -1,6 +1,8 @@
 *.swp
 ~*
 *~
+
+# Jekyll (legacy)
 _site
 .sass-cache
 .jekyll-cache
@@ -8,3 +10,8 @@ _site
 vendor
 _notebooks/.ipynb_checkpoints
 Gemfile.lock
+
+# Hugo
+public/
+resources/
+.hugo_build.lock

@@ -1,0 +1,95 @@
+{{ define "main" }}
+
+<article class="post">
+  <header class="post-header">
+    <h1 class="post-title">{{ .Title }}</h1>
+    
+    <p class="post-meta">
+      <time datetime="{{ .Date.Format "2006-01-02" }}">
+        {{ if eq .Lang "es" }}
+          {{ .Date.Day }} {{ T (lower .Date.Month) }} {{ .Date.Year }}
+        {{ else }}
+          {{ .Date.Format "January 2, 2006" }}
+        {{ end }}
+      </time>
+      {{ with .Params.author }}
+        {{ $authorData := index $.Site.Data.authors . }}
+        {{ if $authorData }}
+          • {{ $authorData.name }}
+        {{ else }}
+          • {{ . }}
+        {{ end }}
+      {{ end }}
+    
+    <!-- Categories -->
+    {{ with .Params.categories }}
+      • <span class="post-categories">
+        {{ $displayedCategories := slice }}
+        {{ range . }}
+          {{ $categoryKey := . }}
+          {{ $categoryData := index $.Site.Data.categories $categoryKey }}
+          
+          {{ if $categoryData }}
+            {{/* Add parent category if it exists and not already in the list */}}
+            {{ if and (isset $categoryData "parent") (not (in $.Params.categories $categoryData.parent)) }}
+              {{ $parentData := index $.Site.Data.categories $categoryData.parent }}
+              {{ if $parentData }}
+                {{ if not (in $displayedCategories $categoryData.parent) }}
+                  {{ $displayedCategories = $displayedCategories | append $categoryData.parent }}
+                  {{ $parentName := "" }}
+                  {{ if eq $.Lang "es" }}
+                    {{ $parentName = $parentData.es }}
+                  {{ else }}
+                    {{ $parentName = $parentData.en }}
+                  {{ end }}
+                  <a href="{{ printf "/%s/" $categoryData.parent | relLangURL }}" class="category-link">{{ $parentName }}</a>
+                {{ end }}
+              {{ end }}
+            {{ end }}
+            
+            {{/* Add the category itself */}}
+            {{ if not (in $displayedCategories $categoryKey) }}
+              {{ $displayedCategories = $displayedCategories | append $categoryKey }}
+              {{ $categoryName := "" }}
+              {{ if eq $.Lang "es" }}
+                {{ $categoryName = $categoryData.es }}
+              {{ else }}
+                {{ $categoryName = $categoryData.en }}
+              {{ end }}
+              <a href="{{ printf "/%s/" $categoryKey | relLangURL }}" class="category-link">{{ $categoryName }}</a>
+            {{ end }}
+          {{ else }}
+            {{/* Fallback if category not found in data */}}
+            <a href="{{ printf "/%s/" . | relLangURL }}" class="category-link">{{ . }}</a>
+          {{ end }}
+        {{ end }}
+      </span>
+    {{ end }}
+    </p>    
+    <!-- Translation link -->
+    {{ if .IsTranslated }}
+      <div class="translation-notice">
+        {{ range .Translations }}
+          <a href="{{ .Permalink }}"><img src="{{ (printf "images/flag-%s.svg" (cond (eq .Lang "en") "english" "spanish")) | relURL }}" alt="{{ .Language.LanguageName }}" class="flag-icon-inline" /></a>
+          {{ T "alsoReadIn" }} <a href="{{ .Permalink }}">{{ if eq .Lang "es" }}Español{{ else }}English{{ end }}</a>
+        {{ end }}
+      </div>
+    {{ end }}
+  </header>
+  
+  <div class="post-content">
+    {{ .Content }}
+  </div>
+  
+  <footer class="post-footer">
+    <!-- Author bio -->
+    {{ partial "author-bio.html" . }}
+    
+    <!-- Related posts -->
+    {{ partial "related-posts.html" . }}
+    
+    <!-- Comments -->
+    {{ partial "comments.html" . }}
+  </footer>
+</article>
+{{ end }}

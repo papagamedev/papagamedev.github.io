@@ -1,0 +1,127 @@
+{{ define "main" }}
+<div class="home">
+  {{ with .Content }}
+    <div class="home-content">
+      {{ . }}
+    </div>
+  {{ end }}
+  
+  <!-- Featured posts carousel/roulette -->
+  {{ $featured := where (where site.RegularPages ".Lang" .Lang) ".Params.featured" true }}
+  {{ if $featured }}
+    <section class="featured-posts-carousel">
+      <div class="carousel-container">
+        {{ range $index, $post := first 5 $featured }}
+          <div class="carousel-item{{ if eq $index 0 }} active{{ end }}" data-index="{{ $index }}">
+            {{ partial "post-card-featured.html" $post }}
+          </div>
+        {{ end }}
+      </div>
+      {{ if gt (len $featured) 1 }}
+        <button class="carousel-prev" aria-label="Previous">‹</button>
+        <button class="carousel-next" aria-label="Next">›</button>
+        <div class="carousel-dots">
+          {{ range $index, $post := first 5 $featured }}
+            <span class="dot{{ if eq $index 0 }} active{{ end }}" data-index="{{ $index }}"></span>
+          {{ end }}
+        </div>
+      {{ end }}
+    </section>
+  {{ end }}
+  
+  <!-- Recent articles -->
+  {{ $articles := where (where site.RegularPages ".Lang" .Lang) "Type" "in" (slice "articles" "blog" "interviews" "recommended-games") }}
+  {{ if $articles }}
+    <section class="recent-posts">
+      <h2>{{ i18n "articles" }}</h2>
+      <div class="post-list">
+        {{ range first 3 $articles }}
+          {{ partial "post-card.html" . }}
+        {{ end }}
+      </div>
+      <div class="view-more">
+        <a href="{{ if eq .Lang "es" }}/articles/{{ else }}/en/articles/{{ end }}" class="view-more-link">
+          {{ i18n "viewMore" }}
+        </a>
+      </div>
+    </section>
+  {{ end }}
+  
+  <!-- Recent projects -->
+  {{ $projects := where (where site.RegularPages ".Lang" .Lang) "Type" "in" (slice "projects") }}
+  {{ if $projects }}
+    <section class="recent-projects">
+      <h2>{{ i18n "projects" }}</h2>
+      <div class="post-list">
+        {{ range first 3 $projects }}
+          {{ partial "post-card.html" . }}
+        {{ end }}
+      </div>
+      <div class="view-more">
+        <a href="{{ if eq .Lang "es" }}/projects/{{ else }}/en/projects/{{ end }}" class="view-more-link">
+          {{ i18n "viewMore" }}
+        </a>
+      </div>
+    </section>
+  {{ end }}
+</div>
+
+<script>
+// Featured posts carousel
+(function() {
+  const carousel = document.querySelector('.featured-posts-carousel');
+  if (!carousel) return;
+  
+  const items = carousel.querySelectorAll('.carousel-item');
+  const dots = carousel.querySelectorAll('.dot');
+  const prevBtn = carousel.querySelector('.carousel-prev');
+  const nextBtn = carousel.querySelector('.carousel-next');
+  
+  let currentIndex = 0;
+  let autoplayInterval;
+  
+  function showSlide(index) {
+    items.forEach(item => item.classList.remove('active'));
+    dots.forEach(dot => dot.classList.remove('active'));
+    
+    items[index].classList.add('active');
+    dots[index].classList.add('active');
+    currentIndex = index;
+  }
+  
+  function nextSlide() {
+    const next = (currentIndex + 1) % items.length;
+    showSlide(next);
+  }
+  
+  function prevSlide() {
+    const prev = (currentIndex - 1 + items.length) % items.length;
+    showSlide(prev);
+  }
+  
+  function startAutoplay() {
+    autoplayInterval = setInterval(nextSlide, 5000);
+  }
+  
+  function stopAutoplay() {
+    clearInterval(autoplayInterval);
+  }
+  
+  if (prevBtn) prevBtn.addEventListener('click', () => { stopAutoplay(); prevSlide(); startAutoplay(); });
+  if (nextBtn) nextBtn.addEventListener('click', () => { stopAutoplay(); nextSlide(); startAutoplay(); });
+  
+  dots.forEach((dot, index) => {
+    dot.addEventListener('click', () => {
+      stopAutoplay();
+      showSlide(index);
+      startAutoplay();
+    });
+  });
+  
+  startAutoplay();
+  
+  carousel.addEventListener('mouseenter', stopAutoplay);
+  carousel.addEventListener('mouseleave', startAutoplay);
+})();
+</script>
+{{ end }}

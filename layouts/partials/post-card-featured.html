@@ -1,0 +1,12 @@
+<article class="post-card-featured">
+  <a href="{{ .Permalink }}">
+    {{ with .Params.image }}
+      <div class="post-card-featured-image">
+        <img src="{{ . }}" alt="{{ $.Title }}" loading="lazy">
+      </div>
+    {{ end }}
+    <div class="post-card-featured-content">
+      <h3>{{ .Title }}</h3>
+    </div>
+  </a>
+</article>

@@ -1,0 +1,41 @@
+<article class="post-card">
+  <a href="{{ .Permalink }}">
+    {{ with .Params.image }}
+      <div class="post-card-image">
+        <img src="{{ . }}" alt="{{ $.Title }}" loading="lazy">
+      </div>
+    {{ end }}
+    <div class="post-card-content">
+      <h3>{{ .Title }}</h3>
+      <time datetime="{{ .Date.Format "2006-01-02" }}">
+        {{ if eq .Lang "es" }}
+          {{ .Date.Day }} {{ T (lower .Date.Month) }} {{ .Date.Year }}
+        {{ else }}
+          {{ .Date.Format "January 2, 2006" }}
+        {{ end }}
+      </time>
+      {{ with .Params.categories }}
+        <span class="post-card-categories">
+          {{ range . }}
+            {{ $categoryKey := . }}
+            {{ $categoryData := index $.Site.Data.categories $categoryKey }}
+            {{ $categoryName := "" }}
+            {{ if $categoryData }}
+              {{ if eq $.Lang "es" }}
+                {{ $categoryName = $categoryData.es }}
+              {{ else }}
+                {{ $categoryName = $categoryData.en }}
+              {{ end }}
+            {{ else }}
+              {{ $categoryName = . }}
+            {{ end }}
+            <a href="{{ printf "/category/%s/" . | relLangURL }}" class="post-card-category">{{ $categoryName }}</a>
+          {{ end }}
+        </span>
+      {{ end }}
+      {{ with .Description }}
+        <p>{{ . }}</p>
+      {{ end }}
+    </div>
+  </a>
+</article>

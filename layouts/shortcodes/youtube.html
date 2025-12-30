@@ -1,0 +1,17 @@
+{{- $id := .Get "id" -}}
+{{- $start := .Get "start" -}}
+{{- $caption := .Get "caption" -}}
+
+<div class="video-container">
+  <iframe 
+    width="560" 
+    height="315" 
+    src="https://www.youtube.com/embed/{{ $id }}{{ if $start }}?start={{ $start }}{{ end }}"
+    style="border:0;"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+  </iframe>
+  {{- with $caption }}
+    <p class="caption">{{ . }}</p>
+  {{- end }}
+</div>

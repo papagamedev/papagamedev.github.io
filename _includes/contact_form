@@ -1,1 +1,0 @@
-{% include message_form title_loc_key="" button_loc_key="contact_btn_submit" send_api="contact_api" %}

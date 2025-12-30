@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="{{ .Lang }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ .Title }} | {{ site.Title }}{{ end }}</title>
+  <meta name="description" content="{{ .Description | default .Site.Params.description }}">
+  
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/png" href="/favicon.png">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="/css/papagamedev.css">
+  
+  <!-- Hugo built-in SEO -->
+  {{ template "_internal/opengraph.html" . }}
+  {{ template "_internal/twitter_cards.html" . }}
+  {{ template "_internal/schema.html" . }}
+  
+  <!-- Google Analytics -->
+  {{ template "_internal/google_analytics.html" . }}
+  
+  {{ block "head" . }}{{ end }}
+</head>
+<body>
+  {{ partial "header.html" . }}
+  
+  <main class="page-content">
+    <div class="wrapper">
+      {{ block "main" . }}{{ end }}
+    </div>
+  </main>
+  
+  {{ partial "footer.html" . }}
+  
+  <!-- Scripts -->
+  <script src="/js/jquery-3.7.1.min.js"></script>
+  <script src="/js/menu.js"></script>
+  {{ block "scripts" . }}{{ end }}
+</body>
+</html>

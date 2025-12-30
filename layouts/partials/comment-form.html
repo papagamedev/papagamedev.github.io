@@ -1,0 +1,99 @@
+<!-- Comment form -->
+<div class="comment-form-section">
+  <h4>{{ T "leaveComment" }}</h4>
+  <form id="comment-form" class="comment-form">
+    <input type="hidden" name="slug" value="{{ .File.BaseFileName }}">
+    
+    <div class="form-group">
+      <label for="comment-name">{{ T "name" }} *
+        <input type="text" id="comment-name" name="name" required>
+      </label>
+    </div>
+    
+    <div class="form-group">
+      <label for="comment-email">{{ T "email" }} *
+        <input type="email" id="comment-email" name="email" required>
+      </label>
+    </div>
+    
+    <div class="form-group">
+      <label for="comment-url">{{ T "website" }}
+        <input type="url" id="comment-url" name="url" placeholder="https://example.com">
+      </label>
+    </div>
+    
+    <div class="form-group">
+      <label for="comment-message">{{ T "message" }} *
+        <textarea id="comment-message" name="message" required rows="5"></textarea>
+      </label>
+    </div>
+    
+    {{ if site.Params.reCaptcha.siteKey }}
+      <div class="g-recaptcha" data-sitekey="{{ site.Params.reCaptcha.siteKey }}"></div>
+    {{ end }}
+    
+    <button type="submit" class="btn btn-primary">{{ T "submit" }}</button>
+    <span class="form-message" id="form-message"></span>
+  </form>
+</div>
+
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<script>
+(function() {
+  const form = document.getElementById('comment-form');
+  const messageEl = document.getElementById('form-message');
+  
+  if (!form) return;
+  
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    
+    const submitBtn = form.querySelector('button[type="submit"]');
+    const originalText = submitBtn.textContent;
+    submitBtn.disabled = true;
+    submitBtn.textContent = '{{ T "sending" }}';
+    messageEl.textContent = '';
+    messageEl.className = 'form-message';
+    
+    try {
+      const formData = new FormData(form);
+      const data = {
+        name: formData.get('name'),
+        email: formData.get('email'),
+        url: formData.get('url') || null,
+        message: formData.get('message'),
+        slug: formData.get('slug'),
+        date: new Date().toISOString()
+      };
+      
+      const response = await fetch('{{ site.Params.backend.commentApi }}', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data)
+      });
+      
+      if (response.ok) {
+        messageEl.textContent = '{{ T "commentSuccess" }}';
+        messageEl.className = 'form-message success';
+        form.reset();
+        // Reload page after 2 seconds
+        setTimeout(() => {
+          location.reload();
+        }, 2000);
+      } else {
+        messageEl.textContent = '{{ T "commentError" }}';
+        messageEl.className = 'form-message error';
+      }
+    } catch (err) {
+      console.error('Comment submission error:', err);
+      messageEl.textContent = '{{ T "commentError" }}';
+      messageEl.className = 'form-message error';
+    } finally {
+      submitBtn.disabled = false;
+      submitBtn.textContent = originalText;
+    }
+  });
+})();
+</script>

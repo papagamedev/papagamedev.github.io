@@ -1,0 +1,23 @@
+{{ define "main" }}
+
+<div class="list-page">
+  <h1>{{ .Title }}</h1>
+  
+  {{ with .Content }}
+    <div class="list-description">
+      {{ . }}
+    </div>
+  {{ end }}
+  
+  <div class="post-list">
+    {{ range .Pages }}
+      {{ partial "post-card.html" . }}
+    {{ end }}
+  </div>
+  
+  <!-- Pagination (disabled for articles/projects sections as they use custom category pages) -->
+  {{ if not (or (eq .Section "articles") (eq .Section "projects")) }}
+    {{ template "_internal/pagination.html" . }}
+  {{ end }}
+</div>
+{{ end }}

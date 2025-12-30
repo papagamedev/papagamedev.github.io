@@ -1,0 +1,28 @@
+{{ $author := index site.Data.authors .Params.author }}
+{{ if $author }}
+<div class="author-bio">
+  {{ with $author.image }}
+    <img src="{{ . }}" alt="{{ $author.name }}" class="author-image">
+  {{ end }}
+  <div class="author-info">
+    <strong>{{ $author.name }}</strong>
+    {{ if eq $.Lang "en" }}
+      {{ with (index $author "bio-en") }}<p>{{ . }}</p>{{ end }}
+    {{ else }}
+      {{ with $author.bio }}<p>{{ . }}</p>{{ end }}
+    {{ end }}
+    <ul class="author-links">
+      {{ with $author.twitter }}
+        <li>
+          <a href="{{ . }}" aria-label="Twitter" title="Twitter"></a>
+        </li>
+      {{ end }}
+      {{ with $author.url }}
+        <li>
+          <a href="{{ . }}" aria-label="{{ if eq $.Lang "es" }}Sitio Web{{ else }}Website{{ end }}" title="{{ if eq $.Lang "es" }}Sitio Web{{ else }}Website{{ end }}"></a>
+        </li>
+      {{ end }}
+    </ul>
+  </div>
+</div>
+{{ end }}

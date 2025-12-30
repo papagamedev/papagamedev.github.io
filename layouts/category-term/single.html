@@ -1,0 +1,69 @@
+{{ define "main" }}
+
+<div class="subcategory-page">
+  {{ $lang := .Lang }}
+  
+  {{/* Extract category key from URL (e.g., /learnai/ or /en/learnai/ → learnai) */}}
+  {{ $categoryKey := path.Base .RelPermalink }}
+  
+  {{ $categoryData := index .Site.Data.categories $categoryKey }}
+  
+  {{/* Get title from category data */}}
+  {{ $title := .Title }}
+  {{ if $categoryData }}
+    {{ if eq $lang "es" }}
+      {{ $title = $categoryData.es }}
+    {{ else }}
+      {{ $title = $categoryData.en }}
+    {{ end }}
+  {{ end }}
+  
+  <h1>{{ $title }}</h1>
+
+  {{ if $categoryData }}
+    {{ $description := "" }}
+    {{ if eq $lang "es" }}
+      {{ $description = $categoryData.description.es }}
+    {{ else }}
+      {{ $description = $categoryData.description.en }}
+    {{ end }}
+    {{ if $description }}
+      <div class="subcategory-description">
+        <p>{{ $description }}</p>
+      </div>
+    {{ end }}
+  {{ end }}
+  
+  {{ with .Content }}
+    <div class="subcategory-description">
+      {{ . }}
+    </div>
+  {{ end }}
+  
+  <div class="post-list">
+    {{/* For custom category pages, filter all site posts by category */}}
+    {{ $pages := slice }}
+    {{ if .IsPage }}
+      {{/* This is a custom page, use the category key extracted from URL */}}
+      {{ if $categoryKey }}
+        {{ range where .Site.RegularPages "Params.categories" "intersect" (slice $categoryKey) }}
+          {{ if eq .Lang $lang }}
+            {{ $pages = $pages | append . }}
+          {{ end }}
+        {{ end }}
+      {{ end }}
+    {{ else }}
+      {{/* This is a taxonomy term page */}}
+      {{ $pages = .Pages }}
+    {{ end }}
+    
+    {{ range $pages }}
+      {{ partial "post-card.html" . }}
+    {{ end }}
+  </div>
+  
+  {{ if eq (len $pages) 0 }}
+    <p>{{ if eq .Lang "es" }}No hay entradas disponibles.{{ else }}No posts available.{{ end }}</p>
+  {{ end }}
+</div>
+{{ end }}

@@ -1,0 +1,53 @@
+{{ define "main" }}
+<article>
+  <div class="content">
+    {{ .Content }}
+    
+    <!-- Search Input -->
+    <div class="search-container">
+      <input 
+        type="text" 
+        id="search-input" 
+        class="search-input"
+        placeholder="{{ T "searchPlaceholderShort" }}"
+        aria-label="{{ .Title }}"
+      >
+    </div>
+
+    <!-- Search Results -->
+    <ul id="search-results" class="search-results"></ul>
+  </div>
+</article>
+
+<script src="{{ "js/simple-jekyll-search.min.js" | relURL }}"></script>
+<script>
+(function() {
+  const searchLang = '{{ .Lang }}';
+  const searchDataUrl = '{{ "/" | relLangURL }}index.json';
+  
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('search-results'),
+    json: searchDataUrl,
+    searchResultTemplate: '<li><h3><a href="{url}">{title}</a></h3><p class="search-result-meta"><time>{date}</time> <span class="categories">{categories}</span></p><p class="search-result-description">{description}</p></li>',
+    noResultsText: '{{ T "noResultsFound" }}',
+    limit: 50,
+    fuzzy: false,
+    exclude: [],
+    success: function() {
+      console.log('Search data loaded successfully');
+    },
+    templateMiddleware: function(prop, value, template) {
+      if (prop === 'categories') {
+        if (Array.isArray(value)) {
+          return value.join(', ');
+        }
+      }
+      return value;
+    }
+  });
+})();
+</script>
+{{ end }}
+
+

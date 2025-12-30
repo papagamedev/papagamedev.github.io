@@ -1,0 +1,68 @@
+articles:
+    es: Artículos
+    en: Articles
+    primary: true
+    description:
+        es: Una colección de artículos acerca de la paternidad y los videojuegos. También incluye entrevistas y juegos recomendados.
+        en: A collection of articles about paternity and video games. It also includes interviews and recommended games.
+blog:
+    es: Blog
+    en: Blog
+    primary: false
+    parent: articles
+    order: 1
+    description:
+        es: Artículos acerca de la paternidad y los videojuegos
+        en: Articles about paternity and videogames
+interviews:
+    es: Entrevistas
+    en: Interviews
+    primary: false
+    parent: articles
+    order: 2
+    description:
+        es: Entrevistas a personas que también disfrutan del mundo de la paternidad y los videojuegos en su vida.
+        en: Interviews with individuals who also enjoy the world of paternity and video games in their lives.
+recommended-games:
+    es: Juegos Recomendados
+    en: Recommended Games
+    primary: false
+    parent: articles
+    order: 3
+    description:
+        es: Esta sección contiene artículos acerca de videojuegos que son recomendables para disfrutarlos en conjunto con los hijos.
+        en: This section contains articles about video games that are recommended to be enjoyed together with your children.
+projects:
+    es: Proyectos
+    en: Projects
+    primary: true
+    description:
+        es: Esta sección contiene actualizaciones del progreso en diferentes proyectos personales en que estoy trabajando. Son proyectos no comerciales, y los comparto con el objetivo de que puedan servir de guía a quienes estén empezando en el desarrollo.
+        en: This section contains updates on the progress of personal projects I'm working on. They are non-commercial projects and the purpose of sharing them is to hopefully serve as a guide to those just starting on development.
+learnai:
+    es: Aprender AI
+    en: Learn AI
+    primary: false
+    parent: projects
+    order: 1
+    description:
+        es: Diversas pruebas y experimentos realizados mientras aprendo acerca de Inteligencia Artificial y Deep Learning.
+        en: A set of tests and experiments developed while learning about Artificial Intelligence and Deep Learning. 
+jpacman:
+    es: JPacman
+    en: JPacman
+    primary: false
+    parent: projects
+    order: 2
+    description:
+        es: JPacman es un juego inspirado en Pacman, con mejoras jugables. Surgió como regalo en 1998-1999, revivido en 2015. El nombre combina mis iniciales (JP) y Pacman.
+        en: JPacman is a Pacman-inspired game with gameplay enhancements. Originating as a gift in 1998-1999, it was revived in 2015. The name combines my initials (JP) and Pacman.
+downloads:
+    es: Descargas
+    en: Downloads
+    primary: false
+    parent: projects
+    order: 3
+    description:
+        es: Listado de archivos descargables.
+        en: A list of downloadable files.

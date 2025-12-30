@@ -1,0 +1,49 @@
+<header class="site-header">
+  <div class="wrapper">
+    <a class="site-logo" href="{{ "/" | relLangURL }}">
+      <img alt="{{ site.Title }}" src="{{ "images/papagamedev_logo_web.png" | relURL }}" width="300"/>
+    </a>
+    
+    <!-- Hamburger menu button -->
+    <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    
+    <nav class="site-nav" id="site-nav">
+      <ul class="nav-links">
+        {{ range site.Menus.main }}
+          <li>
+            <a href="{{ .URL | relLangURL }}"{{ if $.IsMenuCurrent "main" . }} class="active"{{ end }}>
+              {{ .Name }}
+            </a>
+          </li>
+        {{ end }}
+        
+        <!-- Language toggle as part of nav -->
+        <li class="lang-toggle-item">
+          {{/* Show current language flag, link to translation */}}
+          {{ if .IsTranslated }}
+            {{ range .Translations }}
+              <a href="{{ .Permalink }}" title="{{ .Language.LanguageName }}" class="lang-link">
+                <img src="{{ (printf "images/flag-%s.svg" (cond (eq $.Lang "en") "english" "spanish")) | relURL }}" alt="{{ $.Language.LanguageName }}" class="flag-icon" />
+              </a>
+            {{ end }}
+          {{ else }}
+            {{/* Link to home of other language if no translation exists, but show current language flag */}}
+            {{ if eq .Lang "es" }}
+              <a href="/en/" title="English" class="lang-link">
+                <img src="{{ "images/flag-spanish.svg" | relURL }}" alt="Español" class="flag-icon" />
+              </a>
+            {{ else }}
+              <a href="/" title="Español" class="lang-link">
+                <img src="{{ "images/flag-english.svg" | relURL }}" alt="English" class="flag-icon" />
+              </a>
+            {{ end }}
+          {{ end }}
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>

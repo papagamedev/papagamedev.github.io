@@ -1,0 +1,41 @@
+{{ define "main" }}
+<div class="subcategory-page">
+  <h1>{{ .Title }}</h1>
+  
+  {{ $contentType := .Params.contentType }}
+  {{ $lang := .Lang }}
+  {{ $categoryData := index .Site.Data.categories $contentType }}
+  
+  {{ if $categoryData }}
+    {{ $description := "" }}
+    {{ if eq $lang "es" }}
+      {{ $description = $categoryData.description.es }}
+    {{ else }}
+      {{ $description = $categoryData.description.en }}
+    {{ end }}
+    {{ if $description }}
+      <div class="subcategory-description">
+        <p>{{ $description }}</p>
+      </div>
+    {{ end }}
+  {{ end }}
+  
+  {{ with .Content }}
+    <div class="subcategory-description">
+      {{ . }}
+    </div>
+  {{ end }}
+  
+  {{ $posts := where (where site.RegularPages ".Lang" $lang) "Type" $contentType }}
+  
+  <div class="post-list">
+    {{ range $posts }}
+      {{ partial "post-card.html" . }}
+    {{ end }}
+  </div>
+  
+  {{ if eq (len $posts) 0 }}
+    <p>{{ if eq $lang "es" }}No hay entradas disponibles.{{ else }}No posts available.{{ end }}</p>
+  {{ end }}
+</div>
+{{ end }}

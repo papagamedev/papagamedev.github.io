@@ -1,0 +1,15 @@
+{{- $url := .Get "url" -}}
+{{- $src := .Get "src" -}}
+{{- $path := cond (isset .Params "url") $url $src -}}
+{{- $caption := .Get "caption" -}}
+
+{{- if not (hasPrefix $path "/") -}}
+  {{- $path = printf "/images/%s" $path -}}
+{{- end -}}
+
+<figure class="figure-image-container">
+  <img src="{{ $path }}" alt="{{ $caption | default "" }}" class="figure-image" loading="lazy">
+  {{- with $caption }}
+    <figcaption class="figure-caption">{{ . }}</figcaption>
+  {{- end }}
+</figure>
