@@ -57,21 +57,10 @@
     
     try {
       const formData = new FormData(form);
-      const data = {
-        name: formData.get('name'),
-        email: formData.get('email'),
-        url: formData.get('url') || null,
-        message: formData.get('message'),
-        slug: formData.get('slug'),
-        date: new Date().toISOString()
-      };
       
       const response = await fetch('{{ site.Params.backend.commentApi }}', {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(data)
+        body: formData
       });
       
       if (response.ok) {
