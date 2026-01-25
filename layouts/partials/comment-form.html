@@ -4,6 +4,13 @@
   <form id="comment-form" class="comment-form">
     <input type="hidden" name="slug" value="{{ .File.BaseFileName }}">
     
+    <!-- Honeypot field to catch spam bots - hidden from real users -->
+    <div class="form-group" style="position: absolute; left: -5000px;" aria-hidden="true">
+      <label for="comment-hidden">Leave this field empty
+        <input type="text" id="comment-hidden" name="hidden" tabindex="-1" autocomplete="off">
+      </label>
+    </div>
+    
     <div class="form-group">
       <label for="comment-name">{{ T "name" }} *
         <input type="text" id="comment-name" name="name" required>
@@ -57,31 +64,16 @@
     
     try {
       const formData = new FormData(form);
-      const data = {
-        name: formData.get('name'),
-        email: formData.get('email'),
-        url: formData.get('url') || null,
-        message: formData.get('message'),
-        slug: formData.get('slug'),
-        date: new Date().toISOString()
-      };
       
       const response = await fetch('{{ site.Params.backend.commentApi }}', {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(data)
+        body: formData
       });
       
       if (response.ok) {
         messageEl.textContent = '{{ T "commentSuccess" }}';
         messageEl.className = 'form-message success';
         form.reset();
-        // Reload page after 2 seconds
-        setTimeout(() => {
-          location.reload();
-        }, 2000);
       } else {
         messageEl.textContent = '{{ T "commentError" }}';
         messageEl.className = 'form-message error';

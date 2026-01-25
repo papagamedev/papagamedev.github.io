@@ -111,6 +111,8 @@ disableKinds = ["taxonomy", "term"]
     siteKey = "6LeaCwsTAAAAAC1B4rTP9IbD9O4WACfBXbbpWsdv"
   
   [params.backend]
+#    commentApi = "http://localhost:7071/api/comment"
+#    contactApi = "http://localhost:7071/api/contact"
     commentApi = "https://papagamedevsite.azurewebsites.net/api/comment"
     contactApi = "https://papagamedevsite.azurewebsites.net/api/contact"
 
