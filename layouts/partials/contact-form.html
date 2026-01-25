@@ -2,6 +2,13 @@
 <div class="contact-form-section">
   <h3>{{ T "contactForm" }}</h3>
   <form id="contact-form" class="comment-form">
+    <!-- Honeypot field to catch spam bots - hidden from real users -->
+    <div class="form-group" style="position: absolute; left: -5000px;" aria-hidden="true">
+      <label for="contact-hidden">Leave this field empty
+        <input type="text" id="contact-hidden" name="hidden" tabindex="-1" autocomplete="off">
+      </label>
+    </div>
+    
     <div class="form-group">
       <label for="contact-name">{{ T "name" }} *
         <input type="text" id="contact-name" name="name" required>
@@ -55,20 +62,10 @@
     
     try {
       const formData = new FormData(form);
-      const data = {
-        name: formData.get('name'),
-        email: formData.get('email'),
-        subject: formData.get('subject'),
-        message: formData.get('message'),
-        date: new Date().toISOString()
-      };
       
       const response = await fetch('{{ site.Params.backend.contactApi }}', {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(data)
+        body: formData
       });
       
       if (response.ok) {
